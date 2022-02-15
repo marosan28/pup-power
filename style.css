@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap');
+
+
+#header {
+    background-image:url("https://cdn.pixabay.com/photo/2012/03/01/00/57/background-19861_960_720.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(50%);   
+}
+
+body {
+    margin: auto;
+}
+
+#logo {
+    font-size: 60px;
+    font-family: Kanit, sans-serif;
+    text-align: center;
+    margin-top:0;
+    }
