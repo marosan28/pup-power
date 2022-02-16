@@ -2,7 +2,7 @@
 
 .background {
 
-    background-image:url('images/1424153078-huge.jpg');
+    background-image:url('images/shutterstock_1712342506.jpg');
     background-color: rgba(255, 255, 255, 0.356);
     background-position: center;
     background-repeat: no-repeat;
@@ -20,9 +20,10 @@ body {
 }
 
 #logo {
-    font-size: 60px;
+    font-size: 70px;
     font-family: Kanit, sans-serif;
     text-align: center;
     margin-top:0;
     transform: translateX(50%);
+    color: rgba(230, 219, 209, 0.6)
     }
