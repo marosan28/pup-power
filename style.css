@@ -64,3 +64,8 @@ li a {
     text-decoration: none;
     color: white;
 }
+
+a:hover {
+    background-color: rgba(34, 28, 28, 0.63);
+    padding: 20px;
+}
