@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap');
 
+.background {
 
-#header {
-    background-image:url("https://cdn.pixabay.com/photo/2012/03/01/00/57/background-19861_960_720.jpg");
+    background-image:url('images/1424153078-huge.jpg');
+    background-color: rgba(255, 255, 255, 0.356);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: contrast(50%);   
+    overflow: hidden;
+    width: 100vh;
+    height: 100vh;
 }
 
 body {
-    margin: auto;
+   
+    margin: 0px 0 20px 0;
+    padding: 0px 0 20px 0;
+    
 }
 
 #logo {
@@ -18,4 +24,5 @@ body {
     font-family: Kanit, sans-serif;
     text-align: center;
     margin-top:0;
+    transform: translateX(50%);
     }
