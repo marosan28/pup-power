@@ -44,6 +44,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+  
 }
 
 #menu {
@@ -57,6 +58,7 @@ body {
     background-color: rgba(230, 219, 209, 0.6);
     padding: 20px;
     width: 100%;
+
 }
 
 #menu li {
@@ -80,27 +82,34 @@ a:hover {
     text-transform: uppercase;
     text-decoration: overline;
   }
-  /* Circle photos styling*/
-.circle-1 {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
-}
-.circle-1 img {
-    width: 430px;
-    height: 430px;
-    grid-area: 2/1/2/4;
-    position: absolute; 
-}
 
-.circle-2 {
+  /* Circle photos styling*/
+  #circle-images {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 500px 2fr;
+    grid-template-rows: 470px 2fr;
+  }
+
+.circle-1 img {
+    width: 450px;
+    height: 450px;
+    
 }
 
 .circle-2 img {
     width: 450px;
     height: 450px;
-    grid-area: 2/2/5/4;
+}
+
+.circle-3 img {
+    width: 450px;
+    height: 450px;
+
+}
+
+
+.circle-4 img {
+    width: 450px;
+    height: 450px;
+    
 }
