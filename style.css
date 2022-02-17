@@ -21,7 +21,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    width: 200vh;
+    width: 200vw;
     height: 100vh;
 }
 
@@ -81,7 +81,8 @@ a:hover {
     margin-bottom: 20px;
     text-transform: uppercase;
     text-decoration: overline;
-  }
+   font-family:Montserrat, sans-serif;
+}
 
   /* Circle photos styling*/
   #circle-images {
@@ -90,26 +91,28 @@ a:hover {
     grid-template-rows: 470px 2fr;
   }
 
-.circle-1 img {
+.circle-1 img, .circle-2 img, .circle-3 img, .circle-4 img {
     width: 450px;
     height: 450px;
     
 }
-
-.circle-2 img {
-    width: 450px;
-    height: 450px;
+.circle-1 > #circle-text-1 {
+    color: rgb(53, 51, 51);
+    position: absolute;
+    top:400px;
+    left:25px;
+    font-family:Montserrat, sans-serif;
+}
+div > .circle-1 {
+    position: relative;
 }
 
-.circle-3 img {
-    width: 450px;
-    height: 450px;
-
-}
-
-
-.circle-4 img {
-    width: 450px;
-    height: 450px;
+#pool {
+    color: rgb(53, 51, 51);
+    position: absolute;
+    font-family: Montserrat, sans-serif;
+    top:255px;
+    left:170px;
+    font-size:180%
     
 }
