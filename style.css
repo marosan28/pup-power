@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    
 }
 
 body {
@@ -12,6 +13,7 @@ body {
     padding: 0;
     border: none;
     overflow: scroll;
+    scroll-behavior: smooth;
 }
 
 .background {
@@ -21,7 +23,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    width: 200vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -56,7 +58,7 @@ body {
     display: flex;
     text-align: center;
     background-color: rgba(230, 219, 209, 0.6);
-    padding: 20px;
+    padding: 20px 0 20px 0;
     width: 100%;
 
 }
@@ -87,8 +89,8 @@ a:hover {
   /* Circle photos styling*/
   #circle-images {
     display: grid;
-    grid-template-columns: 500px 2fr;
-    grid-template-rows: 470px 2fr;
+    grid-template-columns: auto minmax(500px, 1fr);
+    grid-template-areas: "top left";
   }
 
 .circle-1 img, .circle-2 img, .circle-3 img, .circle-4 img {
