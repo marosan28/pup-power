@@ -14,6 +14,7 @@ body {
     border: none;
     overflow: scroll;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .background {
@@ -94,9 +95,9 @@ a:hover {
   }
 
 .circle-1 img, .circle-2 img, .circle-3 img, .circle-4 img {
-    width: 450px;
-    height: 450px;
-    
+    width: 100%;
+    max-width: 450px;
+    height: auto;
 }
 .circle-1 > #circle-text-1 {
     color: rgb(53, 51, 51);
