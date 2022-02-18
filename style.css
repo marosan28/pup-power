@@ -6,6 +6,7 @@
     
 }
 
+
 body {
     font-family: Markazi, sans-serif;
     font-weight: 200;
@@ -99,12 +100,19 @@ a:hover {
     max-width: 450px;
     height: auto;
 }
+#circle-text-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .circle-1 > #circle-text-1 {
+    
     color: rgb(53, 51, 51);
     position: absolute;
-    top:400px;
-    left:25px;
+    top: 350px; 
+    left:35px;
     font-family:Montserrat, sans-serif;
+
 }
 div > .circle-1 {
     position: relative;
@@ -119,3 +127,4 @@ div > .circle-1 {
     font-size:180%
     
 }
+
