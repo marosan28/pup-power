@@ -109,7 +109,7 @@ a:hover {
     
     color: rgb(53, 51, 51);
     position: absolute;
-    top: 350px; 
+    top: 360px; 
     left:35px;
     font-family:Montserrat, sans-serif;
 
@@ -122,9 +122,25 @@ div > .circle-1 {
     color: rgb(53, 51, 51);
     position: absolute;
     font-family: Montserrat, sans-serif;
-    top:255px;
-    left:170px;
+    top:270px;
+    left:180px;
     font-size:180%
     
 }
 
+.circle-2 > #circle-text-2 {
+    color: rgb(53, 51, 51);
+    position: absolute;
+    top: 360px;
+    left: 485px;
+    font-family:Montserrat, sans-serif;
+}
+
+#playground {
+    color: rgb(53, 51, 51);
+    position: absolute;
+    font-family: Montserrat, sans-serif;
+    top: 270px;
+    left: 570px;
+    font-size:180%
+}
