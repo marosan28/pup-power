@@ -45,6 +45,7 @@ body {
     font-family: Montserrat, sans-serif;
     letter-spacing: 5px;
     color: white;
+    margin-left: 10px;
 }
 
 
@@ -104,14 +105,32 @@ li a:hover {
 }
 
   /* Circle photos styling*/
+  
 
-.circle-1 img, .circle-2 img, .circle-3 img, .circle-4 img {
+.circle-1 img {
     width: 100%;
     max-width: 450px;
     padding: 0 0 20px 0;
     height: auto;
 }
-
+.circle-2 img {
+    width: 100%;
+    max-width: 450px;
+    padding: 0 0 20px 0;
+    height: auto;
+}
+.circle-3 img {
+    width: 100%;
+    max-width: 450px;
+    padding: 0 0 20px 0;
+    height: auto;
+}
+.circle-4 img {
+    width: 100%;
+    max-width: 450px;
+    padding: 0 0 20px 0;
+    height: auto;
+}
 
 #circle-text-1 {
     display: flex;
@@ -206,7 +225,7 @@ footer {
     width: 100%;
     font-family: Montserrat, sans-serif;
     color: white;
-    font-size: 115%;
+    font-size: 90%;
     letter-spacing: 5px;
 
 }
