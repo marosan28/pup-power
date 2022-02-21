@@ -53,9 +53,9 @@ body {
 
 .nav {
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     top: 0;
-    z-index: 100;
+    z-index: 1;
     border-bottom: 2px solid white;
     grid-area: hd;
     
@@ -76,7 +76,7 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        min-height: 100%;
 }
 
 #menu li {
@@ -96,12 +96,13 @@ li a:hover {
 }
 
 .intro-text-box {
-    font-size: 50%;
+    font-size: 150%;
     color: white;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-family: Montserrat, sans-serif;
     grid-area: text;
+    margin-top: 20px;
 }
 
   /* Circle photos styling*/
