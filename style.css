@@ -104,6 +104,33 @@ li a:hover {
     grid-area: text;
     margin-top: 20px;
 }
+
+
+/* Images styling */ 
+.container-1 {
+    margin: 0 auto;
+    max-width: 60rem;
+    display: grid;
+    grid-area: img1;
+}
+
+.img-1 {
+width: 100%;
+height: 100%;
+object-fit: fill;
+}
+.container-2 {
+    margin: 0 auto;
+    max-width: 60rem;
+    display: grid;
+    grid-area: img2;
+}
+.img-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    }
+
 /*Footer styling */
 
 footer {
