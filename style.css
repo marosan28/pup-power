@@ -54,7 +54,7 @@ body {
 
 .nav {
     width: 100%;
-    min-height: 100px;
+    min-height: auto;
     top: 0;
     z-index: 1;
     border-bottom: 2px solid white;
@@ -65,7 +65,7 @@ body {
 #menu {
         list-style-type: none;
         font-family: Montserrat, sans-serif;
-        font-size: 90%;
+        font-size: 100%;
         letter-spacing: 7px;
         display: inline-grid;
         text-align: center;
@@ -206,14 +206,22 @@ footer {
 }
 @media only screen and (max-width: 550px) {
     body {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.4fr 2.2fr 2.2fr 2.2fr 2.2fr 0.5fr;
-    grid-template-areas: "hd"
-                        "text"
-                        "img1"
-                        "img2"
-                        "img3"
-                        "img4"
-                        "foot";
-    }
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.4fr 2.2fr 2.2fr 2.2fr 2.2fr 0.5fr;
+        grid-template-areas: "hd"
+                            "text"
+                            "img1"
+                            "img2"
+                            "img3"
+                            "img4"
+                            "foot";
+        }
+    #menu {
+            
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;       
 }
+
+} 
