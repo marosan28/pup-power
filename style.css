@@ -42,7 +42,7 @@ body {
 
 
 #logo {
-    font-size: 170%;
+    font-size: 220%;
     font-family: Montserrat, sans-serif;
     letter-spacing: 5px;
     color: white;
@@ -96,7 +96,7 @@ li a:hover {
 
 }
 .intro-text-box {
-    font-size: 150%;
+    font-size: 200%;
     color: white;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -165,7 +165,7 @@ footer {
     width: 100%;
     font-family: Montserrat, sans-serif;
     color: white;
-    font-size: 150%;
+    font-size: 170%;
     letter-spacing: 5px;
 }
 
@@ -203,7 +203,7 @@ footer {
     letter-spacing: 3px;
     margin-top: 20px;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 770px) {
     body {
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 0.4fr 2.2fr 2.2fr 2.2fr 2.2fr 0.5fr;
@@ -216,7 +216,6 @@ footer {
                             "foot";
         }
     #menu {
-            
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -224,3 +223,15 @@ footer {
 }
 
 } 
+@media only screen and (max-width: 1500px) {
+    #menu {
+        font-size: 100%
+    }
+    .intro-text-box {
+        font-size: 120%;
+    }
+    .footer {
+        font-size: 100%;
+    }
+    
+}
