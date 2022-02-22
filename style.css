@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
     display: grid;
     grid-template-columns: 30% 30% auto;
-    grid-template-rows: 0.5fr 0.3fr 3fr 3fr 0.5fr;
+    grid-template-rows: 0.5fr 0.3fr 600px 600px 0.5fr;
     grid-template-areas: "hd hd hd"
                         "text text text"
                         "img1 img2 n"
@@ -107,31 +107,36 @@ li a:hover {
 
 /* Images and text styling */ 
 .container-1 {
-    margin: 0 auto;
-    max-width: 60rem;
-    display: grid;
+    background-image: url("images/circle-image-600.png");
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: contain;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
     grid-area: img1;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
-.img-1 {
-width: 100%;
-height: 100%;
-object-fit: contain;
-}
+
 .pool-text {
+    text-align: center;
     font-family: Montserrat, sans-serif;
     font-size: 1.5rem;
     position: absolute;
     grid-area: img1;
-    top: 13em;
-    left: 5.8em;
+
 }
 #pool-title {
     grid-area: img1;
-    position: absolute;
     font-size: 2rem;
-    left: 10em;
-    top: 7em;
    letter-spacing: 4px;
+   position: absolute;
+    margin: 0 0 13.5em 0;
 }
 #pool-title a {
     text-decoration: none;
@@ -142,33 +147,65 @@ object-fit: contain;
     font-size: 2.5rem;
 }
 .container-2 {
-    margin: 0 auto;
-    max-width: 60rem;
-    display: grid;
+    background-image: url("images/circle-image-600.png");
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     grid-area: img2;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
+
 .img-2 {
     width: 100%;
     height: 100%;
     object-fit: contain;
     }
 .container-3 {
-        margin: 0 auto;
-        max-width: 60rem;
-        display: grid;
-        grid-area: img3;
-    }
+    background-image: url("images/circle-image-600.png");
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: img3;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
 .img-3 {
         width: 100%;
         height: 100%;
         object-fit:contain;
         }
 .container-4 {
-            margin: 0 auto;
-            max-width: 60rem;
-            display: grid;
-            grid-area: img4;
-        }
+    background-image: url("images/circle-image-600.png");
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: img4;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 .img-4 {
             width: 100%;
             height: 100%;
