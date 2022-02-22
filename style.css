@@ -122,9 +122,24 @@ object-fit: contain;
     font-size: 1.5rem;
     position: absolute;
     grid-area: img1;
-    top: 12em;
-    left: 6em;
-    
+    top: 13em;
+    left: 5.8em;
+}
+#pool-title {
+    grid-area: img1;
+    position: absolute;
+    font-size: 2rem;
+    left: 10em;
+    top: 7em;
+   letter-spacing: 4px;
+}
+#pool-title a {
+    text-decoration: none;
+    color: black;
+}
+
+#pool-title a:hover {
+    font-size: 2.5rem;
 }
 .container-2 {
     margin: 0 auto;
