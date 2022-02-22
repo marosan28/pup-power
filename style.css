@@ -246,11 +246,20 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;       
+        align-items: center;
+    }
+    .pool-text {
+        font-size: 3.5vw;
+        grid-area: img1;  
+    }
+    
+    #pool-title {
+        grid-area: img1;
+        font-size: 1rem;
+    }
 }
-
-} 
-@media screen and (max-width: 800px) and (min-width: 450px){
+ 
+@media screen and (max-width: 1000px) and (min-width: 450px){
     body {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.5fr 0.4fr 2.2fr 2.2fr 0.5fr;
@@ -277,7 +286,8 @@ footer {
     }
     .footer {
         font-size: 100%;
-    }   
+    }
+
 }
 @media only screen and (max-width: 1300px) {
     #menu {
