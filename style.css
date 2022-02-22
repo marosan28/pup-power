@@ -117,7 +117,7 @@ li a:hover {
     background-repeat: no-repeat;
     grid-area: img1;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -157,7 +157,7 @@ li a:hover {
     background-repeat: no-repeat;
     grid-area: img2;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -179,7 +179,7 @@ li a:hover {
     background-size: contain;
     grid-area: img3;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -201,7 +201,7 @@ li a:hover {
     background-size: contain;
     grid-area: img4;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -270,7 +270,7 @@ footer {
 @media only screen and (max-width: 450px) {
     body {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.4fr 2.2fr 2.2fr 2.2fr 2.2fr 0.5fr;
+        grid-template-rows: 0.5fr 0.4fr 300px 300px 300px 300px 0.5fr;
         grid-template-areas: "hd"
                             "text"
                             "img1"
@@ -299,7 +299,7 @@ footer {
 @media screen and (max-width: 1000px) and (min-width: 450px){
     body {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 0.4fr 2.2fr 2.2fr 0.5fr;
+        grid-template-rows: 0.5fr 0.4fr 450px 450px 0.5fr;
         grid-template-areas: "hd hd"
                             "text text"
                             "img1 img2"
