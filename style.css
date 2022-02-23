@@ -23,14 +23,13 @@ body {
     overflow-x: hidden;
     display: grid;
     grid-template-columns: 35% 35% auto;
-    grid-template-rows: 0.5fr 0.3fr repeat(2, minmax(450px, 600px)) 0.5fr;
+    grid-template-rows: 0.5fr 0.3fr repeat(2, minmax(450px, 600px)) auto 0.5fr;
     grid-template-areas: "hd hd hd"
                         "text text text"
                         "img1 img2 n"
                         "img3 img4 0"
-                        "foot foot foot";
-    
-    
+                        "auto auto auto"
+                        "foot foot foot";   
 }
 
 .background {
@@ -69,7 +68,7 @@ body {
 #menu {
         list-style-type: none;
         font-family: Montserrat, sans-serif;
-        font-size: 150%;
+        font-size: calc(1rem+1vw);
         letter-spacing: 7px;
         display: inline-grid;
         text-align: center;
@@ -100,7 +99,7 @@ li a:hover {
 
 }
 .intro-text-box {
-    font-size: 200%;
+    font-size: calc(1rem+1vw);
     color: white;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -232,7 +231,7 @@ footer {
     width: 100%;
     font-family: Montserrat, sans-serif;
     color: white;
-    font-size: 170%;
+    font-size: calc(1rem+1vw);
     letter-spacing: 5px;
 }
 
@@ -285,13 +284,14 @@ footer {
                             "img4"
                             "foot";
         }
-    
     #menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 20px 0 0 0;
+        
+
     }
     .home, .pool, .playground, .gym, .bar {
         padding: 0 50% 0 50%;
@@ -301,7 +301,6 @@ footer {
         margin-bottom: 2%;
     }
 
-    
     #pool-title {
         grid-area: img1;
         font-size: 1rem;
@@ -322,10 +321,16 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;       
+        align-items: center;
+        padding: 20px 0 0 0;
+        font-size: 70%   
 }
-#menu {
-    font-size: 70%
+.home, .pool, .playground, .gym, .bar {
+    padding: 0 50% 0 50%;
+    border-top: 1px solid white;
+}
+#logo {
+    margin-bottom: 2%;
 }
 .intro-text-box {
     font-size: 90%;
