@@ -291,7 +291,16 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 20px 0 0 0;
     }
+    .home, .pool, .playground, .gym, .bar {
+        padding: 0 50% 0 50%;
+        border-top: 1px solid white;
+    }
+    #logo {
+        margin-bottom: 2%;
+    }
+
     
     #pool-title {
         grid-area: img1;
@@ -315,20 +324,26 @@ body {
         justify-content: center;
         align-items: center;       
 }
-
-    
-} 
-
+#menu {
+    font-size: 70%
+}
+.intro-text-box {
+    font-size: 90%;
+}
+.footer {
+    font-size: 70%;  
+    } 
+}
 @media only screen and (max-width: 1500px) {
     
     #menu {
-        font-size: 100%
+        font-size: 70%
     }
     .intro-text-box {
-        font-size: 120%;
+        font-size: 90%;
     }
     .footer {
-        font-size: 100%;
+        font-size: 70%;
     }
 
 }
@@ -342,15 +357,25 @@ body {
     .footer {
         font-size: 90%;
     }   
-}
-@media only screen and (max-width: 1000px) {
-    #menu {
-        font-size: 70%
+} 
+
+@media screen and (max-width: 1000px) and (min-width: 700px){
+    body {
+        display: grid;
+        grid-template-columns: 45% 45% auto;
+        grid-template-rows: 0.5fr 0.3fr repeat(2, minmax(350px, 500px)) 0.5fr;
+        grid-template-areas: "hd hd hd"
+                            "text text text"
+                            "img1 img2 0"
+                            "img3 img4 n"
+                            "foot foot foot";
+                        }
+        #menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;       
     }
-    .intro-text-box {
-        font-size: 90%;
-    }
-    .footer {
-        font-size: 70%;
-    }   
+    
+        
 }
