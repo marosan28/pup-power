@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
     display: grid;
     grid-template-columns: 30% 30% auto;
-    grid-template-rows: 0.5fr 0.3fr 600px 600px 0.5fr;
+    grid-template-rows: 0.5fr 0.3fr repeat(2, minmax(450px, 600px)) 0.5fr;
     grid-template-areas: "hd hd hd"
                         "text text text"
                         "img1 img2 n"
@@ -221,6 +221,7 @@ footer {
     margin-top: 20px;
 }
 .footer {
+    bottom: 0;
     text-align: center;
     padding: 20px 0 20px 0;
     width: 100%;
@@ -267,10 +268,10 @@ footer {
 
 
 /* Media Queries*/
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     body {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.4fr 300px 300px 300px 300px 0.5fr;
+        grid-template-rows: 0.5fr 0.4fr 350px 350px 350px 350px 0.5fr;
         grid-template-areas: "hd"
                             "text"
                             "img1"
@@ -285,27 +286,23 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    .pool-text {
-        font-size: 3.5vw;
-        grid-area: img1;  
-    }
     
     #pool-title {
         grid-area: img1;
         font-size: 1rem;
     }
 }
- 
-@media screen and (max-width: 1000px) and (min-width: 450px){
-    body {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 0.4fr 450px 450px 0.5fr;
-        grid-template-areas: "hd hd"
-                            "text text"
-                            "img1 img2"
-                            "img3 img4"
-                            "foot foot";
-        }
+@media screen and (max-width: 800px) and (min-width: 500px){
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.3fr repeat(2, minmax(350px, 500px)) 0.5fr;
+    grid-template-areas: "hd hd"
+                        "text text"
+                        "img1 img2"
+                        "img3 img4"
+                        "foot foot";
+                    }
     #menu {
         display: flex;
         flex-direction: column;
@@ -313,8 +310,11 @@ footer {
         align-items: center;       
 }
 
+
+
 } 
 @media only screen and (max-width: 1500px) {
+    
     #menu {
         font-size: 100%
     }
