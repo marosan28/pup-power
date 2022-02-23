@@ -137,8 +137,10 @@ li a:hover {
 }
 #pool-title {
     display: flex;
-    font-size: 2rem;
+    font-size: 1.5rem;
    letter-spacing: 4px;
+   margin-bottom: 3%;
+   
 }
 #pool-title a {
     text-decoration: none;
@@ -146,7 +148,7 @@ li a:hover {
 }
 
 #pool-title a:hover {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
 }
 .container-2 {
     background-image: url("images/circle-image-600.png");
