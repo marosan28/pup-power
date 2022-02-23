@@ -215,7 +215,7 @@ li a:hover {
             height: 100%;
             object-fit: contain;
             }
-/*Footer styling */
+/* Footer */
 
 footer {
     background-color: rgba(230, 219, 209, 0.6);
@@ -235,9 +235,9 @@ footer {
     letter-spacing: 5px;
 }
 
-/* Pool styling*/
+/* Pool page */
 .background-pool {
-    background-color: rgba(112, 74, 38, 0.877);
+    background-color: rgba(107, 170, 170, 0.877);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -245,43 +245,29 @@ footer {
     width: 100%;
     height: 100vh;
 }
-#goldie-pool {
-    position: relative;
-    display: grid;
-    justify-content: space-evenly;
+/* Playground page */
+.background-playground {
+    background-color: rgba(107, 170, 128, 0.877);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
 }
-#goldie-pool img {
-    width: 600px;
-    height: 450px;
-    margin-top: 20px;
-}
-.goldie-text {
-    font-family: Montserrat, sans-serif;
-    color: white;
-    font-size: 80%;
-    letter-spacing: 3px;
-    margin-top: 20px;
-}
-.pool-info {
-    font-family: Montserrat, sans-serif;
-    color: white;
-    font-size: 80%;
-    letter-spacing: 3px;
-    margin-top: 20px;
-}
-
 
 /* Media Queries*/
 @media only screen and (max-width: 700px) {
     body {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.4fr 350px 350px 350px 350px 0.5fr;
+        grid-template-rows: 0.5fr 0.4fr 350px 350px 350px 350px auto 0.5fr;
         grid-template-areas: "hd"
                             "text"
                             "img1"
                             "img2"
                             "img3"
                             "img4"
+                            "auto"
                             "foot";
         }
     #menu {
@@ -302,8 +288,7 @@ footer {
     }
 
     #pool-title {
-        grid-area: img1;
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     .intro-text-box {
         font-size: 100%;
@@ -315,15 +300,16 @@ footer {
         font-size: smaller;
     }   
 }
-@media screen and (max-width: 1050px) and (min-width: 700px){
+@media screen and (max-width: 1100px) and (min-width: 700px){
 body {
     display: grid;
     grid-template-columns: 45% 45% auto;
-    grid-template-rows: 0.5fr 0.3fr repeat(2, minmax(350px, 500px)) 0.5fr;
+    grid-template-rows: 0.5fr 0.3fr repeat(2, minmax(350px, 500px)) auto 0.5fr;
     grid-template-areas: "hd hd hd"
                         "text text text"
                         "img1 img2 0"
                         "img3 img4 n"
+                        "auto auto auto"
                         "foot foot foot";
                     }
     #menu {
@@ -351,11 +337,11 @@ body {
         font-size: small;
         grid-template-columns: minmax(auto, 18em);
         grid-template-rows:minmax(auto, 15em);
-    }  
+    }
 }
 
 
-@media only screen and (max-width: 1200px) and (min-width: 1050px) {
+@media only screen and (max-width: 1200px) and (min-width: 1100px) {
     .pool-text {
         font-size: medium;
     }    
