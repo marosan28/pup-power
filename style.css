@@ -6,6 +6,10 @@
     box-sizing: border-box;
     
 } 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 
 body {
@@ -18,7 +22,7 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     display: grid;
-    grid-template-columns: 30% 30% auto;
+    grid-template-columns: 35% 35% auto;
     grid-template-rows: 0.5fr 0.3fr repeat(2, minmax(450px, 600px)) 0.5fr;
     grid-template-areas: "hd hd hd"
                         "text text text"
@@ -127,7 +131,6 @@ li a:hover {
     text-align: center;
     font-family: Montserrat, sans-serif;
     font-size: 1.5rem;
-    position: absolute;
     grid-area: img1;
 
 }
@@ -135,7 +138,6 @@ li a:hover {
     grid-area: img1;
     font-size: 2rem;
    letter-spacing: 4px;
-   position: absolute;
     margin: 0 0 13.5em 0;
 }
 #pool-title a {
@@ -280,6 +282,7 @@ footer {
                             "img4"
                             "foot";
         }
+    
     #menu {
         display: flex;
         flex-direction: column;
@@ -310,9 +313,20 @@ body {
         align-items: center;       
 }
 
-
-
+    
 } 
+@media screen and (max-width: 1000px) and (min-width: 800px){
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.3fr repeat(2, minmax(350px, 500px)) 0.5fr;
+        grid-template-areas: "hd hd hd"
+                            "text text text"
+                            "img1 img2 0"
+                            "img3 img4 n"
+                            "foot foot foot";
+                        }
+                    }
 @media only screen and (max-width: 1500px) {
     
     #menu {
