@@ -150,7 +150,7 @@ li a:hover {
     font-size: 1.7rem;
 }
 #logo:hover {
-    text-decoration: underline;
+        color: black;
 }
 .container-2 {
     background-image: url("images/circle-image-600.png");
