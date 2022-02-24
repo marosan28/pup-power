@@ -94,7 +94,7 @@ li a:hover {
 
 }
 .intro-text-box {
-    font-size: 100%;
+    font-size: 1.7em;
     color: white;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -333,8 +333,8 @@ footer {
     align-items: center;
 }
 .intro-text-box1 {
-    color:rgb(114, 111, 109);
-    font-size:100%;
+    color:#424242;;
+    font: size 1.7em;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-family: Montserrat, sans-serif;
@@ -348,11 +348,20 @@ footer {
     font-size: 1.1em;
     letter-spacing: 1px;
     justify-content: end;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: minmax(auto, 14em);
     grid-template-rows:minmax(auto, 10em);
     justify-content: center;
     text-align: center;
+    }
+    #march-title {
+        display: flex;
+        font-size: 1.9em;
+       letter-spacing: 4px;
+       margin:20px 0 20px 0;
+       color: #424242;
+       text-decoration: underline;
     }
 .pool-info {
     font-family:Montserrat, sans-serif;
@@ -360,6 +369,7 @@ footer {
     font-size: 1.2em;
     letter-spacing: 1px;
 }
+
 
 .footer-pool {
     background-color:rgba(114, 111, 109, 0.7);
@@ -377,6 +387,21 @@ footer {
     color: white;
     font-size: calc(1rem+1vw);
     letter-spacing: 5px;
+}
+/* Form button */
+.form-btn {
+    background-color: white;
+            border: 2px solid black;
+            border-radius: 25px;
+            color: red;
+            font-family: Montserrat, sans-serif;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 1.5em;
+            margin: 20px 30px;
+            cursor: pointer;
+            text-decoration:none;
 }
 
 /* Playground page */
@@ -438,7 +463,7 @@ footer {
         font-size: 1.4em;
     }
     .intro-text-box, .intro-text-box1 {
-        font-size: .75em;
+        font-size: 1em;
     }
     .footer {
         font-size:.8em;
@@ -475,7 +500,7 @@ body {
     margin-bottom: 2%;
     }
     .intro-text-box, .intro-text-box1 {
-    font-size: .8em;
+    font-size: 1.4em;
     }
     .footer {
     font-size: .9em;  
