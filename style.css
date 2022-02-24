@@ -164,12 +164,36 @@ li a:hover {
     justify-content: center;
     align-items: center;
 }
-
 .img-2 {
     width: 100%;
     height: 100%;
     object-fit: contain;
     }
+    .playground-text {
+        display: grid;
+        grid-template-columns: minmax(auto, 18em);
+        grid-template-rows:minmax(auto, 15em);
+        justify-content: center;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 1.1em;
+    }
+    #playground-title {
+        display: flex;
+        font-size: 1.9em;
+       letter-spacing: 4px;
+       margin-bottom: 2%;
+       
+    }
+    #playground-title a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    #playground-title a:hover {
+        font-size: 1.7rem;
+    }
+    
 .container-3 {
     background-image: url("images/circle-image-600.png");
     width: 100%;
@@ -192,6 +216,30 @@ li a:hover {
         height: 100%;
         object-fit:contain;
         }
+        .gym-text {
+            display: grid;
+            grid-template-columns: minmax(auto, 18em);
+            grid-template-rows:minmax(auto, 15em);
+            justify-content: center;
+            text-align: center;
+            font-family: Montserrat, sans-serif;
+            font-size: 1.1em;
+        }
+        #gym-title {
+            display: flex;
+            font-size: 1.9em;
+           letter-spacing: 4px;
+           margin-bottom: 2%;
+           
+        }
+        #gym-title a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        #gym-title a:hover {
+            font-size: 1.7rem;
+        }
 .container-4 {
     background-image: url("images/circle-image-600.png");
     width: 100%;
@@ -213,6 +261,31 @@ li a:hover {
             height: 100%;
             object-fit: contain;
             }
+            .bar-text {
+                display: grid;
+                grid-template-columns: minmax(auto, 18em);
+                grid-template-rows:minmax(auto, 15em);
+                justify-content: center;
+                text-align: center;
+                font-family: Montserrat, sans-serif;
+                font-size: 1.1em;
+            }
+            #bar-title {
+                display: flex;
+                font-size: 1.9em;
+               letter-spacing: 4px;
+               margin-bottom: 2%;
+               
+            }
+            #bar-title a {
+                text-decoration: none;
+                color: black;
+            }
+            
+            #bar-title a:hover {
+                font-size: 1.7rem;
+            }
+
 /* Footer */
 
 footer {
