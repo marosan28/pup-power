@@ -51,13 +51,10 @@ body {
     color: white;
     margin-left: 10px;
 }
-
-
 /* Nav bar */
 
 .nav {
     width: 100%;
-    min-height: auto;
     top: 0;
     z-index: 1;
     border-bottom: 2px solid white;
@@ -79,7 +76,6 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        min-height: 100%;
 }
 
 #menu li, #menu1 li {
@@ -132,11 +128,11 @@ li a:hover {
     justify-content: center;
     text-align: center;
     font-family: Montserrat, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 #pool-title {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.9em;
    letter-spacing: 4px;
    margin-bottom: 2%;
    
@@ -262,24 +258,29 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
 }
-.intro-text-box {
+.intro-text-box1 {
     color:rgb(114, 111, 109);
-}
-.section1 {
-    grid-column: 1 / 4;
-    grid-row: 3 / 5;
-}
-.march-offer {
+    font-size: 100%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    grid-area: text;
+    margin: 20px 0 0 20px;
     
 }
-.image-container {
-    height: 100%;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.offer {
+    width: 100%;
+    min-width:100%;
+    color: red;
+}
+.march-offer {
+    font-family:Montserrat, sans-serif;
+    color:rgb(114, 111, 109);
+    font-size: 1.2em;
+    letter-spacing: 1px;
+   position: relative;
+   
 }
 
 .footer-pool {
@@ -338,13 +339,13 @@ footer {
                             "auto"
                             "foot";
         }
-    #menu {
+    #menu, #menu1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 20px 0 0 0;
-        font-size: 90%
+        font-size: .8em;
 
     }
     .home, .pool, .playground, .gym, .bar {
@@ -356,19 +357,19 @@ footer {
     }
 
     #pool-title {
-        font-size: 1.4rem;
+        font-size: 1.4em;
     }
-    .intro-text-box {
-        font-size: 100%;
+    .intro-text-box, .intro-text-box1 {
+        font-size: .75em;
     }
     .footer {
-        font-size: 90%;
+        font-size:.8em;
     }
     .pool-text {
-        font-size: smaller;
+        font-size: .75em;
     }   
 }
-@media screen and (max-width: 1100px) and (min-width: 700px){
+@media screen and (max-width: 1000px) and (min-width: 700px){
 body {
     display: grid;
     grid-template-columns: 45% 45% auto;
@@ -380,13 +381,13 @@ body {
                         "auto auto auto"
                         "foot foot foot";
                     }
-    #menu {
+    #menu, #menu1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 20px 0 0 0;
-        font-size: 70%   
+        font-size: .9em   
     }
     .home, .pool, .playground, .gym, .bar {
     padding: 0 50% 0 50%;
@@ -395,27 +396,51 @@ body {
     #logo {
     margin-bottom: 2%;
     }
-    .intro-text-box {
-    font-size: 90%;
+    .intro-text-box, .intro-text-box1 {
+    font-size: .8em;
     }
     .footer {
-    font-size: 70%;  
+    font-size: .9em;  
     }
     .pool-text {
-        font-size: small;
+        font-size: .8rem;
         grid-template-columns: minmax(auto, 18em);
         grid-template-rows:minmax(auto, 15em);
     }
+    #pool-title {
+        font-size: 1.45em;
+    }
 }
 
-
+@media screen and (max-width: 1100px) and (min-width: 1000px){
+    .pool-text {
+        font-size: .8rem;
+    }
+    #pool-title {
+        font-size: 1.5em;
+    }
+}
 @media only screen and (max-width: 1200px) and (min-width: 1100px) {
     .pool-text {
-        font-size: medium;
+        font-size: .9rem;
+    }
+    #pool-title {
+        font-size: 1.7em;
     }    
 }       
-@media only screen and (max-width: 2000px) and (min-width: 1200px) {
+@media only screen and (max-width: 1300px) and (min-width: 1200px) {
     .pool-text {
-        font-size: large;
+        font-size: 1rem;
+    }
+    #pool-title {
+        font-size: 1.8em;
     }    
 }       
+@media only screen and (max-width: 1600px) and (min-width: 1300px) {
+    .pool-text {
+        font-size: 1.1rem;
+    } 
+    #pool-title {
+        font-size: 1.9em;
+    }   
+}  
