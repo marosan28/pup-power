@@ -388,7 +388,7 @@ footer {
     font-size: calc(1rem+1vw);
     letter-spacing: 5px;
 }
-/* Form button */
+/* Form */
 .form-btn {
     background-color: white;
             border: 2px solid black;
@@ -403,6 +403,22 @@ footer {
             cursor: pointer;
             text-decoration:none;
 }
+div .join-form {
+    max-width: 500px;
+    width: 100%;
+    background: red;
+    margin: 20px auto;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.39);
+    padding: 30px;
+  }
+  #form-title{
+    font-size: 1em;
+    margin-bottom: 25px;
+    color: gray;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
 
 /* Playground page */
 .background-playground {
@@ -459,7 +475,7 @@ footer {
         margin-bottom: 2%;
     }
 
-    #pool-title, #playground-title, #gym-title, #bar-title {
+    #pool-title, #playground-title, #gym-title, #bar-title, #march-title {
         font-size: 1.4em;
     }
     .intro-text-box, .intro-text-box1 {
@@ -468,7 +484,7 @@ footer {
     .footer {
         font-size:.8em;
     }
-    .pool-text, .playground-text, .gym-text, .bar-text {
+    .pool-text, .playground-text, .gym-text, .bar-text, .march-offer {
         font-size: .75em;
     }   
 }
@@ -505,45 +521,54 @@ body {
     .footer {
     font-size: .9em;  
     }
-    .pool-text, .playground-text, .gym-text, .bar-text  {
+    .pool-text, .playground-text, .gym-text, .bar-text{
         font-size: .8rem;
         grid-template-columns: minmax(auto, 18em);
         grid-template-rows:minmax(auto, 15em);
     }
-    #pool-title, #playground-title, #gym-title, #bar-title {
+    .march-offer  {
+        font-size: .8rem;
+        grid-template-columns: minmax(auto, 16em);
+        grid-template-rows:minmax(auto, 8em);
+    }
+    #pool-title, #playground-title, #gym-title, #bar-title{
         font-size: 1.45em;
+    }
+    #march-title {
+        font-size: 1.45em;
+        margin-top: 50px;
     }
 }
 
 @media screen and (max-width: 1100px) and (min-width: 1000px){
-    .pool-text, .playground-text, .gym-text, .bar-text {
+    .pool-text, .playground-text, .gym-text, .bar-text, .march-offer {
         font-size: .8rem;
     }
-    #pool-title, #playground-title, #gym-title, #bar-title {
+    #pool-title, #playground-title, #gym-title, #bar-title, #march-title  {
         font-size: 1.5em;
     }
 }
 @media only screen and (max-width: 1200px) and (min-width: 1100px) {
-    .pool-text, .playground-text, .gym-text, .bar-text {
+    .pool-text, .playground-text, .gym-text, .bar-text, .march-offer {
         font-size: .9rem;
     }
-    #pool-title, #playground-title, #gym-title, #bar-title {
+    #pool-title, #playground-title, #gym-title, #bar-title, #march-title{
         font-size: 1.7em;
     }    
 }       
 @media only screen and (max-width: 1300px) and (min-width: 1200px) {
-    .pool-text, .playground-text, .gym-text, .bar-text  {
+    .pool-text, .playground-text, .gym-text, .bar-text, .march-offer  {
         font-size: 1rem;
     }
-    #pool-title, #playground-title, #gym-title, #bar-title {
+    #pool-title, #playground-title, #gym-title, #bar-title, #march-title {
         font-size: 1.8em;
     }    
 }       
 @media only screen and (max-width: 1600px) and (min-width: 1300px) {
-    .pool-text, .playground-text, .gym-text, .bar-text  {
+    .pool-text, .playground-text, .gym-text, .bar-text, .march-offer {
         font-size: 1.1rem;
     } 
-    #pool-title, #playground-title, #gym-title, #bar-title {
+    #pool-title, #playground-title, #gym-title, #bar-title, #march-title {
         font-size: 1.9em;
     }   
 }  
