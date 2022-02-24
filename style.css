@@ -261,7 +261,7 @@ footer {
 }
 .intro-text-box1 {
     color:rgb(114, 111, 109);
-    font-size: 100%;
+    font-size:100%;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-family: Montserrat, sans-serif;
@@ -269,18 +269,23 @@ footer {
     margin: 20px 0 0 20px;
     
 }
-.offer {
-    width: 100%;
-    min-width:100%;
-    color: red;
-}
 .march-offer {
+    font-family:Montserrat, sans-serif;
+    color:rgb(114, 111, 109);
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    justify-content: end;
+    display: grid;
+    grid-template-columns: minmax(auto, 14em);
+    grid-template-rows:minmax(auto, 10em);
+    justify-content: center;
+    text-align: center;
+    }
+.pool-info {
     font-family:Montserrat, sans-serif;
     color:rgb(114, 111, 109);
     font-size: 1.2em;
     letter-spacing: 1px;
-   position: relative;
-   
 }
 
 .footer-pool {
