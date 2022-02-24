@@ -82,7 +82,7 @@ body {
         min-height: 100%;
 }
 
-#menu li {
+#menu li, #menu1 li {
     flex: 1;
 }
 
@@ -239,7 +239,7 @@ footer {
 
 /* Pool page */
 .background-pool {
-    background-color: rgba(107, 170, 170, 0.877);
+    background-image: url("images/stock-photo-happy-cute-pug-dog-swimming-with-tongue-sticking-out-in-private-local-pool-1105440215.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -247,6 +247,59 @@ footer {
     width: 100%;
     height: 100vh;
 }
+#menu1 {
+    list-style-type: none;
+    font-family: Montserrat, sans-serif;
+    font-size: calc(2rem+1vw);
+    letter-spacing: 7px;
+    display: inline-grid;
+    text-align: center;
+    background-color: rgba(114, 111, 109, 0.6);
+    padding: 20px 0 20px 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+.intro-text-box {
+    color:rgb(114, 111, 109);
+}
+.section1 {
+    grid-column: 1 / 4;
+    grid-row: 3 / 5;
+}
+.march-offer {
+    
+}
+.image-container {
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-pool {
+    background-color:rgba(114, 111, 109, 0.7);
+    padding: 20px 0 20px 0;
+    border: 2px solid white;
+    grid-area: foot;
+    margin-top: 20px;
+}
+.footer1 {
+    bottom: 0;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: calc(1rem+1vw);
+    letter-spacing: 5px;
+}
+
 /* Playground page */
 .background-playground {
     background-color: rgba(107, 170, 128, 0.877);
@@ -270,6 +323,9 @@ footer {
 
 /* Media Queries*/
 @media only screen and (max-width: 700px) {
+    .section1 {
+        grid-area: img1;
+    }
     body {
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 0.4fr 350px 350px 350px 350px auto 0.5fr;
