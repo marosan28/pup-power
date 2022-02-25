@@ -9,10 +9,8 @@
 </head>
 <body id="form">
   <form action="#" method="post">
-        <div class="join-form">
-        <p id="form-title">
-          Register to join us!
-        </p>
+        <fieldset class="join-form">
+          <legend id="form-title">Register to join us!</legend>
            <div class="fieldinput">
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="first_name" placeholder="Please enter your full name"  >
@@ -59,8 +57,11 @@
   <label for="checkbox">I agree to terms and conditions
   </label>
 </div>
-
-
+<div class="fieldinput">
+  <button class="btn" type="submit">Join Now</button>
+  <input type="reset" value="Reset Form" class="btn">
+</div>
+</fieldset>
 </form>
 </body>
 </html>

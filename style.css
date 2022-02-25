@@ -404,7 +404,12 @@ footer {
             text-decoration:none;
 }
 input {
-    width: 300px;
+   margin-right: 10px;
+   font-size: 1em;
+    height: 20px;
+    border: 1px solid gray;
+    border: 2px solid rgb(102, 99, 99);
+    border-radius: 8px;
 }
 
 .join-form {
@@ -418,22 +423,34 @@ input {
   }
   #form-title{
     font-family:Montserrat, sans-serif;
-    font-size: 1em;
-    margin-bottom: 25px;
-    color: gray;
+    font-size: 1.1em;
+    color: black;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;
   }
   label {
+      margin-bottom: 20px;
       font-family: Montserrat, sans-serif;
       font-size: .9em;
   }
  .fieldinput {
      margin: 10px 0 10px 0;
+     width: 100%;
+     max-width: 500px;
  }
  #checkbox { 
      width: 20px;
+     
+ }
+ .btn {
+     font-family: Montserrat, sans-serif;
+     font-size: .9em;
+     border: 2px solid rgb(102, 99, 99);
+     border-radius: 8px;
+     margin: 20px 0 20px 0;
+     background: rgb(185, 180, 180);
+     cursor: pointer;
+    
  }
 
 /* Playground page */
