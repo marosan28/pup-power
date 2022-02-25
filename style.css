@@ -395,16 +395,24 @@ form  {
 label { 
     display: table-cell; 
 }
-input { 
-    display: table-cell; 
+#main-form {
+    flex-grow: 1;
 }
 #form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-between;
-    align-items: center;
+    font-family: Markazi, sans-serif;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr auto 0.5fr 187.87px;
+    grid-template-areas: "a a a"
+                        "b b b"
+                        "c c c"
+                        "foot foot foot";  
+    min-height: 100vh;
 }
 .form-btn {
     background-color: white;
@@ -428,6 +436,7 @@ input {
     border: 2px solid rgb(102, 99, 99);
     border-radius: 5px;
     width: 300px;
+    display: table-cell; 
 }
 
 .join-form {
@@ -474,7 +483,16 @@ input {
      background: rgb(185, 180, 180);
      cursor: pointer;
  }
-
+ .footer-img {
+     background-image: url("images/form-footer.jpg");
+     width: 100%;
+     min-height: 100%;
+     background-repeat: no-repeat;
+     background-position: center;
+     object-fit: fill;
+     grid-area: 2 / 1 / span 2 / span 3;
+     
+}
 /* Playground page */
 .background-playground {
     background-color: rgba(107, 170, 128, 0.877);
