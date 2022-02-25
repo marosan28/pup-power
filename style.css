@@ -389,6 +389,23 @@ footer {
     letter-spacing: 5px;
 }
 /* Form */
+form  { 
+    display: table;
+}
+label { 
+    display: table-cell; 
+}
+input { 
+    display: table-cell; 
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+}
 .form-btn {
     background-color: white;
             border: 2px solid black;
@@ -409,7 +426,8 @@ input {
     height: 20px;
     border: 1px solid gray;
     border: 2px solid rgb(102, 99, 99);
-    border-radius: 8px;
+    border-radius: 5px;
+    width: 300px;
 }
 
 .join-form {
@@ -429,7 +447,7 @@ input {
     text-transform: uppercase;
   }
   label {
-      margin-bottom: 20px;
+      margin: 0 0 20px;
       font-family: Montserrat, sans-serif;
       font-size: .9em;
   }
@@ -440,7 +458,12 @@ input {
  }
  #checkbox { 
      width: 20px;
-     
+     position: relative;
+    top: 6px;
+
+ }
+ option {
+    font-family: Montserrat, sans-serif;
  }
  .btn {
      font-family: Montserrat, sans-serif;
@@ -450,7 +473,6 @@ input {
      margin: 20px 0 20px 0;
      background: rgb(185, 180, 180);
      cursor: pointer;
-    
  }
 
 /* Playground page */
