@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&family=Montserrat:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+
+}
+
+html,
+
+   
+
+header {
+    width: 100%;
+    grid-area: hd;
+}
+
+body {
+    max-width: 100%;
+    font-family: Markazi, sans-serif;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 35% 35% auto;
+    grid-template-areas: 
+        "hd hd hd"
+        "text text text"
+        "img1 img2 n"
+        "img3 img4 0"
+        "foot foot foot";
+}
+
+.background {
+    background-color: darkslategray;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+
+#logo {
+    font-size: 220%;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 5px;
+    color: black;
+    margin-left: 10px;
+}
+
+/* Nav bar */
+
+.nav {
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    border-bottom: 2px solid white;
+    grid-area: hd;
+}
+
+#menu {
+    list-style-type: none;
+    font-family: Montserrat, sans-serif;
+    font-size: calc(2rem+1vw);
+    letter-spacing: 7px;
+    display: inline-grid;
+    text-align: center;
+    background-color: rgb(248, 154, 154);
+    padding: 20px 0 20px 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li,
+#menu1 li {
+    flex: 1;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    transition: background-color .5s;
+}
+
+li a:hover {
+    background-color: rgba(255, 255, 255, 0.63);
+    padding: 3.52px;
+
+}
+
+.intro-text-box {
+    font-size: 1.7em;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    grid-area: text;
+    margin: 20px 0 0 20px;
+}
+
+/* Images and text styling */
+.container-1 {
+    background-image: url("../images/circle-image-600.png");
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: contain;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: img1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.pool-text {
+    display: grid;
+    grid-template-columns: minmax(auto, 18em);
+    grid-template-rows: minmax(auto, 15em);
+    justify-content: center;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.1em;
+}
+
+#pool-title {
+    display: flex;
+    font-size: 1.9em;
+    letter-spacing: 4px;
+    margin-bottom: 2%;
+
+}
+
+#pool-title a {
+    text-decoration: none;
+    color: black;
+}
+
+#pool-title a:hover {
+    font-size: 1.7rem;
+}
+
+#logo:hover {
+    color: white;
+}
+
+.container-2 {
+    background-image: url("../images/circle-image-600.png");
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-area: img2;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.playground-text {
+    display: grid;
+    grid-template-columns: minmax(auto, 18em);
+    grid-template-rows: minmax(auto, 15em);
+    justify-content: center;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.1em;
+}
+
+#playground-title {
+    display: flex;
+    font-size: 1.9em;
+    letter-spacing: 4px;
+    margin-bottom: 2%;
+
+}
+
+#playground-title a {
+    text-decoration: none;
+    color: black;
+}
+
+#playground-title a:hover {
+    font-size: 1.7rem;
+}
+
+.container-3 {
+    background-image: url("../images/circle-image-600.png");
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: img3;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-3 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.gym-text {
+    display: grid;
+    grid-template-columns: minmax(auto, 18em);
+    grid-template-rows: minmax(auto, 15em);
+    justify-content: center;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.1em;
+}
+
+#gym-title {
+    display: flex;
+    font-size: 1.9em;
+    letter-spacing: 4px;
+    margin-bottom: 2%;
+
+}
+
+#gym-title a {
+    text-decoration: none;
+    color: black;
+}
+
+#gym-title a:hover {
+    font-size: 1.7rem;
+}
+
+.container-4 {
+    background-image: url("../images/circle-image-600.png");
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: img4;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-4 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bar-text {
+    display: grid;
+    grid-template-columns: minmax(auto, 18em);
+    grid-template-rows: minmax(auto, 15em);
+    justify-content: center;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.1em;
+}
+
+#bar-title {
+    display: flex;
+    font-size: 1.9em;
+    letter-spacing: 4px;
+    margin-bottom: 2%;
+
+}
+
+#bar-title a {
+    text-decoration: none;
+    color: black;
+}
+
+#bar-title a:hover {
+    font-size: 1.7rem;
+}
+
+/* Footer */
+
+footer {
+        background-image: url("../images/pug-footer.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 20px 0 20px 0;
+        background-size: cover;
+        border: 2px solid white;
+        grid-area: foot;
+        margin-top: 20px;
+        position: relative;
+        z-index: 100;
+}
+
+.footer {
+    bottom: 0;
+    text-align: end;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    font-family: Montserrat, sans-serif;
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+
+/* Pool page */
+.background-pool {
+    background-image: url("../images/stock-photo-happy-cute-pug-dog-swimming-with-tongue-sticking-out-in-private-local-pool-1105440215.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+#menu1 {
+    list-style-type: none;
+    font-family: Montserrat, sans-serif;
+    font-size: calc(2rem+1vw);
+    letter-spacing: 7px;
+    display: inline-grid;
+    text-align: center;
+    background-color: rgba(114, 111, 109, 0.6);
+    padding: 20px 0 20px 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text-box1 {
+    color: #424242;
+    ;
+    font: size 1.7em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    grid-area: text;
+    margin: 20px 0 0 20px;
+
+}
+
+.march-offer {
+    font-family: Montserrat, sans-serif;
+    color: rgb(114, 111, 109);
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    justify-content: end;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: minmax(auto, 14em);
+    grid-template-rows: minmax(auto, 10em);
+    justify-content: center;
+    text-align: center;
+}
+
+#march-title {
+    display: flex;
+    font-size: 1.9em;
+    letter-spacing: 4px;
+    margin: 20px 0 20px 0;
+    color: #424242;
+    text-decoration: underline;
+}
+
+.pool-info {
+    font-family: Montserrat, sans-serif;
+    color: rgb(114, 111, 109);
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+
+/* Form */
+form {
+    display: table;
+}
+
+label {
+    display: table-cell;
+}
+
+#main-form {
+    flex-grow: 1;
+}
+
+#form {
+    font-family: Markazi, sans-serif;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr auto 0.5fr 187.87px;
+    grid-template-areas: "a a a"
+        "b b b"
+        "c c c"
+        "foot foot foot";
+    min-height: 100vh;
+}
+
+.form-btn {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    color: red;
+    font-family: Montserrat, sans-serif;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 20px 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input {
+    margin-right: 10px;
+    font-size: 1em;
+    height: 20px;
+    border: 1px solid gray;
+    border: 2px solid rgb(102, 99, 99);
+    border-radius: 5px;
+    width: 300px;
+    display: table-cell;
+}
+
+.join-form {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(230, 219, 209, 0.6);
+    ;
+    margin: 20px auto;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.486);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#form-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.1em;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+label {
+    margin: 0 0 20px;
+    font-family: Montserrat, sans-serif;
+    font-size: .9em;
+}
+
+.fieldinput {
+    margin: 10px 0 10px 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+#checkbox {
+    width: 20px;
+    position: relative;
+    top: 6px;
+
+}
+
+option {
+    font-family: Montserrat, sans-serif;
+}
+
+.btn {
+    font-family: Montserrat, sans-serif;
+    font-size: .9em;
+    border: 2px solid rgb(102, 99, 99);
+    border-radius: 8px;
+    margin: 20px 0 20px 0;
+    background: rgb(185, 180, 180);
+    cursor: pointer;
+}
+
+.footer-img {
+    background-image: url("../images/form-footer.jpg");
+    width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: fill;
+    grid-area: 2 / 1 / span 2 / span 3;
+
+}
+
+/* Playground page */
+.background-playground {
+    background-color: rgba(107, 170, 128, 0.877);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Gym page */
+.background-gym {
+    background-color: rgba(88, 109, 126, 0.795);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Media Queries*/
+@media only screen and (max-width: 700px) {
+    .section1 {
+        grid-area: img1;
+    }
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas: "hd"
+            "text"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "auto"
+            "foot";
+    }
+
+    #menu,
+    #menu1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0 0 0;
+        font-size: .8em;
+
+    }
+
+    .home,
+    .pool,
+    .playground,
+    .gym,
+    .bar {
+        padding: 0 50% 0 50%;
+        border-top: 1px solid white;
+    }
+
+    #logo {
+        margin-bottom: 2%;
+    }
+
+    #pool-title,
+    #playground-title,
+    #gym-title,
+    #bar-title,
+    #march-title {
+        font-size: 1.4em;
+    }
+
+    .intro-text-box,
+    .intro-text-box1 {
+        font-size: 1em;
+    }
+
+    .footer {
+        font-size: .8em;
+    }
+
+    .pool-text,
+    .playground-text,
+    .gym-text,
+    .bar-text,
+    .march-offer {
+        font-size: .75em;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+    body {
+        display: grid;
+        grid-template-columns: 45% 45% auto;
+        grid-template-areas: "hd hd hd"
+            "text text text"
+            "img1 img2 0"
+            "img3 img4 n"
+            "auto auto auto"
+            "foot foot foot";
+    }
+
+    #menu,
+    #menu1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0 0 0;
+        font-size: .9em
+    }
+
+    .home,
+    .pool,
+    .playground,
+    .gym,
+    .bar {
+        padding: 0 50% 0 50%;
+        border-top: 1px solid white;
+    }
+
+    #logo {
+        margin-bottom: 2%;
+    }
+
+    .intro-text-box,
+    .intro-text-box1 {
+        font-size: 1.4em;
+    }
+
+    .footer {
+        font-size: .9em;
+    }
+
+    .pool-text,
+    .playground-text,
+    .gym-text,
+    .bar-text {
+        font-size: .8rem;
+        grid-template-columns: minmax(auto, 18em);
+        grid-template-rows: minmax(auto, 15em);
+    }
+
+    .march-offer {
+        font-size: .8rem;
+        grid-template-columns: minmax(auto, 16em);
+        grid-template-rows: minmax(auto, 8em);
+    }
+
+    #pool-title,
+    #playground-title,
+    #gym-title,
+    #bar-title {
+        font-size: 1.45em;
+    }
+
+    #march-title {
+        font-size: 1.45em;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 1000px) {
+
+    .pool-text,
+    .playground-text,
+    .gym-text,
+    .bar-text,
+    .march-offer {
+        font-size: .8rem;
+    }
+
+    #pool-title,
+    #playground-title,
+    #gym-title,
+    #bar-title,
+    #march-title {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1100px) {
+
+    .pool-text,
+    .playground-text,
+    .gym-text,
+    .bar-text,
+    .march-offer {
+        font-size: .9rem;
+    }
+
+    #pool-title,
+    #playground-title,
+    #gym-title,
+    #bar-title,
+    #march-title {
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1200px) {
+
+    .pool-text,
+    .playground-text,
+    .gym-text,
+    .bar-text,
+    .march-offer {
+        font-size: 1rem;
+    }
+
+    #pool-title,
+    #playground-title,
+    #gym-title,
+    #bar-title,
+    #march-title {
+        font-size: 1.8em;
+    }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1300px) {
+
+    .pool-text,
+    .playground-text,
+    .gym-text,
+    .bar-text,
+    .march-offer {
+        font-size: 1.1rem;
+    }
+
+    #pool-title,
+    #playground-title,
+    #gym-title,
+    #bar-title,
+    #march-title {
+        font-size: 1.9em;
+    }
+   
+}
