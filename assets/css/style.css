@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Shizuru&display=swap');
 
 * {
     margin: 0;
@@ -8,7 +8,9 @@
 
 }
 
-html,
+html, body {
+    height: 100%;
+}
 
    
 
@@ -18,8 +20,9 @@ header {
 }
 
 body {
+    
     max-width: 100%;
-    font-family: Markazi, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     font-weight: 200;
     margin: 0;
     padding: 0;
@@ -29,6 +32,7 @@ body {
     overflow-x: hidden;
     display: grid;
     grid-template-columns: 35% 35% auto;
+    grid-template-rows: auto auto 700px 700px auto;
     grid-template-areas: 
         "hd hd hd"
         "text text text"
@@ -38,7 +42,7 @@ body {
 }
 
 .background {
-    background-color: darkslategray;
+    background-image: url("../images/stock-vector-hand-drawn-brown-and-black-colored-paw-prints-foot-prints-background-1368085664.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,8 +53,8 @@ body {
 
 
 #logo {
-    font-size: 220%;
-    font-family: Montserrat, sans-serif;
+    font-size: 3rem;
+    font-family: Shizuru, sans-serif;
     letter-spacing: 5px;
     color: black;
     margin-left: 10px;
@@ -68,12 +72,12 @@ body {
 
 #menu {
     list-style-type: none;
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     font-size: calc(2rem+1vw);
     letter-spacing: 7px;
     display: inline-grid;
     text-align: center;
-    background-color: rgb(248, 154, 154);
+    background-color:hotpink;
     padding: 20px 0 20px 0;
     width: 100%;
     color: white;
@@ -105,27 +109,21 @@ li a:hover {
     color: white;
     letter-spacing: 3px;
     text-transform: uppercase;
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     grid-area: text;
     margin: 20px 0 0 20px;
 }
 
 /* Images and text styling */
 .container-1 {
-    background-image: url("../images/circle-image-600.png");
+  background-image: url("../images/containter1-img.png");
     width: 100%;
     height: 100%;
     position: relative;
     background-size: contain;
-    display: flex;
     background-position: center;
     background-repeat: no-repeat;
-    grid-area: img1;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    grid-area: img1; 
 }
 
 .pool-text {
@@ -134,7 +132,7 @@ li a:hover {
     grid-template-rows: minmax(auto, 15em);
     justify-content: center;
     text-align: center;
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     font-size: 1.1em;
 }
 
@@ -158,9 +156,9 @@ li a:hover {
 #logo:hover {
     color: white;
 }
-
+/*
 .container-2 {
-    background-image: url("../images/circle-image-600.png");
+ 
     width: 100%;
     height: 100%;
     position: relative;
@@ -188,7 +186,7 @@ li a:hover {
     grid-template-rows: minmax(auto, 15em);
     justify-content: center;
     text-align: center;
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     font-size: 1.1em;
 }
 
@@ -210,9 +208,9 @@ li a:hover {
 }
 
 .container-3 {
-    background-image: url("../images/circle-image-600.png");
+    background-image: url("../images/containter1-img.png");
     width: 100%;
-    height: 100%;
+    height: 200%;
     position: relative;
     display: flex;
     background-position: center;
@@ -239,7 +237,7 @@ li a:hover {
     grid-template-rows: minmax(auto, 15em);
     justify-content: center;
     text-align: center;
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     font-size: 1.1em;
 }
 
@@ -261,7 +259,7 @@ li a:hover {
 }
 
 .container-4 {
-    background-image: url("../images/circle-image-600.png");
+    
     width: 100%;
     height: 100%;
     position: relative;
@@ -289,7 +287,7 @@ li a:hover {
     grid-template-rows: minmax(auto, 15em);
     justify-content: center;
     text-align: center;
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     font-size: 1.1em;
 }
 
@@ -309,11 +307,12 @@ li a:hover {
 #bar-title a:hover {
     font-size: 1.7rem;
 }
-
+*/
 /* Footer */
 
 footer {
-        background-image: url("../images/pug-footer.jpg");
+
+        background-color:hotpink;
         background-repeat: no-repeat;
         background-position: center;
         padding: 20px 0 20px 0;
@@ -330,11 +329,17 @@ footer {
     text-align: end;
     padding: 20px 0 20px 0;
     width: 100%;
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     color: black;
     font-size: 1rem;
     letter-spacing: 5px;
     position: relative;
+}
+
+.footer-img  {
+    width: 50px;
+    height: 50px;
+    
 }
 
 
@@ -351,7 +356,7 @@ footer {
 
 #menu1 {
     list-style-type: none;
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     font-size: calc(2rem+1vw);
     letter-spacing: 7px;
     display: inline-grid;
@@ -372,14 +377,14 @@ footer {
     font: size 1.7em;
     letter-spacing: 3px;
     text-transform: uppercase;
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     grid-area: text;
     margin: 20px 0 0 20px;
 
 }
 
 .march-offer {
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     color: rgb(114, 111, 109);
     font-size: 1.1em;
     letter-spacing: 1px;
@@ -402,7 +407,7 @@ footer {
 }
 
 .pool-info {
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     color: rgb(114, 111, 109);
     font-size: 1.2em;
     letter-spacing: 1px;
@@ -423,7 +428,7 @@ label {
 }
 
 #form {
-    font-family: Markazi, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     font-weight: 200;
     margin: 0;
     padding: 0;
@@ -444,7 +449,7 @@ label {
     border: 2px solid black;
     border-radius: 25px;
     color: red;
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     padding: 5px 10px;
     text-align: center;
     display: inline-block;
@@ -477,7 +482,7 @@ input {
 }
 
 #form-title {
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     font-size: 1.1em;
     color: black;
     font-weight: bold;
@@ -486,7 +491,7 @@ input {
 
 label {
     margin: 0 0 20px;
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     font-size: .9em;
 }
 
@@ -504,11 +509,11 @@ label {
 }
 
 option {
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
 }
 
 .btn {
-    font-family: Montserrat, sans-serif;
+    font-family: Fuzzy Bubbles, sans-serif;
     font-size: .9em;
     border: 2px solid rgb(102, 99, 99);
     border-radius: 8px;
@@ -517,16 +522,6 @@ option {
     cursor: pointer;
 }
 
-.footer-img {
-    background-image: url("../images/form-footer.jpg");
-    width: 100%;
-    min-height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: fill;
-    grid-area: 2 / 1 / span 2 / span 3;
-
-}
 
 /* Playground page */
 .background-playground {
