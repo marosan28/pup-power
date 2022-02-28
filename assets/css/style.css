@@ -5,22 +5,16 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
-
 }
-
 html, body {
     height: 100%;
+    min-width: 100%;
 }
-
-   
-
 header {
     width: 100%;
     grid-area: hd;
 }
-
 body {
-    
     max-width: 100%;
     font-family: Fuzzy Bubbles, sans-serif;
     font-weight: 200;
@@ -31,27 +25,27 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     display: grid;
-    grid-template-columns: 35% 35% auto;
+    grid-template-columns: 45% auto;
     grid-template-rows: auto auto 700px 700px auto;
     grid-template-areas: 
-        "hd hd hd"
-        "text text text"
-        "img1 img2 n"
-        "img3 img4 0"
-        "foot foot foot";
+        "hd hd"
+        "text text"
+        "img1 img2"
+        "img3 img4"
+        "foot foot";
 }
-
-.background {
-    background-image: url("../images/stock-vector-hand-drawn-brown-and-black-colored-paw-prints-foot-prints-background-1368085664.jpg");
+body {
+   background-image: url("../images/stock-vector-hand-drawn-brown-and-black-colored-paw-prints-foot-prints-background-1368085664.jpg"); 
     background-position: center center;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
 }
-
-
 #logo {
     font-size: 3rem;
     font-family: Shizuru, sans-serif;
@@ -59,7 +53,6 @@ body {
     color: black;
     margin-left: 10px;
 }
-
 /* Nav bar */
 
 .nav {
@@ -69,7 +62,6 @@ body {
     border-bottom: 2px solid white;
     grid-area: hd;
 }
-
 #menu {
     list-style-type: none;
     font-family: Fuzzy Bubbles, sans-serif;
@@ -86,7 +78,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 #menu li,
 #menu1 li {
     flex: 1;
@@ -97,13 +88,10 @@ li a {
     color: black;
     transition: background-color .5s;
 }
-
 li a:hover {
     background-color: rgba(255, 255, 255, 0.63);
     padding: 3.52px;
-
 }
-
 .intro-text-box {
     font-size: 1.7em;
     color: white;
@@ -113,20 +101,20 @@ li a:hover {
     grid-area: text;
     margin: 20px 0 0 20px;
 }
-
 /* Images and text styling */
 .container-1 {
   background-image: url("../images/containter1-img.png");
     width: 100%;
     height: 100%;
     position: relative;
+
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     grid-area: img1; 
 }
 
-.pool-text {
+.container-1 p {
     display: grid;
     grid-template-columns: minmax(auto, 18em);
     grid-template-rows: minmax(auto, 15em);
@@ -344,6 +332,7 @@ footer {
 
 
 /* Pool page */
+/* 
 .background-pool {
     background-image: url("../images/stock-photo-happy-cute-pug-dog-swimming-with-tongue-sticking-out-in-private-local-pool-1105440215.jpg");
     background-position: center center;
@@ -412,7 +401,7 @@ footer {
     font-size: 1.2em;
     letter-spacing: 1px;
 }
-
+ */
 
 /* Form */
 form {
@@ -547,13 +536,12 @@ option {
 
 /* Media Queries*/
 @media only screen and (max-width: 700px) {
-    .section1 {
-        grid-area: img1;
-    }
 
     body {
         grid-template-columns: 1fr;
-        grid-template-areas: "hd"
+        grid-template-rows:auto; 
+        grid-template-areas: 
+            "hd"
             "text"
             "img1"
             "img2"
@@ -563,6 +551,11 @@ option {
             "foot";
     }
 
+    
+
+    html, body {
+        overflow-x: hidden;
+    }
     #menu,
     #menu1 {
         display: flex;
@@ -571,7 +564,6 @@ option {
         align-items: center;
         padding: 20px 0 0 0;
         font-size: .8em;
-
     }
 
     .home,
@@ -615,16 +607,20 @@ option {
 
 @media screen and (max-width: 1000px) and (min-width: 700px) {
     body {
+        
         display: grid;
-        grid-template-columns: 45% 45% auto;
-        grid-template-areas: "hd hd hd"
-            "text text text"
-            "img1 img2 0"
-            "img3 img4 n"
-            "auto auto auto"
-            "foot foot foot";
+        grid-template-columns: auto auto;
+        grid-template-areas: "hd hd"
+            "text text"
+            "img1 img2"
+            "img3 img4"
+            "auto auto"
+            "foot foot";
     }
-
+    html, body {
+        
+        overflow-x: hidden;
+    }
     #menu,
     #menu1 {
         display: flex;
@@ -657,7 +653,7 @@ option {
         font-size: .9em;
     }
 
-    .pool-text,
+    /* .pool-text,
     .playground-text,
     .gym-text,
     .bar-text {
@@ -670,7 +666,7 @@ option {
         font-size: .8rem;
         grid-template-columns: minmax(auto, 16em);
         grid-template-rows: minmax(auto, 8em);
-    }
+    } */
 
     #pool-title,
     #playground-title,
