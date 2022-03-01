@@ -78,8 +78,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-#menu li,
-#menu1 li {
+#menu li{
     flex: 1;
 }
 
@@ -150,7 +149,7 @@ li a:hover {
   }
 /* Images and text styling */
 .container-1 {
-  background-image: url("../images/containter1-img.png");
+  background-image: url("../images/amstaff-dog-img.png");
     width: 100%;
     height: 100%;
     position: relative;
@@ -379,77 +378,62 @@ footer {
 }
 
 
-/* Pool page */
-/* 
-.background-pool {
-    background-image: url("../images/stock-photo-happy-cute-pug-dog-swimming-with-tongue-sticking-out-in-private-local-pool-1105440215.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-}
-
-#menu1 {
-    list-style-type: none;
-    font-family: Fuzzy Bubbles, sans-serif;
-    font-size: calc(2rem+1vw);
-    letter-spacing: 7px;
-    display: inline-grid;
-    text-align: center;
-    background-color: rgba(114, 111, 109, 0.6);
-    padding: 20px 0 20px 0;
-    width: 100%;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
+/* Pool page */ 
+ #menu.menu-p {
+     background-color: rgb(114, 184, 231);
+ }
 .intro-text-box1 {
-    color: #424242;
-    ;
+    color:black;
+    background-color: rgb(236, 207, 77);
     font: size 1.7em;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-family: Fuzzy Bubbles, sans-serif;
     grid-area: text;
-    margin: 20px 0 0 20px;
-
-}
-
-.march-offer {
-    font-family: Fuzzy Bubbles, sans-serif;
-    color: rgb(114, 111, 109);
-    font-size: 1.1em;
-    letter-spacing: 1px;
-    justify-content: end;
-    margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: minmax(auto, 14em);
-    grid-template-rows: minmax(auto, 10em);
-    justify-content: center;
-    text-align: center;
+    margin: 20px;
 }
 
 #march-title {
     display: flex;
+    flex-direction: column;
     font-size: 1.9em;
     letter-spacing: 4px;
-    margin: 20px 0 20px 0;
-    color: #424242;
+    margin: 65px 0 0 0;
     text-decoration: underline;
 }
-
 .pool-info {
     font-family: Fuzzy Bubbles, sans-serif;
     color: rgb(114, 111, 109);
     font-size: 1.2em;
     letter-spacing: 1px;
 }
- */
+.container-p p {
+    position: relative;
+    display: grid;
+    margin: 0 60px;
+    grid-template-columns: 100%;
+    font-family: Fuzzy Bubbles, sans-serif;
+    font-size: 1.15em;
+    top: 480px;
+}
+.container-p {
+    background-image: url("../images/boxer-dog-img.png"), url("../images/yellow-background.jpg");
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: contain;
+    background-position: bottom 180% left 20%, top 27rem left 1rem;
+    background-repeat: no-repeat;
+    grid-area: img1;
+}
+
+.footer#footer-p {
+    background-color:rgb(114, 184, 231);
+}
+footer#footer{
+    background-color: rgb(114, 184, 231);
+}
+
 
 /* Form */
 form {
@@ -490,10 +474,13 @@ label {
     padding: 5px 10px;
     text-align: center;
     display: inline-block;
-    font-size: 1.5em;
-    margin: 20px 30px;
+    font-size: 1.3em;
+    position: relative;
+    left: 59%;
+    top: 49.3%;
     cursor: pointer;
     text-decoration: none;
+
 }
 
 input {
@@ -725,8 +712,7 @@ div.container-1 {
         
         overflow-x: hidden;
     }
-    #menu,
-    #menu1 {
+    #menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -816,8 +802,7 @@ div.container-1 {
         
         overflow-x: hidden;
     }
-    #menu,
-    #menu1 {
+    #menu{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -848,7 +833,6 @@ div.container-1 {
         font-size: .9em;
     }
 }
-
 @media screen and (min-width: 980px) and (max-width: 1350px)   {
     .container-1 {
         width: 100%;
@@ -864,7 +848,6 @@ div.container-1 {
         display: none;
       }
 } 
-
 @media (min-width: 1670px) and (max-width: 1850px)   {
     .container-1 {
           width: 100%;
@@ -880,7 +863,6 @@ div.container-1 {
         display: none;
       }
 } 
-
 @media (min-width: 1850px) and (max-width: 2560px)  {
     .container-1 {
         width: 85%;
