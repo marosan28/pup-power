@@ -107,7 +107,6 @@ li a:hover {
     width: 100%;
     height: 100%;
     position: relative;
-
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -115,17 +114,19 @@ li a:hover {
 }
 
 .container-1 p {
+    position: relative;
     display: grid;
-    grid-template-columns: minmax(auto, 18em);
-    grid-template-rows: minmax(auto, 15em);
+    grid-template-columns: 65%;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     font-family: Fuzzy Bubbles, sans-serif;
     font-size: 1.1em;
+    top: 380px;
 }
 
 #pool-title {
-    display: flex;
+    text-align: center;
+    font-family: Shizuru, sans-serif;
     font-size: 1.9em;
     letter-spacing: 4px;
     margin-bottom: 2%;
@@ -605,18 +606,31 @@ option {
     }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 700px) {
+@media screen and (max-width: 900px) and (min-width: 700px) {
     body {
         
         display: grid;
-        grid-template-columns: auto auto;
-        grid-template-areas: "hd hd"
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 300px 300px auto;
+        grid-template-areas: 
+            "hd hd"
             "text text"
             "img1 img2"
             "img3 img4"
             "auto auto"
             "foot foot";
     }
+    .container-1 {
+        width: 100%;
+        height: 150%;
+    }
+
+      .container-1 p {
+        grid-template-columns: 70%;
+        font-size: .7em;
+        top: 250px;
+    }
+
     html, body {
         
         overflow-x: hidden;
@@ -680,80 +694,41 @@ option {
         margin-top: 50px;
     }
 }
-
-@media screen and (max-width: 1100px) and (min-width: 1000px) {
-
-    .pool-text,
-    .playground-text,
-    .gym-text,
-    .bar-text,
-    .march-offer {
-        font-size: .8rem;
+@media (min-width: 1000px) and (max-width: 1350px)   {
+    .container-1 {
+        width: 100%;
+        height: 80%;
     }
 
-    #pool-title,
-    #playground-title,
-    #gym-title,
-    #bar-title,
-    #march-title {
-        font-size: 1.5em;
+      .container-1 p {
+        grid-template-columns: 65%;
+        font-size: .8em;
+        top: 310px;
     }
-}
+} 
 
-@media only screen and (max-width: 1200px) and (min-width: 1100px) {
-
-    .pool-text,
-    .playground-text,
-    .gym-text,
-    .bar-text,
-    .march-offer {
-        font-size: .9rem;
+@media (min-width: 1670px) and (max-width: 1850px)   {
+    .container-1 {
+          width: 100%;
+          height: 100%;
     }
 
-    #pool-title,
-    #playground-title,
-    #gym-title,
-    #bar-title,
-    #march-title {
-        font-size: 1.7em;
+      .container-1 p {
+        grid-template-columns: 55%;
+        font-size: 1.1em;
+        top: 375px;
     }
-}
+} 
 
-@media only screen and (max-width: 1300px) and (min-width: 1200px) {
-
-    .pool-text,
-    .playground-text,
-    .gym-text,
-    .bar-text,
-    .march-offer {
-        font-size: 1rem;
+@media (min-width: 1850px) and (max-width: 2560px)  {
+    .container-1 {
+        width: 85%;
+        height: 111%;
     }
-
-    #pool-title,
-    #playground-title,
-    #gym-title,
-    #bar-title,
-    #march-title {
-        font-size: 1.8em;
-    }
-}
-
-@media only screen and (max-width: 1600px) and (min-width: 1300px) {
-
-    .pool-text,
-    .playground-text,
-    .gym-text,
-    .bar-text,
-    .march-offer {
-        font-size: 1.1rem;
+      .container-1 p {
+        grid-template-columns: 50%;
+        font-size: 1.1em;
+        top: 420px;
     }
 
-    #pool-title,
-    #playground-title,
-    #gym-title,
-    #bar-title,
-    #march-title {
-        font-size: 1.9em;
-    }
-   
 }
