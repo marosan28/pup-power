@@ -6,7 +6,7 @@
     border: none;
     box-sizing: border-box;
 }
-html, body {
+html {
     height: 100%;
     min-width: 100%;
 }
@@ -15,6 +15,15 @@ header {
     grid-area: hd;
 }
 body {
+    background-image: url("../images/stock-vector-hand-drawn-brown-and-black-colored-paw-prints-foot-prints-background-1368085664.jpg"); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
     max-width: 100%;
     font-family: Fuzzy Bubbles, sans-serif;
     font-weight: 200;
@@ -34,18 +43,7 @@ body {
         "img3 img4"
         "foot foot";
 }
-body {
-   background-image: url("../images/stock-vector-hand-drawn-brown-and-black-colored-paw-prints-foot-prints-background-1368085664.jpg"); 
-    background-position: center center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-}
+
 #logo {
     font-size: 3rem;
     font-family: Shizuru, sans-serif;
@@ -102,7 +100,7 @@ li a:hover {
 }
 
 /* Hamburger menu */
-.topnav {
+/* .topnav {
     overflow: hidden;
     background-color: rgb(82, 60, 60);
     position: relative;
@@ -190,7 +188,7 @@ li a:hover {
 
 #logo:hover {
     color: white;
-}
+} 
 /*
 .container-2 {
  
@@ -410,22 +408,23 @@ footer {
 .container-p p {
     position: relative;
     display: grid;
-    margin: 0 60px;
-    grid-template-columns: 100%;
+    margin: 0 0 0 13%;
+    grid-template-columns: 80%;
     font-family: Fuzzy Bubbles, sans-serif;
     font-size: 1.15em;
-    top: 480px;
+    top: 470px;
 }
 .container-p {
-    background-image: url("../images/boxer-dog-img.png"), url("../images/yellow-background.jpg");
+    background-image: url("../images/boxer-img.png");
     width: 100%;
     height: 100%;
     position: relative;
     background-size: contain;
-    background-position: bottom 180% left 20%, top 27rem left 1rem;
+    background-position: center;
     background-repeat: no-repeat;
     grid-area: img1;
 }
+.topnav a 
 
 .footer#footer-p {
     background-color:rgb(114, 184, 231);
@@ -436,7 +435,7 @@ footer#footer{
 
 
 /* Form */
-form {
+/* form {
     display: table;
 }
 
@@ -477,12 +476,10 @@ label {
     font-size: 1.3em;
     position: relative;
     left: 59%;
-    top: 49.3%;
+    top: 48%;
     cursor: pointer;
     text-decoration: none;
-
 }
-
 input {
     margin-right: 10px;
     font-size: 1em;
@@ -493,18 +490,15 @@ input {
     width: 300px;
     display: table-cell;
 }
-
 .join-form {
     max-width: 600px;
     width: 100%;
     background: rgba(230, 219, 209, 0.6);
-    ;
     margin: 20px auto;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.486);
     border-radius: 20px;
     padding: 30px;
 }
-
 #form-title {
     font-family: Fuzzy Bubbles, sans-serif;
     font-size: 1.1em;
@@ -512,30 +506,24 @@ input {
     font-weight: bold;
     text-transform: uppercase;
 }
-
 label {
     margin: 0 0 20px;
     font-family: Fuzzy Bubbles, sans-serif;
     font-size: .9em;
 }
-
 .fieldinput {
     margin: 10px 0 10px 0;
     width: 100%;
     max-width: 500px;
 }
-
 #checkbox {
     width: 20px;
     position: relative;
     top: 6px;
-
 }
-
 option {
     font-family: Fuzzy Bubbles, sans-serif;
 }
-
 .btn {
     font-family: Fuzzy Bubbles, sans-serif;
     font-size: .9em;
@@ -543,9 +531,7 @@ option {
     border-radius: 8px;
     margin: 20px 0 20px 0;
     background: rgb(185, 180, 180);
-    cursor: pointer;
-}
-
+    cursor: pointer; }*/
 
 /* Playground page */
 .background-playground {
@@ -557,7 +543,6 @@ option {
     width: 100%;
     height: 100vh;
 }
-
 /* Gym page */
 .background-gym {
     background-color: rgba(88, 109, 126, 0.795);
@@ -568,7 +553,6 @@ option {
     width: 100%;
     height: 100vh;
 }
-
 /* Media Queries*/
 @media only screen and (max-width: 500px) {
     body {
@@ -586,15 +570,13 @@ option {
     .nav #menu {
         display: none;
     }
-    
     div.topnav{
       display:contents !important;
       }
     #pool-title,
     #playground-title,
     #gym-title,
-    #bar-title,
-    #march-title {
+    #bar-title{
         font-size: 1.4em;
     }
     
@@ -615,7 +597,7 @@ option {
         font-size: .75em;
     }
 
-div.container-1 {
+div.container-1, div.container-p {
     width: 100%;
     height: 120%;
 }
@@ -623,6 +605,19 @@ div.container-1 {
     grid-template-columns: 50%;
     font-size: .5em;
     top: 200px;
+}
+div.container-p p {
+    grid-template-columns: 70%;
+    font-size: .5em;
+    top: 12.3rem;
+}
+.form-btn {
+    font-size: .5em;
+    left: 62%;
+    top: 36%;
+}
+span#march-title {
+    margin-bottom: 5px;
 }
 }
 @media screen and (min-width: 500px) and (max-width: 700px) {
@@ -641,11 +636,9 @@ div.container-1 {
     .nav #menu {
         display: none;
     }
-    
     div.topnav{
       display:contents !important;
       }
-
     #pool-title,
     #playground-title,
     #gym-title,
@@ -653,16 +646,13 @@ div.container-1 {
     #march-title {
         font-size: 1.4em;
     }
-
     .intro-text-box,
     .intro-text-box1 {
         font-size: 1em;
     }
-
     .footer {
         font-size: .8em;
     }
-
     .pool-text,
     .playground-text,
     .gym-text,
@@ -701,16 +691,10 @@ div.container-1 {
         width: 100%;
         height: 150%;
     }
-
       .container-1 p {
         grid-template-columns: 70%;
         font-size: .7em;
         top: 250px;
-    }
-
-    html, body {
-        
-        overflow-x: hidden;
     }
     #menu {
         display: flex;
@@ -742,22 +726,6 @@ div.container-1 {
     .footer {
         font-size: .9em;
     }
-
-    /* .pool-text,
-    .playground-text,
-    .gym-text,
-    .bar-text {
-        font-size: .8rem;
-        grid-template-columns: minmax(auto, 18em);
-        grid-template-rows: minmax(auto, 15em);
-    }
-
-    .march-offer {
-        font-size: .8rem;
-        grid-template-columns: minmax(auto, 16em);
-        grid-template-rows: minmax(auto, 8em);
-    } */
-
     #pool-title,
     #playground-title,
     #gym-title,
@@ -774,7 +742,6 @@ div.container-1 {
     div.topnav {
         display: none;
       }
-
     body {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -876,4 +843,45 @@ div.container-1 {
     div.topnav {
         display: none ;
       }
+}
+/* Pool Page Media Query */
+@media screen and (min-width: 350px) and (max-width:400px) {
+    div.container-p p {
+        grid-template-columns: 70%;
+        font-size: .5em;
+        top: 13.2rem;
+    }
+    .form-btn {
+        font-size: .5em;
+        left: 62%;
+        top: 38%;
+    }
+}
+@media screen and (min-width: 400px) and (max-width:450px) {
+    
+    div.container-p p {
+        grid-template-columns: 70%;
+        font-size: .5em;
+        top: 14.3rem;
+        left: 5%;
+    }
+    .form-btn {
+        font-size: .5em;
+        left: 60%;
+        top: 45%;
+    }
+}
+@media screen and (min-width: 450px) and (max-width:550px) {
+
+    div.container-p p {
+        grid-template-columns: 70%;
+        font-size: .5em;
+        top: 14.3rem;
+        left: 5%;
+    }
+    .form-btn {
+        font-size: .5em;
+        left: 60%;
+        top: 45%;
+    }
 }
