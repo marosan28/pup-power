@@ -101,6 +101,49 @@ li a:hover {
     grid-area: text;
     margin: 20px 0 0 20px;
 }
+
+/* Hamburger menu */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(82, 60, 60);
+    position: relative;
+    
+  }
+  
+  div.topnav {
+    display: none;
+  }
+  
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    border-bottom: 1px solid white;
+    background-color: hotpink;
+}
+  
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(102, 102, 102);
+  }
+  
+  
+  .active {
+    background-color: hotpink;
+    
+  }
 /* Images and text styling */
 .container-1 {
   background-image: url("../images/containter1-img.png");
@@ -306,7 +349,7 @@ footer {
         background-position: center;
         padding: 20px 0 20px 0;
         background-size: cover;
-        border: 2px solid white;
+        border-top: 2px solid white;
         grid-area: foot;
         margin-top: 20px;
         position: relative;
@@ -537,48 +580,25 @@ option {
 
 /* Media Queries*/
 @media only screen and (max-width: 700px) {
-
     body {
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows:auto; 
+        grid-template-rows: auto auto 300px 300px auto;
         grid-template-areas: 
             "hd"
             "text"
             "img1"
-            "img2"
             "img3"
-            "img4"
             "auto"
             "foot";
     }
-
+    .nav #menu {
+        display: none;
+    }
     
-
-    html, body {
-        overflow-x: hidden;
-    }
-    #menu,
-    #menu1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 0 0 0;
-        font-size: .8em;
-    }
-
-    .home,
-    .pool,
-    .playground,
-    .gym,
-    .bar {
-        padding: 0 50% 0 50%;
-        border-top: 1px solid white;
-    }
-
-    #logo {
-        margin-bottom: 2%;
-    }
+    div.topnav{
+      display:contents !important;
+      }
 
     #pool-title,
     #playground-title,
@@ -606,9 +626,75 @@ option {
     }
 }
 
-@media screen and (max-width: 900px) and (min-width: 700px) {
+@media screen and (max-width: 1000px) and (min-width: 900px) {
+    div.topnav {
+        display: none;
+      }
+
     body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 300px 300px auto;
+        grid-template-areas: 
+            "hd hd"
+            "text text"
+            "img1 img2"
+            "img3 img4"
+            "auto auto"
+            "foot foot";
+    }
+    .container-1 {
+        width: 100%;
+        height: 150%;
+    }
+
+      .container-1 p {
+        grid-template-columns: 60%;
+        font-size: .7em;
+        top: 250px;
+    }
+
+    html, body {
         
+        overflow-x: hidden;
+    }
+    #menu,
+    #menu1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0 0 0;
+        font-size: .9em
+    }
+
+    .home,
+    .pool,
+    .playground,
+    .gym,
+    .bar {
+        padding: 0 50% 0 50%;
+        border-top: 1px solid white;
+    }
+
+    #logo {
+        margin-bottom: 2%;
+    }
+
+    .intro-text-box,
+    .intro-text-box1 {
+        font-size: 1.4em;
+    }
+
+    .footer {
+        font-size: .9em;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 700px) {
+    div.topnav {
+        display: none;
+      }
+    body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto 300px 300px auto;
@@ -705,6 +791,9 @@ option {
         font-size: .8em;
         top: 310px;
     }
+    div.topnav {
+        display: none;
+      }
 } 
 
 @media (min-width: 1670px) and (max-width: 1850px)   {
@@ -718,6 +807,9 @@ option {
         font-size: 1.1em;
         top: 375px;
     }
+    div.topnav {
+        display: none;
+      }
 } 
 
 @media (min-width: 1850px) and (max-width: 2560px)  {
@@ -730,5 +822,7 @@ option {
         font-size: 1.1em;
         top: 420px;
     }
-
+    div.topnav {
+        display: none ;
+      }
 }

@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }</script>
     <title>Pup Power</title>
 </head>
 
@@ -20,6 +29,19 @@
                 <li class="bar"><a href="bar.html">BAR</a></li>
             </ul>
         </nav>
+<!-- Top Navigation Hamburger Menu -->
+    <div class="topnav">
+    <a href="index.html" class="active">HOME</a>
+    <div id="myLinks">
+      <a href="pool.html">POOL</a>
+      <a href="playground.html">PLAYGROUND</a>
+      <a href="gym.html">GYM</a>
+      <a href="bar.html">BAR</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
     </header>
     <h2 class="intro-text-box">Dublin's first Dog only Sports & Leisure centre</h2>
     <div class="container-1">
