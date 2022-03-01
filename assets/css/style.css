@@ -93,13 +93,13 @@ li a:hover {
     padding: 3.52px;
 }
 .intro-text-box {
-    font-size: 1.7em;
-    color: white;
+    color: black;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-family: Fuzzy Bubbles, sans-serif;
     grid-area: text;
-    margin: 20px 0 0 20px;
+    margin: 20px;
+    background-color: aquamarine;
 }
 
 /* Hamburger menu */
@@ -603,7 +603,6 @@ option {
     div.topnav{
       display:contents !important;
       }
-
     #pool-title,
     #playground-title,
     #gym-title,
@@ -614,7 +613,7 @@ option {
     
     .intro-text-box,
     .intro-text-box1 {
-        font-size: 1em;
+        font-size: .8em;
     }
 
     .footer {
@@ -639,7 +638,6 @@ div.container-1 {
     top: 200px;
 }
 }
-
 @media screen and (min-width: 500px) and (max-width: 700px) {
     body {
         display: grid;
@@ -685,20 +683,108 @@ div.container-1 {
     .march-offer {
         font-size: .75em;
     }
+    .container-1 {
+        width: 100%;
+        height: 150%;
+    }
+    
+      .container-1 p {
+        grid-template-columns: 43%;
+        font-size: .65em;
+        top: 248px;
+    }
 }
-.container-1 {
-    width: 100%;
-    height: 150%;
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    div.topnav {
+        display: none;
+      }
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 300px 300px auto;
+        grid-template-areas: 
+            "hd hd"
+            "text text"
+            "img1 img2"
+            "img3 img4"
+            "auto auto"
+            "foot foot";
+    }
+    .container-1 {
+        width: 100%;
+        height: 150%;
+    }
+
+      .container-1 p {
+        grid-template-columns: 70%;
+        font-size: .7em;
+        top: 250px;
+    }
+
+    html, body {
+        
+        overflow-x: hidden;
+    }
+    #menu,
+    #menu1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0 0 0;
+        font-size: .9em
+    }
+
+    .home,
+    .pool,
+    .playground,
+    .gym,
+    .bar {
+        padding: 0 50% 0 50%;
+        border-top: 1px solid white;
+    }
+
+    #logo {
+        margin-bottom: 2%;
+    }
+
+    .intro-text-box,
+    .intro-text-box1 {
+        font-size: 1.2em;
+    }
+
+    .footer {
+        font-size: .9em;
+    }
+
+    /* .pool-text,
+    .playground-text,
+    .gym-text,
+    .bar-text {
+        font-size: .8rem;
+        grid-template-columns: minmax(auto, 18em);
+        grid-template-rows: minmax(auto, 15em);
+    }
+
+    .march-offer {
+        font-size: .8rem;
+        grid-template-columns: minmax(auto, 16em);
+        grid-template-rows: minmax(auto, 8em);
+    } */
+
+    #pool-title,
+    #playground-title,
+    #gym-title,
+    #bar-title {
+        font-size: 1.45em;
+    }
+
+    #march-title {
+        font-size: 1.45em;
+        margin-top: 50px;
+    }
 }
-
-  .container-1 p {
-    grid-template-columns: 43%;
-    font-size: .65em;
-    top: 248px;
-}
-
-
-@media screen and (max-width: 1000px) and (min-width: 900px) {
+@media screen and (min-width: 900px) and (max-width: 980px) {
     div.topnav {
         display: none;
       }
@@ -762,97 +848,8 @@ div.container-1 {
         font-size: .9em;
     }
 }
-@media screen and (max-width: 900px) and (min-width: 700px) {
-    div.topnav {
-        display: none;
-      }
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto 300px 300px auto;
-        grid-template-areas: 
-            "hd hd"
-            "text text"
-            "img1 img2"
-            "img3 img4"
-            "auto auto"
-            "foot foot";
-    }
-    .container-1 {
-        width: 100%;
-        height: 150%;
-    }
 
-      .container-1 p {
-        grid-template-columns: 70%;
-        font-size: .7em;
-        top: 250px;
-    }
-
-    html, body {
-        
-        overflow-x: hidden;
-    }
-    #menu,
-    #menu1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 0 0 0;
-        font-size: .9em
-    }
-
-    .home,
-    .pool,
-    .playground,
-    .gym,
-    .bar {
-        padding: 0 50% 0 50%;
-        border-top: 1px solid white;
-    }
-
-    #logo {
-        margin-bottom: 2%;
-    }
-
-    .intro-text-box,
-    .intro-text-box1 {
-        font-size: 1.4em;
-    }
-
-    .footer {
-        font-size: .9em;
-    }
-
-    /* .pool-text,
-    .playground-text,
-    .gym-text,
-    .bar-text {
-        font-size: .8rem;
-        grid-template-columns: minmax(auto, 18em);
-        grid-template-rows: minmax(auto, 15em);
-    }
-
-    .march-offer {
-        font-size: .8rem;
-        grid-template-columns: minmax(auto, 16em);
-        grid-template-rows: minmax(auto, 8em);
-    } */
-
-    #pool-title,
-    #playground-title,
-    #gym-title,
-    #bar-title {
-        font-size: 1.45em;
-    }
-
-    #march-title {
-        font-size: 1.45em;
-        margin-top: 50px;
-    }
-}
-@media screen and (min-width: 1000px) and (max-width: 1350px)   {
+@media screen and (min-width: 980px) and (max-width: 1350px)   {
     .container-1 {
         width: 100%;
         height: 80%;
