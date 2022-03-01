@@ -107,9 +107,13 @@ li a:hover {
     overflow: hidden;
     background-color: rgb(82, 60, 60);
     position: relative;
-    
   }
-  
+  #logo-mobile {
+    font-size: 17px;
+    font-family: Shizuru, sans-serif;
+    letter-spacing: 5px;
+    color: black;
+}
   div.topnav {
     display: none;
   }
@@ -130,7 +134,7 @@ li a:hover {
     display: block;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 2.5px;
   }
   
 
@@ -579,7 +583,64 @@ option {
 }
 
 /* Media Queries*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 300px 300px auto;
+        grid-template-areas: 
+            "hd"
+            "text"
+            "img1"
+            "img3"
+            "auto"
+            "foot";
+    }
+    .nav #menu {
+        display: none;
+    }
+    
+    div.topnav{
+      display:contents !important;
+      }
+
+    #pool-title,
+    #playground-title,
+    #gym-title,
+    #bar-title,
+    #march-title {
+        font-size: 1.4em;
+    }
+    
+    .intro-text-box,
+    .intro-text-box1 {
+        font-size: 1em;
+    }
+
+    .footer {
+        font-size: .8em;
+    }
+
+    .pool-text,
+    .playground-text,
+    .gym-text,
+    .bar-text,
+    .march-offer {
+        font-size: .75em;
+    }
+
+div.container-1 {
+    width: 100%;
+    height: 120%;
+}
+  div.container-1 p {
+    grid-template-columns: 50%;
+    font-size: .5em;
+    top: 200px;
+}
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
     body {
         display: grid;
         grid-template-columns: 1fr;
@@ -625,6 +686,17 @@ option {
         font-size: .75em;
     }
 }
+.container-1 {
+    width: 100%;
+    height: 150%;
+}
+
+  .container-1 p {
+    grid-template-columns: 43%;
+    font-size: .65em;
+    top: 248px;
+}
+
 
 @media screen and (max-width: 1000px) and (min-width: 900px) {
     div.topnav {
@@ -780,7 +852,7 @@ option {
         margin-top: 50px;
     }
 }
-@media (min-width: 1000px) and (max-width: 1350px)   {
+@media screen and (min-width: 1000px) and (max-width: 1350px)   {
     .container-1 {
         width: 100%;
         height: 80%;
