@@ -97,6 +97,10 @@ li a:hover {
     grid-area: text;
     margin: 20px;
     background-color: aquamarine;
+    border: 1px solid rgb(94, 196, 162);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 }
 
 /* Hamburger menu */
@@ -425,6 +429,7 @@ footer#footer{
 #topnav.topnav a{
     background-color:rgb(114, 184, 231);
 }
+
 /* Table */
 table.time-table {
     margin: 20px;
@@ -447,6 +452,43 @@ table.time-table td, .time-table th {
 .time-table td {
     padding: 12px 14px;
     background-color:rgb(233, 170, 75);
+}
+.staff {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr repeat (3, auto);
+    grid-template-areas: "t t"
+                        "a b"
+                        "c d"
+                        "e f";
+}
+.staff-header {
+    background-color: rgb(236, 207, 77);
+    border: 1px solid rgb(197, 174, 69);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 20px 0 20px;
+    letter-spacing: 3px;
+    grid-area:t;
+}
+.corinne, .katherine, .david {
+    margin: 20px;
+   width: auto;
+   height: auto;
+   border-radius: 50%;
+   border: 10px solid rgb(236, 207, 77);
+}
+img.corinne {
+    grid-area: a;
+}
+img.katherine {
+    grid-area: c;
+}
+img.david {
+    grid-area:e;
 }
 
 /* Form */
@@ -551,17 +593,7 @@ option {
     background: rgb(185, 180, 180);
     cursor: pointer;
 }
-.staff-header {
-    background-color: rgb(236, 207, 77);
-    border: 1px solid rgb(197, 174, 69);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display: block;
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 0 20px 0 20px;
-    letter-spacing: 3px;
-}
+
 /* Playground page */
 .background-playground {
     background-color: rgba(107, 170, 128, 0.877);
