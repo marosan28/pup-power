@@ -867,6 +867,7 @@ div.container-1 {
       }
     }
 @media (min-width: 1850px) and (max-width: 2560px)  {
+
     .container-1 {
         width: 85%;
         height: 111%;
@@ -884,5 +885,8 @@ div.container-1 {
 @media screen and (min-width: 1350px) and (max-width: 2560px) {
     body#pool-body {
         grid-template-columns: 1fr 1fr;
+    }
+    .form-btn {
+        left: 52%;
     }
 }
