@@ -123,9 +123,7 @@ li a:hover {
     display: block;
     border-bottom: 1px solid white;
     background-color: hotpink;
-}
-  
-  
+} 
   .topnav a.icon {
     background: black;
     display: block;
@@ -133,14 +131,10 @@ li a:hover {
     right: 0;
     top: 2.5px;
   }
-  
-
   .topnav a:hover {
     background-color: #ddd;
     color: rgb(102, 102, 102);
   }
-  
-  
   .active {
     background-color: hotpink;
     
@@ -156,7 +150,6 @@ li a:hover {
     background-repeat: no-repeat;
     grid-area: img1; 
 }
-
 .container-1 p {
     position: relative;
     display: grid;
@@ -167,7 +160,6 @@ li a:hover {
     font-size: 1.1em;
     top: 380px;
 }
-
 #pool-title {
     text-align: center;
     font-family: Shizuru, sans-serif;
@@ -176,16 +168,13 @@ li a:hover {
     margin-bottom: 2%;
 
 }
-
 #pool-title a {
     text-decoration: none;
     color: black;
 }
-
 #pool-title a:hover {
     font-size: 1.7rem;
 }
-
 #logo:hover {
     color: white;
 }
@@ -342,7 +331,6 @@ li a:hover {
 }
 */
 /* Footer */
-
 footer {
 
         background-color:hotpink;
@@ -356,7 +344,6 @@ footer {
         position: relative;
         z-index: 100;
 }
-
 .footer {
     bottom: 0;
     text-align: end;
@@ -368,14 +355,11 @@ footer {
     letter-spacing: 5px;
     position: relative;
 }
-
 .footer-img  {
     width: 50px;
     height: 50px;
     
 }
-
-
 /* Pool page */ 
  #menu.menu-p {
      background-color: rgb(114, 184, 231);
@@ -390,7 +374,6 @@ footer {
     grid-area: text;
     margin: 20px;
 }
-
 #march-title {
     text-align: center;
     font-family: Shizuru, sans-serif;
@@ -425,7 +408,6 @@ footer {
           background-repeat: no-repeat;
           grid-area: img1; 
 }
-
 .footer#footer-p {
     background-color:rgb(114, 184, 231);
 }
@@ -435,8 +417,6 @@ footer#footer{
 #topnav.topnav a{
     background-color:rgb(114, 184, 231);
 }
-
-
 /* Form */
 form {
     display: table;
