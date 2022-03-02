@@ -520,6 +520,7 @@ img.david {
 .staff-d {
     grid-area: f;
 }
+
 /* Form */
 form {
     display: table;
@@ -645,7 +646,7 @@ option {
 }
 /* Media Queries*/
 @media only screen and (max-width: 500px) {
-    body {
+    body, body#pool-body {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto 300px 300px auto;
@@ -656,6 +657,50 @@ option {
             "img3"
             "auto"
             "foot";
+    }
+    div.staff {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "t"
+                            "a"
+                            "b"
+                            "c"
+                            "d"
+                            "e"
+                            "f";
+       
+    }
+    table {
+        white-space: pre;
+    }
+    .staff-c {
+        grid-area: b;  
+    }
+    .staff-k{
+        grid-area: d;
+    }
+   .staff-d {
+        grid-area:f;
+    }
+    .staff-c, .staff-k, .staff-d {
+        font-size: .8em;
+        border-radius: 1%;
+    }
+    img.corinne {
+        grid-area: a;
+        width: 50%;
+    }
+    img.katherine {
+        grid-area: c;
+        width: 50%;
+    }
+    img.david {
+        grid-area:e;
+        width: 50%;
+    }
+    .staff-header {
+        font-size: .8em;
+        grid-area: t;
     }
     .nav #menu {
         display: none;
@@ -704,7 +749,7 @@ div.container-1 {
     font-size: 0.8em;
 }
 table.time-table {
-    margin: 20px;
+    margin: 10px;
     font-size: .8em;
 }
 table.time-table td, .time-table th {
@@ -716,6 +761,7 @@ table.time-table td, .time-table th {
 .time-table td {
     padding: 2px 2px;
 }
+
 }
 @media screen and (min-width: 500px) and (max-width: 700px) {
     body {
