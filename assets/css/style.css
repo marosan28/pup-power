@@ -373,6 +373,10 @@ footer {
     font-family: Fuzzy Bubbles, sans-serif;
     grid-area: text;
     margin: 20px;
+    border: 1px solid rgb(197, 174, 69);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
 }
 #march-title {
     text-align: center;
@@ -382,6 +386,8 @@ footer {
     margin-bottom: 2%;
     background-color:rgb(236, 207, 77);
     margin: 0 20px 0 20px;
+    border: 1px solid rgb(197, 174, 69);
+    border-radius: 20px;
 }
 .pool-info {
     font-family: Fuzzy Bubbles, sans-serif;
@@ -392,11 +398,13 @@ footer {
 .container-p p {
     position: relative;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     font-family: Fuzzy Bubbles, sans-serif;
     font-size: 1.1em;
     background-color:rgb(236, 207, 77);
     margin:0 20px 0 20px;
+    border: 1px solid rgb(197, 174, 69);
+    border-radius: 20px;
 }
 .container-boxer {
         background-image: url("../images/boxer-img.png");
@@ -419,7 +427,7 @@ footer#footer{
 }
 /* Table */
 table.time-table {
-    margin: 100px 100px;
+    margin: 20px;
     min-width: 200px;
     font-size: 1.3em;    
 }
@@ -542,6 +550,17 @@ option {
     margin: 20px 0 20px 0;
     background: rgb(185, 180, 180);
     cursor: pointer;
+}
+.staff-header {
+    background-color: rgb(236, 207, 77);
+    border: 1px solid rgb(197, 174, 69);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 20px 0 20px;
+    letter-spacing: 3px;
 }
 /* Playground page */
 .background-playground {
