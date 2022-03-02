@@ -417,6 +417,30 @@ footer#footer{
 #topnav.topnav a{
     background-color:rgb(114, 184, 231);
 }
+/* Table */
+table.time-table {
+    margin: 100px 100px;
+    min-width: 200px;
+    font-size: 1.3em;    
+}
+table.time-table tr {
+    font-size: 1em;
+}
+table.time-table td, .time-table th {
+    border: 5px solid rgb(66, 147, 212);
+}
+.time-table thead tr {
+    background-color: rgb(236, 207, 77);
+    text-align: left;
+}
+.time-table th {
+    padding: 12px 14px;
+}
+.time-table td {
+    padding: 12px 14px;
+    background-color:rgb(233, 170, 75);
+}
+
 /* Form */
 form {
     display: table;
