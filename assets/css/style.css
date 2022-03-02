@@ -43,7 +43,9 @@ body{
         "img3 img4"
         "foot foot";
 }
-
+body#pool-body {
+    grid-template-rows: auto auto 700px auto auto;
+}
 #logo {
     font-size: 3rem;
     font-family: Shizuru, sans-serif;
@@ -359,11 +361,6 @@ footer {
     letter-spacing: 5px;
     position: relative;
 }
-.footer-img  {
-    width: 50px;
-    height: 50px;
-    
-}
 /* Pool page */ 
  #menu.menu-p {
      background-color: rgb(114, 184, 231);
@@ -456,11 +453,12 @@ table.time-table td, .time-table th {
 .staff {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.3fr repeat (3, auto);
+    grid-gap: 2px;
     grid-template-areas: "t t"
                         "a b"
                         "c d"
                         "e f";
+    
 }
 .staff-header {
     background-color: rgb(236, 207, 77);
@@ -473,6 +471,7 @@ table.time-table td, .time-table th {
     margin: 0 20px 0 20px;
     letter-spacing: 3px;
     grid-area:t;
+    padding: 10px 0 10px 0;
 }
 .corinne, .katherine, .david {
     margin: 20px;
@@ -480,6 +479,20 @@ table.time-table td, .time-table th {
    height: auto;
    border-radius: 50%;
    border: 10px solid rgb(236, 207, 77);
+}
+div.container-s {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+#name {
+    display: block;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    background-color: rgb(236, 207, 77);
+    border: 1px solid rgb(197, 174, 69);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 img.corinne {
     grid-area: a;
@@ -490,7 +503,23 @@ img.katherine {
 img.david {
     grid-area:e;
 }
+.staff-c, .staff-k, .staff-d {
+    margin: auto;
+    font-size: 1.1em;
+    background-color: rgb(236, 207, 77);
+    border: 1px solid rgb(233, 170, 75);
+    border-radius: 5%;
 
+}
+.staff-c{
+    grid-area: b;
+}
+.staff-k {
+    grid-area: d;
+}
+.staff-d {
+    grid-area: f;
+}
 /* Form */
 form {
     display: table;
