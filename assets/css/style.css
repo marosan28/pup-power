@@ -429,7 +429,7 @@ footer#footer{
 
 /* Table */
 table.time-table {
-    margin: 20px;
+    margin: 20px auto;
     min-width: 200px;
     font-size: 1.3em;    
 }
@@ -646,18 +646,7 @@ option {
 }
 /* Media Queries*/
 @media only screen and (max-width: 500px) {
-    body, body#pool-body {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 300px 300px auto;
-        grid-template-areas: 
-            "hd"
-            "text"
-            "img1"
-            "img3"
-            "auto"
-            "foot";
-    }
+  
     div.staff {
         display: grid;
         grid-template-columns: auto;
@@ -668,10 +657,9 @@ option {
                             "d"
                             "e"
                             "f";
-       
     }
     table {
-        white-space: pre;
+        font-size: .5em;
     }
     .staff-c {
         grid-area: b;  
@@ -749,7 +737,6 @@ div.container-1 {
     font-size: 0.8em;
 }
 table.time-table {
-    margin: 10px;
     font-size: .8em;
 }
 table.time-table td, .time-table th {
@@ -763,11 +750,12 @@ table.time-table td, .time-table th {
 }
 
 }
-@media screen and (min-width: 500px) and (max-width: 700px) {
-    body {
+/* Grid settings for smaller screens */
+@media screen and (max-width: 900px) {
+    body, body#pool-body {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto 300px 300px auto;
+        grid-template-rows: auto auto 300px 420px auto;
         grid-template-areas: 
             "hd"
             "text"
@@ -775,6 +763,34 @@ table.time-table td, .time-table th {
             "img3"
             "auto"
             "foot";
+    }
+    div.staff {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "t"
+                            "a"
+                            "b"
+                            "c"
+                            "d"
+                            "e"
+                            "f";
+ }
+ #name {
+    font-size: .8em;
+}
+}
+/* */
+@media screen and (min-width: 500px) and (max-width: 700px) {
+
+    .staff-c, .staff-k, .staff-d {
+        font-size: .8em;
+        border-radius: 2%;
+    }
+    img.corinne, img.katherine, img.david {
+        width: 60%;
+    }
+    .staff-header {
+        font-size: .8em;
     }
     .nav #menu {
         display: none;
@@ -825,7 +841,6 @@ table.time-table td, .time-table th {
         font-size: 0.8em;
     }
     table.time-table {
-        margin: 20px;
         font-size: .9em;
     }
     table.time-table td, .time-table th {
@@ -839,9 +854,18 @@ table.time-table td, .time-table th {
     }
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
-    div.topnav {
-        display: none;
-      }
+    body#pool-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 300px 450px auto;
+        grid-template-areas: 
+            "hd"
+            "text"
+            "img1"
+            "img3"
+            "auto"
+            "foot";
+    }
     body {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -853,6 +877,19 @@ table.time-table td, .time-table th {
             "img3 img4"
             "auto auto"
             "foot foot";
+    }
+    div.topnav {
+        display: none;
+      }
+      .staff-c, .staff-k, .staff-d {
+        font-size: 1em;
+        border-radius: 2%;
+    }
+    img.corinne, img.katherine, img.david {
+        width: 50%;
+    }
+    .staff-header {
+        font-size: 1em;
     }
     .container-1 {
         width: 100%;
@@ -911,7 +948,6 @@ table.time-table td, .time-table th {
         font-size: 1em;
     }
     table.time-table {
-        margin: 20px;
         font-size: 1em;
     }
     table.time-table td, .time-table th {
