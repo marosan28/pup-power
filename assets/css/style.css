@@ -520,6 +520,34 @@ img.david {
 .staff-d {
     grid-area: f;
 }
+.g-pinscher {
+
+    display: grid;
+    grid-template-columns: 5px 1fr 5px;
+    grid-template-rows: 600px 500px;
+    grid-template-areas: 
+                        "er dog re"
+                        "em pool me";
+    background-image: url("../images/german-pinscher.png");
+    width: 800px;
+    height: 800px;
+    background-size: contain;
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+    grid-area: img4;
+    margin:0 auto;
+}
+#inner-pool {
+    grid-area: pool;
+}
+#inner-pool img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+   border: 10px solid rgb(236, 207, 77);
+  
+   
+}
 
 /* Form */
 form {
