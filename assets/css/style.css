@@ -520,8 +520,7 @@ img.david {
 .staff-d {
     grid-area: f;
 }
-.g-pinscher {
-
+div.g-pinscher#g-p {
     display: grid;
     grid-template-columns: 5px 1fr 5px;
     grid-template-rows: 600px 500px;
@@ -545,8 +544,6 @@ img.david {
     width: 100%;
     border-radius: 50%;
    border: 10px solid rgb(236, 207, 77);
-  
-   
 }
 
 /* Form */
@@ -674,7 +671,28 @@ option {
 }
 /* Media Queries*/
 @media only screen and (max-width: 500px) {
-  
+    div.g-pinscher#g-p {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 100px;
+        grid-template-areas:
+            "er dog re"
+            "em pool me";
+        width: 200px;
+        height: 200px;
+        grid-area: img5;
+        margin: 10px auto;
+    }
+    #inner-pool {
+        grid-area: img4;
+    }
+    #inner-pool img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border: 10px solid rgb(236, 207, 77);
+    }
+    
     div.staff {
         display: grid;
         grid-template-columns: auto;
@@ -782,13 +800,16 @@ table.time-table td, .time-table th {
 @media screen and (max-width: 900px) {
     body, body#pool-body {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 300px 420px auto;
-        grid-template-areas: 
+        grid-template-columns: auto;
+        grid-template-rows: auto auto 300px 420px 900px auto 280px;
+        grid-template-areas:
             "hd"
             "text"
             "img1"
+            "img2"
             "img3"
+            "img4"
+            "img5"
             "auto"
             "foot";
     }
