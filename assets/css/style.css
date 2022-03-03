@@ -523,13 +523,13 @@ img.david {
 div.g-pinscher#g-p {
     display: grid;
     grid-template-columns: 5px 1fr 5px;
-    grid-template-rows: 600px 500px;
+    grid-template-rows: 440px 550px;
     grid-template-areas: 
                         "er dog re"
                         "em pool me";
     background-image: url("../images/german-pinscher.png");
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     background-size: contain;
     background-position: top, bottom;
     background-repeat: no-repeat;
@@ -671,39 +671,7 @@ option {
 }
 /* Media Queries*/
 @media only screen and (max-width: 500px) {
-    div.g-pinscher#g-p {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 50px 100px;
-        grid-template-areas:
-            "er dog re"
-            "em pool me";
-        width: 200px;
-        height: 200px;
-        grid-area: img5;
-        margin: 10px auto;
-    }
-    #inner-pool {
-        grid-area: img4;
-    }
-    #inner-pool img {
-        height: 100%;
-        width: 100%;
-        border-radius: 50%;
-        border: 10px solid rgb(236, 207, 77);
-    }
-    
-    div.staff {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-areas: "t"
-                            "a"
-                            "b"
-                            "c"
-                            "d"
-                            "e"
-                            "f";
-    }
+  
     table {
         font-size: .5em;
     }
@@ -722,15 +690,15 @@ option {
     }
     img.corinne {
         grid-area: a;
-        width: 50%;
+        width: 70%;
     }
     img.katherine {
         grid-area: c;
-        width: 50%;
+        width: 70%;
     }
     img.david {
         grid-area:e;
-        width: 50%;
+        width: 70%;
     }
     .staff-header {
         font-size: .8em;
@@ -796,39 +764,6 @@ table.time-table td, .time-table th {
 }
 
 }
-/* Grid settings for smaller screens */
-@media screen and (max-width: 900px) {
-    body, body#pool-body {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto 300px 420px 900px auto 280px;
-        grid-template-areas:
-            "hd"
-            "text"
-            "img1"
-            "img2"
-            "img3"
-            "img4"
-            "img5"
-            "auto"
-            "foot";
-    }
-    div.staff {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-areas: "t"
-                            "a"
-                            "b"
-                            "c"
-                            "d"
-                            "e"
-                            "f";
- }
- #name {
-    font-size: .8em;
-}
-}
-/* */
 @media screen and (min-width: 500px) and (max-width: 700px) {
 
     .staff-c, .staff-k, .staff-d {
@@ -903,18 +838,6 @@ table.time-table td, .time-table th {
     }
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
-    body#pool-body {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 300px 450px auto;
-        grid-template-areas: 
-            "hd"
-            "text"
-            "img1"
-            "img3"
-            "auto"
-            "foot";
-    }
     body {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1093,7 +1016,7 @@ table.time-table td, .time-table th {
 @media screen and (min-width: 980px) and (max-width: 1350px)   {
     body#pool-body {
         grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 500px 500px auto;
+    grid-template-rows: auto auto 500px auto auto;
     }
     .form-btn {
         font-size:1.2em;
@@ -1123,7 +1046,7 @@ table.time-table td, .time-table th {
     .time-table td {
         padding: 5px 5px;
     }
-} 
+}
 @media (min-width: 1670px) and (max-width: 1850px)   {
     .container-1 {
           width: 100%;
@@ -1153,6 +1076,31 @@ table.time-table td, .time-table th {
     div.topnav {
         display: none ;
       }
+      div.g-pinscher#g-p {
+        display: grid;
+        grid-template-columns: 5px 1fr 5px;
+        grid-template-rows: 420px 700px;
+        grid-template-areas: 
+                            "er dog re"
+                            "em pool me";
+        background-image: url("../images/german-pinscher.png");
+        width: 600px;
+        height: 600px;
+        background-size: contain;
+        background-position: top, bottom;
+        background-repeat: no-repeat;
+        grid-area: img4;
+        margin:0 auto;
+    }
+    #inner-pool {
+        grid-area: pool;
+    }
+    #inner-pool img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+       border: 10px solid rgb(236, 207, 77);
+    }
 }
 /* Pool Page Media Query */
 @media screen and (min-width: 1350px) and (max-width: 2560px) {
@@ -1163,3 +1111,97 @@ table.time-table td, .time-table th {
         left: 52%;
     }
 }
+/* Grid settings Pool-Page for smaller screens */
+@media screen and (max-width: 770px) {
+    body, body#pool-body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto 300px 420px 1250px auto 280px;
+        grid-template-areas:
+            "hd"
+            "text"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "auto"
+            "foot";
+    }
+    div.staff {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "t"
+                            "a"
+                            "b"
+                            "c"
+                            "d"
+                            "e"
+                            "f";
+ }
+ #name {
+    font-size: .8em;
+}
+#inner-pool {
+    grid-area: img4;
+}
+#inner-pool img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid rgb(236, 207, 77);
+}
+div.g-pinscher#g-p {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 100px;
+    grid-template-areas:
+        "er dog re"
+        "em pool me";
+    width: 200px;
+    height: 200px;
+    grid-area: img5;
+    margin: 10px auto;
+}
+}
+@media screen and (min-width:770px) and (max-width:900px) {
+body, body#pool-body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 300px 420px 800px auto 280px;
+    grid-template-areas:
+        "hd"
+        "text"
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "auto"
+        "foot";
+}    
+#inner-pool {
+    grid-area: img4;
+}
+#inner-pool img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid rgb(236, 207, 77);
+}
+div.g-pinscher#g-p {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 100px;
+    grid-template-areas:
+        "er dog re"
+        "em pool me";
+    width: 200px;
+    height: 200px;
+    grid-area: img5;
+    margin: 10px auto;
+}
+}
+
+
+ 
