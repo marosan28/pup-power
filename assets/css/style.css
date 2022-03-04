@@ -814,10 +814,15 @@ table.time-table td, .time-table th {
     }
     
       .container-1 p {
-        grid-template-columns: 43%;
         font-size: .65em;
-        top: 248px;
-    }
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 55%;
+        min-width: 350px;
+        max-width: 450px;
+        
+      }
     .form-btn {
         font-size: small;
     }
@@ -868,9 +873,13 @@ table.time-table td, .time-table th {
         height: 150%;
     }
       .container-1 p {
-        grid-template-columns: 70%;
-        font-size: .7em;
-        top: 250px;
+        font-size: .65em;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 55%;
+        min-width: 350px;
+        max-width: 500px;
     }
     html, body {
         
