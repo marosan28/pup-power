@@ -550,6 +550,8 @@ div.g-pinscher#g-p {
 form {
     display: table;
     position: relative;
+    transform: translate(50%, 50%);
+
 }
 
 label {
@@ -561,20 +563,13 @@ label {
 }
 
 #form {
-    font-family: Fuzzy Bubbles, sans-serif;
-    font-weight: 200;
-    margin: 0;
-    padding: 0;
-    border: none;
-    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr auto 0.5fr 187.87px;
-    grid-template-areas: "a a a"
-        "b b b"
-        "c c c"
-        "foot foot foot";
-    min-height: 100vh;
+    grid-template-rows: auto 200px;
+    grid-template-areas: 
+        "hd"
+        "a"
+        "foot";
 }
 
 .form-btn {
@@ -600,7 +595,7 @@ input {
     font-size: 1em;
     height: 20px;
     border: 1px solid gray;
-    border: 2px solid rgb(102, 99, 99);
+    border: 2px solid rgb(66, 147, 212);
     border-radius: 5px;
     width: 300px;
     display: table-cell;
@@ -608,7 +603,7 @@ input {
 .join-form {
     max-width: 600px;
     width: 100%;
-    background: rgba(230, 219, 209, 0.6);
+    background: rgb(236, 207, 77);
     margin: 20px auto;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.486);
     border-radius: 20px;
@@ -642,10 +637,10 @@ option {
 .btn {
     font-family: Fuzzy Bubbles, sans-serif;
     font-size: .9em;
-    border: 2px solid rgb(102, 99, 99);
+    border: 2px solid rgb(46, 104, 151);
     border-radius: 8px;
     margin: 20px 0 20px 0;
-    background: rgb(185, 180, 180);
+    background: rgb(66, 147, 212);
     cursor: pointer;
 }
 
