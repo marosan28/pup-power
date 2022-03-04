@@ -945,6 +945,7 @@ table.time-table td, .time-table th {
     div.topnav {
         display: none;
       }
+
     body {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -957,6 +958,17 @@ table.time-table td, .time-table th {
             "auto auto"
             "foot foot";
     }
+    body#pool-body {
+        display: grid;
+        grid-template-columns: 45% 1fr;
+        grid-template-rows: auto auto 500px auto;
+        grid-template-areas:
+            "hd hd"
+            "text text"
+            "img1 img2"
+            "img3 img4"
+            "foot foot";
+}
     .container-1 {
         width: 100%;
         height: 150%;
@@ -1004,6 +1016,7 @@ table.time-table td, .time-table th {
     }
 .form-btn {
         font-size:medium;
+            top: 70%;
     }
     .container-p p, #march-title {
         font-size: 1em;
@@ -1021,14 +1034,49 @@ table.time-table td, .time-table th {
     .time-table td {
         padding: 4px 4px;
     }
+
+    div.g-pinscher#g-p {
+        grid-template-columns: auto;
+        grid-template-rows: 270px 400px;
+        grid-template-areas:
+            "er dog re"
+            "em pool me";
+        width: 400px;
+        height: 400px;
+        position: relative;
+        top: 5%;
+    }
+    .staff-c, .staff-k, .staff-d {
+        font-size: 1em;
+        border-radius: 2%;
+    }
+    img.corinne, img.katherine, img.david {
+        width: 100%;
+        margin: 50% auto;
+    }
+    .staff-header {
+        font-size: 1em;
+    }
+    #inner-pool {
+        grid-area: pool;
+    }
+    #inner-pool img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+       border: 10px solid rgb(236, 207, 77);
+    }
+
 }
 @media screen and (min-width: 980px) and (max-width: 1350px)   {
     body#pool-body {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 45% 1fr;
     grid-template-rows: auto auto 500px auto auto;
     }
     .form-btn {
         font-size:1.2em;
+        top: 80%;
+     
     }
     .container-1 {
         width: 100%;
@@ -1043,8 +1091,8 @@ table.time-table td, .time-table th {
         display: none;
       }
       table.time-table {
-        margin: 20px;
-        font-size: 1.3em;
+        margin: 20px auto;
+        font-size: 1em;
     }
     table.time-table td, .time-table th {
         border: 5px solid rgb(66, 147, 212);
@@ -1055,6 +1103,47 @@ table.time-table td, .time-table th {
     .time-table td {
         padding: 5px 5px;
     }
+    
+    div.g-pinscher#g-p {
+        grid-template-columns: auto;
+        grid-template-rows: 270px 400px;
+        grid-template-areas:
+            "er dog re"
+            "em pool me";
+        width: 400px;
+        height: 400px;
+        position: relative;
+        top: 5%;
+    }
+    .staff-c, .staff-k, .staff-d {
+        font-size: 1em;
+        border-radius: 2%;
+    }
+.staff {
+    grid-template-rows: auto 400px;
+    grid-template-areas:
+        "t t"
+        "a b"
+        "c d"
+        "e f";
+}
+    img.corinne, img.katherine, img.david {
+        width: 100%;
+        margin: 20% auto;
+    }
+    .staff-header {
+        font-size: 1em;
+    }
+    #inner-pool {
+        grid-area: pool;
+    }
+    #inner-pool img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+       border: 10px solid rgb(236, 207, 77);
+    }
+
 }
 @media (min-width: 1670px) and (max-width: 1850px)   {
     .container-1 {
@@ -1088,7 +1177,7 @@ table.time-table td, .time-table th {
       div.g-pinscher#g-p {
         display: grid;
         grid-template-columns: 5px 1fr 5px;
-        grid-template-rows: 420px 700px;
+        grid-template-rows: 420px 600px;
         grid-template-areas: 
                             "er dog re"
                             "em pool me";
