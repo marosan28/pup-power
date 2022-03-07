@@ -2,13 +2,48 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }</script>
+    <title>Pup Power</title>
 </head>
 
+<body class="background">
+    <header>
+        <nav class="nav">
+            <ul id="menu"><span id="logo">PUP POWER <i class="fa-solid fa-paw"></i></span>
+                <li class="home"><a href="index.html">HOME</a></li>
+                <li class="pool"><a href="pool.html">POOL</a></li>
+                <li class="playground"><a href="playground.html">PLAYGROUND</a></li>
+                <li class="gym"><a href="gym.html">GYM</a></li>
+                <li class="bar"><a href="bar.html">BAR</a></li>
+            </ul>
+        </nav>
+<!-- Top Navigation Hamburger Menu -->
+    <div class="topnav">
+    <a href="index.html" class="active" id="logo-mobile">PUP POWER <i class="fa-solid fa-paw"></i></a>
+    <div id="myLinks">
+    <a href="index.html">HOME</a>
+    <a href="pool.html">POOL</a>
+      <a href="playground.html">PLAYGROUND</a>
+      <a href="gym.html">GYM</a>
+      <a href="bar.html">BAR</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+    </header>
 <body id="form">
   <main id="main-form">
     <form action="#" method="post">
@@ -76,6 +111,7 @@
       <li>Address: 175 Herbert Street, Dublin 1, Ireland</li>
     </ul>
   </footer>
+  <script src="https://kit.fontawesome.com/968597752e.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
