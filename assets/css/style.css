@@ -15,7 +15,7 @@ header {
     grid-area: hd;
 }
 body{
-    background-image: url("../images/stock-vector-hand-drawn-brown-and-black-colored-paw-prints-foot-prints-background-1368085664.jpg"); 
+    background-color: beige; 
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -35,7 +35,7 @@ body{
     overflow-x: hidden;
     display: grid;
     grid-template-columns: 45% auto;
-    grid-template-rows: auto 120px 800px 800px auto;
+    grid-template-rows: auto 80px 700px 700px auto;
     grid-template-areas: 
         "hd hd"
         "text text"
@@ -49,6 +49,7 @@ body#pool-body {
 #logo {
     font-size: 3rem;
     font-family: Shizuru, sans-serif;
+    
     letter-spacing: 5px;
     color: black;
     margin-left: 10px;
@@ -66,10 +67,11 @@ body#pool-body {
     list-style-type: none;
     font-family: Fuzzy Bubbles, sans-serif;
     font-size: calc(2rem+1vw);
+    
     letter-spacing: 7px;
     display: inline-grid;
     text-align: center;
-    background-color:hotpink;
+    background-color: rgb(114, 184, 231);
     padding: 20px 0 20px 0;
     width: 100%;
     color: white;
@@ -96,10 +98,11 @@ li a:hover {
     letter-spacing: 3px;
     text-transform: uppercase;
     font-family: Fuzzy Bubbles, sans-serif;
+    
     grid-area: text;
     margin: 20px;
-    background-color: aquamarine;
-    border: 1px solid rgb(94, 196, 162);
+    background-color: rgb(236, 207, 77);
+    border: 1px solid rgb(197, 174, 69);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 
@@ -114,6 +117,7 @@ li a:hover {
   #logo-mobile {
     font-size: 17px;
     font-family: Shizuru, sans-serif;
+    
     letter-spacing: 5px;
     color: black;
 }
@@ -128,7 +132,7 @@ li a:hover {
     font-size: 17px;
     display: block;
     border-bottom: 1px solid white;
-    background-color: hotpink;
+    background-color: rgb(114, 184, 231);
 } 
   .topnav a.icon {
     background: black;
@@ -142,14 +146,14 @@ li a:hover {
     color: rgb(102, 102, 102);
   }
   .active {
-    background-color: hotpink;
+    background-color:  rgb(114, 184, 231);
     
   }
 /* Images and text styling */
 .container-1 {
   background-image: url("../images/amstaff-dog-img.png");
     width: 100%;
-    height: 100%;
+    height: 85%;
     position: relative;
     background-size: contain;
     background-position: center;
@@ -159,17 +163,18 @@ li a:hover {
 .container-1 p, .container-2 p  {
     position: relative;
     display: grid;
-    grid-template-columns: 30%;
+    grid-template-columns: 50%;
     justify-content: center;
     text-align: left;
     font-family: Fuzzy Bubbles, sans-serif;
-    font-size: 1.1em;
-    top: 440px;
+    font-size: .9em;
+    top: 330px;
 }
 #pool-title, #playground-title {
     text-align: center;
     font-family: Shizuru, sans-serif;
-    font-size: 1.9em;
+    font-size: 1.5em;
+    
     letter-spacing: 4px;
     margin-bottom: 2%;
 
@@ -188,7 +193,7 @@ li a:hover {
 .container-2 {
     background-image: url("../images/bullmastiff-img.png");
     width: 100%;
-    height: 100%;
+    height: 85%;
     position: relative;
     background-size: contain;
     background-position: center;
@@ -300,7 +305,7 @@ li a:hover {
 /* Footer */
 footer {
 
-        background-color:hotpink;
+        background-color: rgb(114, 184, 231);
         background-repeat: no-repeat;
         background-position: center;
         padding: 20px 0 20px 0;
@@ -317,15 +322,13 @@ footer {
     padding: 20px 0 20px 0;
     width: 100%;
     font-family: Fuzzy Bubbles, sans-serif;
+    
     color: black;
     font-size: 1rem;
     letter-spacing: 5px;
     position: relative;
 }
 /* Pool page */ 
- #menu.menu-p {
-     background-color: rgb(114, 184, 231);
- }
 .intro-text-box1 {
     color:black;
     background-color: rgb(236, 207, 77);
@@ -333,6 +336,7 @@ footer {
     letter-spacing: 3px;
     text-transform: uppercase;
     font-family: Fuzzy Bubbles, sans-serif;
+    
     grid-area: text;
     margin: 20px;
     border: 1px solid rgb(197, 174, 69);
@@ -344,6 +348,7 @@ footer {
     text-align: center;
     font-family: Shizuru, sans-serif;
     font-size: 1.9em;
+    
     letter-spacing: 4px;
     margin-bottom: 2%;
     background-color:rgb(236, 207, 77);
@@ -355,6 +360,7 @@ footer {
     font-family: Fuzzy Bubbles, sans-serif;
     color: rgb(114, 111, 109);
     font-size: 1.2em;
+    
     letter-spacing: 1px;
 }
 .container-p p {
@@ -363,6 +369,7 @@ footer {
     text-align: center;
     font-family: Fuzzy Bubbles, sans-serif;
     font-size: 1.1em;
+    
     background-color:rgb(236, 207, 77);
     margin:0 20px 0 20px;
     border: 1px solid rgb(197, 174, 69);
@@ -378,16 +385,6 @@ footer {
           background-repeat: no-repeat;
           grid-area: img1; 
 }
-.footer#footer-p {
-    background-color:rgb(114, 184, 231);
-}
-footer#footer{
-    background-color: rgb(114, 184, 231);
-}
-#topnav.topnav a{
-    background-color:rgb(114, 184, 231);
-}
-
 /* Table */
 table.time-table {
     margin: 20px auto;
@@ -398,7 +395,7 @@ table.time-table tr {
     font-size: 1em;
 }
 table.time-table td, .time-table th {
-    border: 5px solid rgb(66, 147, 212);
+    border: 5px solid rgb(114, 184, 231);
 }
 .time-table thead tr {
     background-color: rgb(236, 207, 77);
@@ -409,7 +406,7 @@ table.time-table td, .time-table th {
 }
 .time-table td {
     padding: 12px 14px;
-    background-color:rgb(233, 170, 75);
+    background-color:#ecaf4d;
 }
 .staff {
     display: grid;
@@ -537,8 +534,9 @@ label {
     background-color: rgb(236, 207, 77);
     border: 4px dashed black;
     border-radius: 25px;
-    color: red;
+    color: black;
     font-family: Fuzzy Bubbles, sans-serif;
+    
     padding: 5px 10px;
     text-align: center;
     display: inline-block;
@@ -573,6 +571,7 @@ input {
 #form-title {
     font-family: Fuzzy Bubbles, sans-serif;
     font-size: 1.1em;
+    
     color: black;
     font-weight: bold;
     text-transform: uppercase;
@@ -581,6 +580,7 @@ label {
     margin: 0 0 20px;
     font-family: Fuzzy Bubbles, sans-serif;
     font-size: .9em;
+    
 }
 .fieldinput {
     margin: 10px 0 10px 0;
@@ -594,10 +594,12 @@ label {
 }
 option {
     font-family: Fuzzy Bubbles, sans-serif;
+    
 }
 .btn {
     font-family: Fuzzy Bubbles, sans-serif;
     font-size: .9em;
+    
     border: 2px solid rgb(46, 104, 151);
     border-radius: 8px;
     margin: 20px 0 20px 0;
@@ -783,13 +785,10 @@ table.time-table td, .time-table th {
         height: 110%;
     }
       .container-1 p, .container-2 p{
-        font-size: .65em;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 55%;
-        min-width: 350px;
-        max-width: 450px;
+        font-size: .5em;
+    position: relative;
+    top: 270px;
+    grid-template-columns: 45%;
         
       }
     .form-btn {
@@ -847,12 +846,9 @@ table.time-table td, .time-table th {
     }
       .container-1 p, .container-2 p {
         font-size: .65em;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 55%;
-        min-width: 350px;
-        max-width: 500px;
+        position: relative;
+        top: 245px;
+        grid-template-columns: 30%;
     }
     html, body {
         
@@ -1127,7 +1123,7 @@ table.time-table td, .time-table th {
       .container-1 p, .container-2 p {
         grid-template-columns: 55%;
         font-size: 1.1em;
-        top: 375px;
+        top: 385px;
     }
     div.topnav {
         display: none;
@@ -1138,7 +1134,7 @@ table.time-table td, .time-table th {
 body.background {
     display: grid;
     grid-template-columns: 45% auto;
-    grid-template-rows: auto 120px 700px 700px auto;
+    grid-template-rows: auto 80px 700px 700px auto;
     grid-template-areas:
         "hd hd"
         "text text"
@@ -1147,13 +1143,13 @@ body.background {
         "foot foot";
 }
     .container-1, .container-2 {
-        width: 85%;
-        height: 111%;
+        width: 100%;
+        height: 100%;
     }
       .container-1 p, .container-2 p {
         grid-template-columns: 50%;
         font-size: 1.1em;
-        top: 420px;
+        top: 400px;
     }
     div.topnav {
         display: none ;
