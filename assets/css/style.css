@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Playfair+Display+SC:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -14,7 +14,7 @@ header {
     width: 100%;
     grid-area: hd;
 }
-body{
+body{ 
     background-color: beige; 
     background-position: center center;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@ body{
     background-attachment: fixed;
     height: 100vh;
     max-width: 100%;
-    font-family: Fuzzy Bubbles, sans-serif;
+    font-family: Hubballi, sans-serif;
     font-weight: 200;
     margin: 0;
     padding: 0;
@@ -39,16 +39,18 @@ body{
     grid-template-areas: 
         "hd hd"
         "text text"
+        "swim offer"
         "img1 img2"
         "img3 img4"
         "foot foot";
 }
 body#pool-body {
-    grid-template-rows: auto auto 700px auto auto;
+    grid-template-rows: 110px 80px 110px 700px 700px 110px;
 }
 #logo {
     font-size: 3rem;
-    font-family: Shizuru, sans-serif;
+    font-family: Playfair Display SC, sans-serif;
+    font-weight: 700;
     
     letter-spacing: 5px;
     color: black;
@@ -65,13 +67,12 @@ body#pool-body {
 }
 #menu {
     list-style-type: none;
-    font-family: Fuzzy Bubbles, sans-serif;
-    font-size: calc(2rem+1vw);
-    
-    letter-spacing: 7px;
+    font-family: Hubballi, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
     display: inline-grid;
     text-align: center;
-    background-color: rgb(114, 184, 231);
+    background-color: rgb(144, 190, 192);
     padding: 20px 0 20px 0;
     width: 100%;
     color: white;
@@ -79,6 +80,7 @@ body#pool-body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid black;
 }
 #menu li{
     flex: 1;
@@ -93,20 +95,6 @@ li a:hover {
     background-color: rgba(255, 255, 255, 0.63);
     padding: 3.52px;
 }
-.intro-text-box {
-    color: black;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-family: Fuzzy Bubbles, sans-serif;
-    
-    grid-area: text;
-    margin: 20px;
-    background-color: rgb(236, 207, 77);
-    border: 1px solid rgb(197, 174, 69);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-
-}
 
 /* Hamburger menu */
 .topnav {
@@ -116,7 +104,7 @@ li a:hover {
   }
   #logo-mobile {
     font-size: 17px;
-    font-family: Shizuru, sans-serif;
+    font-family: Playfair Display SC, sans-serif;
     
     letter-spacing: 5px;
     color: black;
@@ -125,7 +113,7 @@ li a:hover {
     display: none;
   }
   
-  .topnav a {
+  .topnav a { 
     color: black;
     padding: 14px 16px;
     text-decoration: none;
@@ -166,13 +154,13 @@ li a:hover {
     grid-template-columns: 50%;
     justify-content: center;
     text-align: left;
-    font-family: Fuzzy Bubbles, sans-serif;
+    font-family: Hubballi, sans-serif;
     font-size: .9em;
     top: 330px;
 }
 #pool-title, #playground-title {
     text-align: center;
-    font-family: Shizuru, sans-serif;
+    font-family: Playfair Display SC, sans-serif;
     font-size: 1.5em;
     
     letter-spacing: 4px;
@@ -231,7 +219,7 @@ li a:hover {
     grid-template-rows: minmax(auto, 15em);
     justify-content: center;
     text-align: center;
-    font-family: Fuzzy Bubbles, sans-serif;
+    font-family: Hubballi, sans-serif;
     font-size: 1.1em;
 }
 
@@ -281,7 +269,7 @@ li a:hover {
     grid-template-rows: minmax(auto, 15em);
     justify-content: center;
     text-align: center;
-    font-family: Fuzzy Bubbles, sans-serif;
+    font-family: Hubballi, sans-serif;
     font-size: 1.1em;
 }
 
@@ -305,7 +293,7 @@ li a:hover {
 /* Footer */
 footer {
 
-        background-color: rgb(114, 184, 231);
+        background-color:  rgb(144, 190, 192);
         background-repeat: no-repeat;
         background-position: center;
         padding: 20px 0 20px 0;
@@ -321,59 +309,49 @@ footer {
     text-align: end;
     padding: 20px 0 20px 0;
     width: 100%;
-    font-family: Fuzzy Bubbles, sans-serif;
+    font-family: Hubballi, sans-serif;
     
     color: black;
     font-size: 1rem;
     letter-spacing: 5px;
     position: relative;
 }
-/* Pool page */ 
-.intro-text-box1 {
-    color:black;
-    background-color: rgb(236, 207, 77);
-    font: size 1.7em;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-family: Fuzzy Bubbles, sans-serif;
-    
+/* --------------------- Pool page ---------------------*/ 
+.intro-text-box, .intro-text-box1 {
+    color: #5f0f40;
+    font-size: 3rem;
+    font-family: Playfair Display SC, sans-serif;
+    font-weight: 400;
     grid-area: text;
-    margin: 20px;
-    border: 1px solid rgb(197, 174, 69);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    
-}
-#march-title {
+    letter-spacing: 7px;
     text-align: center;
-    font-family: Shizuru, sans-serif;
-    font-size: 1.9em;
     
-    letter-spacing: 4px;
-    margin-bottom: 2%;
-    background-color:rgb(236, 207, 77);
-    margin: 0 20px 0 20px;
-    border: 1px solid rgb(197, 174, 69);
-    border-radius: 20px;
 }
+.march-title {
+    text-align: center;
+    background-color: #5F0F40;
+    font-family: Playfair Display SC, sans-serif;
+    font-weight: 400;
+    font-size: 1.9em;
+    letter-spacing: 4px;
+    color: beige;
+    margin: 0 20px 0 20px;
+    border: 1px solid #5F0F40;
+}
+
 .pool-info {
-    font-family: Fuzzy Bubbles, sans-serif;
+    font-family: Hubballi, sans-serif;
     color: rgb(114, 111, 109);
     font-size: 1.2em;
-    
     letter-spacing: 1px;
 }
-.container-p p {
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    font-family: Fuzzy Bubbles, sans-serif;
-    font-size: 1.1em;
-    
-    background-color:rgb(236, 207, 77);
-    margin:0 20px 0 20px;
-    border: 1px solid rgb(197, 174, 69);
-    border-radius: 20px;
+p.march-p{
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.1em;
+        margin: 0 20px 0 20px;
+        border: solid 1px black;
 }
 .container-boxer {
         background-image: url("../images/boxer-img.png");
@@ -385,28 +363,43 @@ footer {
           background-repeat: no-repeat;
           grid-area: img1; 
 }
+.container-swim {
+    grid-area: img1;
+}
 /* Table */
 table.time-table {
     margin: 20px auto;
     min-width: 200px;
-    font-size: 1.3em;    
+    font-size: 1.3em;
+    grid-area: img2;    
 }
 table.time-table tr {
     font-size: 1em;
 }
-table.time-table td, .time-table th {
-    border: 5px solid rgb(114, 184, 231);
-}
 .time-table thead tr {
-    background-color: rgb(236, 207, 77);
-    text-align: left;
+    color: black;
+    text-align: center;
+    background-color: #90BEC0;
 }
 .time-table th {
     padding: 12px 14px;
+    font-family: Playfair Display SC, sans-serif;
+    font-weight: 400;
+    border: solid 1px black;
 }
 .time-table td {
     padding: 12px 14px;
-    background-color:#ecaf4d;
+}
+tr.unpair {
+    background-color: #5F0F40;
+    color: white;
+}
+tr.pair {
+    background-color: rgba(189, 178, 178, 0.377);
+    color: black;
+}
+div.staff {
+    grid-area: img3;
 }
 .staff {
     display: grid;
@@ -447,10 +440,10 @@ div.container-s {
     display: block;
     font-size: 1.1rem;
     letter-spacing: 3px;
-    background-color: rgb(236, 207, 77);
-    border: 1px solid rgb(197, 174, 69);
+    background-color: #90BEC0;
+    border: 2px solid black;
+    font-family: Playfair Display SC, sans-serif;
     border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 img.corinne {
     grid-area: a;
@@ -503,6 +496,21 @@ div.g-pinscher#g-p {
     border-radius: 50%;
    border: 10px solid rgb(236, 207, 77);
 }
+.pool-paragraph {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1em;
+    margin: 0 20px 0 20px;
+    border: solid 1px black;
+}
+#swim {
+    grid-area: swim;
+}
+#offer {
+    grid-area: offer;
+}
+
 
 /* Form */
 form {
@@ -531,12 +539,11 @@ label {
 }
 
 .form-btn {
-    background-color: rgb(236, 207, 77);
-    border: 4px dashed black;
+    background-color: #90BEC0;
+    border: 2px solid black;
     border-radius: 25px;
     color: black;
-    font-family: Fuzzy Bubbles, sans-serif;
-    
+    font-family: Playfair Display SC, sans-serif;
     padding: 5px 10px;
     text-align: center;
     display: inline-block;
@@ -569,16 +576,15 @@ input {
     padding: 30px;
 }
 #form-title {
-    font-family: Fuzzy Bubbles, sans-serif;
+    font-family: Hubballi, sans-serif;
     font-size: 1.1em;
-    
     color: black;
     font-weight: bold;
     text-transform: uppercase;
 }
 label {
     margin: 0 0 20px;
-    font-family: Fuzzy Bubbles, sans-serif;
+    font-family: Hubballi, sans-serif;
     font-size: .9em;
     
 }
@@ -593,11 +599,11 @@ label {
     top: 6px;
 }
 option {
-    font-family: Fuzzy Bubbles, sans-serif;
+    font-family: Hubballi, sans-serif;
     
 }
 .btn {
-    font-family: Fuzzy Bubbles, sans-serif;
+    font-family: Hubballi, sans-serif;
     font-size: .9em;
     
     border: 2px solid rgb(46, 104, 151);
@@ -1186,7 +1192,7 @@ body.background {
         grid-template-columns: 1fr 1fr;
     }
     .form-btn {
-        left: 52%;
+        left: 51%;
     }
 }
 /* Grid settings Pool-Page for smaller screens */
