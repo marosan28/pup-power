@@ -45,7 +45,7 @@ body{
         "foot foot";
 }
 body#pool-body {
-    grid-template-rows: 110px 80px 110px 700px 700px 110px;
+    grid-template-rows: 110px 80px 110px 600px 1200px auto;
 }
 #logo {
     font-size: 3rem;
@@ -120,7 +120,7 @@ li a:hover {
     font-size: 17px;
     display: block;
     border-bottom: 1px solid white;
-    background-color: rgb(114, 184, 231);
+    background-color: #90BEC0;
 } 
   .topnav a.icon {
     background: black;
@@ -298,7 +298,7 @@ footer {
         background-position: center;
         padding: 20px 0 20px 0;
         background-size: cover;
-        border-top: 2px solid white;
+        border-top: 1px solid black;
         grid-area: foot;
         margin-top: 20px;
         position: relative;
@@ -368,10 +368,14 @@ p.march-p{
 }
 /* Table */
 table.time-table {
-    margin: 20px auto;
+
     min-width: 200px;
     font-size: 1.3em;
-    grid-area: img2;    
+    grid-area: img2;
+    margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
 }
 table.time-table tr {
     font-size: 1em;
@@ -401,6 +405,9 @@ tr.pair {
 div.staff {
     grid-area: img3;
 }
+p.staff-c, p.staff-k, p.staff-d {
+    padding-block: 20px;
+}
 .staff {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -412,24 +419,26 @@ div.staff {
     
 }
 .staff-header {
-    background-color: rgb(236, 207, 77);
-    border: 1px solid rgb(197, 174, 69);
+    background-color: #5f0f40;
+    border: 1px solid black;
     border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
     display: block;
     text-align: center;
     font-size: 1.5rem;
     margin: 0 20px 0 20px;
     letter-spacing: 3px;
-    grid-area:t;
+    grid-area: t;
     padding: 10px 0 10px 0;
+    color: beige;
+    font-family: Playfair Display SC, sans-serif;
+    font-weight: 400;
 }
 .corinne, .katherine, .david {
     margin: 20px;
    width: auto;
    height: auto;
    border-radius: 50%;
-   border: 10px solid rgb(236, 207, 77);
+   border: 2px solid #5F0F40;
 }
 div.container-s {
     vertical-align: top;
@@ -440,10 +449,11 @@ div.container-s {
     display: block;
     font-size: 1.1rem;
     letter-spacing: 3px;
-    background-color: #90BEC0;
-    border: 2px solid black;
+    background-color: #5F0F40;
     font-family: Playfair Display SC, sans-serif;
+    border: 1px solid black;
     border-top-right-radius: 20px;
+    color: beige;
 }
 img.corinne {
     grid-area: a;
@@ -457,9 +467,9 @@ img.david {
 .staff-c, .staff-k, .staff-d {
     margin: auto;
     font-size: 1.1em;
-    background-color: rgb(236, 207, 77);
-    border: 1px solid rgb(233, 170, 75);
-    border-radius: 5%;
+    border: 1px solid black;
+    text-align: center;
+    
 
 }
 .staff-c{
@@ -494,7 +504,7 @@ div.g-pinscher#g-p {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-   border: 10px solid rgb(236, 207, 77);
+   border: 2px solid #5F0F40;
 }
 .pool-paragraph {
     position: relative;
@@ -506,9 +516,11 @@ div.g-pinscher#g-p {
 }
 #swim {
     grid-area: swim;
+    margin: 20px;
 }
 #offer {
     grid-area: offer;
+    margin: 20px;
 }
 
 
@@ -721,20 +733,21 @@ div.container-2 p {
 .form-btn {
     font-size: small;
 }
-.container-p p, #march-title {
+.container-p p, .march-title {
     font-size: 0.8em;
 }
 table.time-table {
     font-size: .8em;
 }
-table.time-table td, .time-table th {
-    border: 2px solid rgb(66, 147, 212);
-}
 .time-table th {
     padding: 2px 2px;
+    font-size: 1em;
 }
 .time-table td {
     padding: 2px 2px;
+}
+p.march-p, p.pool-paragraph{
+    font-size: .8em;
 }
 
 }
@@ -762,7 +775,7 @@ table.time-table td, .time-table th {
     #playground-title,
     #gym-title,
     #bar-title,
-    #march-title {
+    .march-title {
         font-size: 1.4em;
     }
 
@@ -800,14 +813,11 @@ table.time-table td, .time-table th {
     .form-btn {
         font-size: small;
     }
-    .container-p p, #march-title {
+    .container-p p, .march-title {
         font-size: 0.8em;
     }
     table.time-table {
         font-size: .9em;
-    }
-    table.time-table td, .time-table th {
-        border: 3px solid rgb(66, 147, 212);
     }
     .time-table th {
         padding: 3px 3px;
@@ -878,6 +888,7 @@ table.time-table td, .time-table th {
     }
     #logo {
         margin-bottom: 2%;
+        font-size: 2em;
     }
     .intro-text-box,
     .intro-text-box1 {
@@ -893,21 +904,18 @@ table.time-table td, .time-table th {
         font-size: 1.45em;
     }
 
-    #march-title {
+    .march-title {
         font-size: 1.45em;
-        margin-top: 50px;
+        
     }
     .form-btn {
         font-size: medium;
     }
-    .container-p p, #march-title {
+    .container-p p, .march-title {
         font-size: 1em;
     }
     table.time-table {
         font-size: 1em;
-    }
-    table.time-table td, .time-table th {
-        border: 4px solid rgb(66, 147, 212);
     }
     .time-table th {
         padding: 4px 4px;
@@ -936,10 +944,11 @@ table.time-table td, .time-table th {
     body#pool-body {
         display: grid;
         grid-template-columns: 45% 1fr;
-        grid-template-rows: auto auto 500px auto;
+        grid-template-rows: auto auto 110px 500px auto;
         grid-template-areas:
             "hd hd"
             "text text"
+            "swim offer"
             "img1 img2"
             "img3 img4"
             "foot foot";
@@ -956,7 +965,6 @@ table.time-table td, .time-table th {
     }
 
     html, body {
-        
         overflow-x: hidden;
     }
     #menu{
@@ -965,7 +973,10 @@ table.time-table td, .time-table th {
         justify-content: center;
         align-items: center;
         padding: 20px 0 0 0;
-        font-size: .9em
+        font-size: 1.2em
+    }
+    #logo {
+        font-size: 2rem;
     }
 
     .home,
@@ -993,21 +1004,21 @@ table.time-table td, .time-table th {
         font-size:medium;
             top: 70%;
     }
-    .container-p p, #march-title {
+    .container-p p, .march-title {
         font-size: 1em;
     }
     table.time-table {
         margin: 20px;
         font-size: 1em;
     }
-    table.time-table td, .time-table th {
-        border: 4px solid rgb(66, 147, 212);
-    }
     .time-table th {
         padding: 4px 4px;
     }
     .time-table td {
         padding: 4px 4px;
+    }
+    .march-title {
+        font-size: 1em;
     }
 
     div.g-pinscher#g-p {
@@ -1039,15 +1050,19 @@ table.time-table td, .time-table th {
         height: 100%;
         width: 100%;
         border-radius: 50%;
-       border: 10px solid rgb(236, 207, 77);
     }
 
 }
 @media screen and (min-width: 980px) and (max-width: 1350px)   {
-    body#pool-body {
+    body.background {
         grid-template-columns: 45% 1fr;
     grid-template-rows: auto auto 500px auto auto;
     }
+    body#pool-body {
+  
+    grid-template-rows: 110px 80px 110px 500px 1200px auto;
+    }
+
     .form-btn {
         font-size:1.2em;
         top: 80%;
@@ -1068,9 +1083,6 @@ table.time-table td, .time-table th {
       table.time-table {
         margin: 20px auto;
         font-size: 1em;
-    }
-    table.time-table td, .time-table th {
-        border: 5px solid rgb(66, 147, 212);
     }
     .time-table th {
         padding: 5px 4px;
@@ -1116,9 +1128,11 @@ table.time-table td, .time-table th {
         height: 100%;
         width: 100%;
         border-radius: 50%;
-       border: 10px solid rgb(236, 207, 77);
     }
-
+    .intro-text-box, .intro-text-box1 {
+        font-size: 2rem;
+        letter-spacing: 7px;
+}
 }
 @media (min-width: 1670px) and (max-width: 1850px)   {
     .container-1, .container-2 {
@@ -1183,12 +1197,12 @@ body.background {
         height: 100%;
         width: 100%;
         border-radius: 50%;
-       border: 10px solid rgb(236, 207, 77);
     }
 }
 /* Pool Page Media Query */
 @media screen and (min-width: 1350px) and (max-width: 2560px) {
     body#pool-body {
+        grid-template-rows: 110px 80px 110px 700px 1200px auto;
         grid-template-columns: 1fr 1fr;
     }
     .form-btn {
@@ -1197,13 +1211,15 @@ body.background {
 }
 /* Grid settings Pool-Page for smaller screens */
 @media screen and (max-width: 770px) {
-    body, body#pool-body {
+    body#pool-body {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto 300px 420px 1250px auto 280px;
+        grid-template-rows: auto auto 90px 90px 300px 420px 1250px auto 280px;
         grid-template-areas:
             "hd"
             "text"
+            "swim"
+            "offer"
             "img1"
             "img2"
             "img3"
@@ -1282,10 +1298,12 @@ body.background{
 body#pool-body {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto 300px 420px 800px auto 280px;
+    grid-template-rows: auto auto 90px 90px 300px 420px 700px auto 280px;
     grid-template-areas:
         "hd"
         "text"
+        "swim"
+        "offer"
         "img1"
         "img2"
         "img3"
@@ -1293,7 +1311,7 @@ body#pool-body {
         "img5"
         "auto"
         "foot";
-}  
+}
 #inner-pool {
     grid-area: img4;
 }
@@ -1301,7 +1319,6 @@ body#pool-body {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border: 10px solid rgb(236, 207, 77);
 }
 div.g-pinscher#g-p {
     display: grid;
