@@ -39,13 +39,19 @@ body{
     grid-template-areas: 
         "hd hd"
         "text text"
-        "swim offer"
         "img1 img2"
         "img3 img4"
         "foot foot";
 }
 body#pool-body {
     grid-template-rows: 110px 80px 110px 600px 1200px auto;
+    grid-template-areas: 
+    "hd hd"
+    "text text"
+    "swim offer"
+    "img1 img2"
+    "img3 img4"
+    "foot foot";
 }
 #logo {
     font-size: 3rem;
@@ -631,8 +637,41 @@ input[value="Reset Form"] {
 }
 
 /* Playground page */
-.background-playground {
-    background-color: beige;
+body#playground {
+    grid-template-columns: auto;
+    grid-template-rows: auto 80px 900px 600px 1200px auto;
+    grid-template-areas:
+        "hd"
+        "text"
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "foot";
+}
+.container-play {
+    background-image: url("../images/dogs-img.png");
+    width: 100%;
+    height: 85%;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: img1; 
+}
+.container-play p {
+    position: relative;
+    display: grid;
+    grid-template-columns: 60%;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 65%;
+}
+.play-text {
+    background-color: #5f0f40;
 }
 
 /* Gym page */
@@ -733,7 +772,7 @@ div.container-2 p {
 .form-btn {
     font-size: small;
 }
-.container-p p, .march-title {
+.container-p p, .march-title, .container-play p{
     font-size: 0.8em;
 }
 table.time-table {
@@ -748,6 +787,24 @@ table.time-table {
 }
 p.march-p, p.pool-paragraph{
     font-size: .8em;
+}
+
+body#playground {
+    grid-template-columns: auto;
+    grid-template-rows: auto 80px 400px 600px 1200px auto;
+    grid-template-areas:
+        "hd"
+        "text"
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "foot";
+}
+.container-play p {
+    grid-template-columns: 70%;
+    transform: translateX(-50%);
+    top: 60%; 
 }
 
 }
@@ -816,6 +873,11 @@ p.march-p, p.pool-paragraph{
     .container-p p, .march-title {
         font-size: 0.8em;
     }
+    .container-play p {
+        font-size: 0.8em;
+    grid-template-columns: 80%;
+    top: 70%;
+}
     table.time-table {
         font-size: .9em;
     }
@@ -825,8 +887,32 @@ p.march-p, p.pool-paragraph{
     .time-table td {
         padding: 3px 3px;
     }
+    body#playground {
+        grid-template-columns: auto;
+        grid-template-rows: auto 80px 400px 600px 1200px auto;
+        grid-template-areas:
+            "hd"
+            "text"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "foot";
+    }
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
+    body#playground {
+        grid-template-columns: auto;
+        grid-template-rows: auto 80px 400px 600px 1200px auto;
+        grid-template-areas:
+            "hd"
+            "text"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "foot";
+    }
     body {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -923,12 +1009,29 @@ p.march-p, p.pool-paragraph{
     .time-table td {
         padding: 4px 4px;
     }
+    .container-play p {
+        font-size: 1em;
+        grid-template-columns: 73%;
+        top: 70%;
+    }
+
 }
 @media screen and (min-width: 900px) and (max-width: 980px) {
     div.topnav {
         display: none;
       }
-
+      body#playground {
+        grid-template-columns: auto;
+        grid-template-rows: auto 80px 400px 600px 1200px auto;
+        grid-template-areas:
+            "hd"
+            "text"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "foot";
+    }
     body {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1051,9 +1154,26 @@ p.march-p, p.pool-paragraph{
         width: 100%;
         border-radius: 50%;
     }
+    .container-play p {
+        font-size: 1em;
+        grid-template-columns: 60%;
+        top: 70%;
+    }
 
 }
 @media screen and (min-width: 980px) and (max-width: 1350px)   {
+    body#playground {
+        grid-template-columns: auto;
+        grid-template-rows: auto 80px 600px 600px 1200px auto;
+        grid-template-areas:
+            "hd"
+            "text"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "foot";
+    }
     body.background {
         grid-template-columns: 45% 1fr;
     grid-template-rows: auto auto 500px auto auto;
@@ -1133,8 +1253,32 @@ p.march-p, p.pool-paragraph{
         font-size: 2rem;
         letter-spacing: 7px;
 }
+
+.container-play p {
+    position: relative;
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 65%;
+}
 }
 @media (min-width: 1670px) and (max-width: 1850px)   {
+    body#playground {
+        grid-template-columns: auto;
+        grid-template-rows: auto 80px 900px 600px 1200px auto;
+        grid-template-areas:
+            "hd"
+            "text"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "foot";
+    }
     .container-1, .container-2 {
           width: 100%;
           height: 100%;
@@ -1151,6 +1295,18 @@ p.march-p, p.pool-paragraph{
     }
 @media (min-width: 1850px) and (max-width: 2560px)  {
     
+    body#playground {
+        grid-template-columns: auto;
+        grid-template-rows: auto 80px 900px 600px 1200px auto;
+        grid-template-areas:
+            "hd"
+            "text"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "foot";
+    }
 body.background {
     display: grid;
     grid-template-columns: 45% auto;
@@ -1198,6 +1354,17 @@ body.background {
         width: 100%;
         border-radius: 50%;
     }
+.container-play p {
+    position: relative;
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 75%;
+}  
 }
 /* Pool Page Media Query */
 @media screen and (min-width: 1350px) and (max-width: 2560px) {
