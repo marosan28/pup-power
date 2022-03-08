@@ -710,7 +710,24 @@ img.swing, img.bench {
     margin: 0 auto;
     border: 50px solid white;
 }
-
+.p-article {
+    margin: 20px 0 20px 0;
+}
+.questions h4 {
+    padding: 7px;
+    font-size: 1.1em;
+    background-color: #5f0f40;
+    display: inline;
+    color: beige;
+    font-family: Playfair Display SC;
+    font-weight: 400;
+    margin: 20px;
+    border-top-right-radius: 20px;
+}
+.questions p {
+    margin:20px;
+    font-size: 1.1em;
+}
 /* Gym page */
 .background-gym {
     background-color: rgba(88, 109, 126, 0.795);
@@ -1324,7 +1341,7 @@ body#playground {
 @media (min-width: 1670px) and (max-width: 1850px)   {
     body#playground {
         grid-template-columns: auto;
-        grid-template-rows: auto 80px 900px 80px auto auto;
+        grid-template-rows: auto 80px 900px 80px auto auto auto;
         grid-template-areas:
             "hd"
             "text"
@@ -1332,6 +1349,8 @@ body#playground {
             "img2"
             "img3"
             "img4"
+            "play"
+            "questions"
             "foot";
     }
     .container-1, .container-2 {
