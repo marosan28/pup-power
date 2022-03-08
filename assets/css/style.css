@@ -383,21 +383,21 @@ table.time-table {
   margin-top: 50px;
 
 }
-table.time-table tr {
+table.time-table tr, .table.classes-table tr {
     font-size: 1em;
 }
-.time-table thead tr {
+.time-table thead tr, .classes-table thead tr  {
     color: black;
     text-align: center;
     background-color: #90BEC0;
 }
-.time-table th {
+.time-table th, .classes-table th{
     padding: 12px 14px;
     font-family: Playfair Display SC, sans-serif;
     font-weight: 400;
     border: solid 1px black;
 }
-.time-table td {
+.time-table td, .classes-table td {
     padding: 12px 14px;
 }
 tr.unpair {
@@ -710,6 +710,7 @@ img.bench {
 img.swing, img.bench {
     margin: 0 auto;
     border: 50px solid white;
+    border-radius: 10%;
 }
 .p-article {
     margin: 20px 0 20px 0;
@@ -734,7 +735,84 @@ img.swing, img.bench {
     grid-area: text;
     margin: 20px;
 }
-
+body#gym {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 110px 700px auto;
+    grid-template-areas: 
+                        "hd"
+                        "text"
+                        "img1"
+                        "img2"
+                        "img3"
+                        "gym"
+                        "img"
+                        "table"
+                        "foot";
+}
+.gym-container { 
+    grid-area: img1;
+}
+.gym-container img {
+    margin: 0 auto;
+    display: flex;
+    border-radius: 10%;
+}
+.gym-box, .gym-box1 {
+    font-size: 2rem;
+    background-color: #5f0f40;
+    width: 350px;
+    border-radius: 2%;
+    margin: 20px;
+    transform: translateY(-180%);
+    padding: 15px;
+    font-family: 'Playfair Display SC';
+    color: beige;
+    border: 1px solid;
+    text-align: center;
+}
+.gym-box1 {
+    transform: translate(400%, -450%);
+}
+ .gym-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "t-box1 t-box2"
+    "t-box3 t-box4";
+}
+.text-gym1 {
+    grid-area: t-box1;
+}
+.text-gym2 {
+    grid-area: t-box2;
+}
+.text-gym3 {
+    grid-area: t-box3;
+}
+.text-gym4 {
+    grid-area: t-box4;
+}
+.text-gym1, .text-gym2, .text-gym3, .text-gym4 {
+    border: 1px solid;
+    margin: 20px;
+    font-size: 1.1em;
+    padding: 5px;
+}
+.text-g {
+    font-size: 1.1em;
+    margin: 20px;
+    border: 1px solid;
+}
+.gym-box1 a {
+    color: beige;
+    cursor: pointer;
+}
+/*----------------------------------------- Table -----------------------------------------*/
+table.classes-table {
+    font-size: 1.3em;
+    grid-area: table;
+  margin-top: 50px;
+}
 /* Media Queries*/
 @media only screen and (max-width: 500px) {
   
