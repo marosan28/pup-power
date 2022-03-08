@@ -333,7 +333,7 @@ footer {
     text-align: center;
     
 }
-.march-title {
+.march-title, .playground-title {
     text-align: center;
     background-color: #5F0F40;
     font-family: Playfair Display SC, sans-serif;
@@ -342,7 +342,7 @@ footer {
     letter-spacing: 4px;
     color: beige;
     margin: 0 20px 0 20px;
-    border: 1px solid #5F0F40;
+    border: 1px solid black;
 }
 
 .pool-info {
@@ -639,7 +639,7 @@ input[value="Reset Form"] {
 /* Playground page */
 body#playground {
     grid-template-columns: auto;
-    grid-template-rows: auto 80px 900px 600px 1200px auto;
+    grid-template-rows: auto 80px 600px 80px auto auto;
     grid-template-areas:
         "hd"
         "text"
@@ -665,13 +665,26 @@ body#playground {
     grid-template-columns: 60%;
     justify-content: center;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
     left: 50%;
     transform: translateX(-50%);
-    top: 65%;
+    top: 67%;
 }
-.play-text {
+.play-text p{
     background-color: #5f0f40;
+}
+.p-reason {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.p-reason div {
+    padding: 10px;
+    border-block: 15px solid;
+    text-align: center;
+    font-size: 1.1em;
 }
 
 /* Gym page */
@@ -772,7 +785,7 @@ div.container-2 p {
 .form-btn {
     font-size: small;
 }
-.container-p p, .march-title, .container-play p{
+.container-p p, .march-title, .container-play p, .playground-title{
     font-size: 0.8em;
 }
 table.time-table {
@@ -791,7 +804,7 @@ p.march-p, p.pool-paragraph{
 
 body#playground {
     grid-template-columns: auto;
-    grid-template-rows: auto 80px 400px 600px 1200px auto;
+    grid-template-rows: auto 80px 300px 50px auto auto;
     grid-template-areas:
         "hd"
         "text"
@@ -806,7 +819,13 @@ body#playground {
     transform: translateX(-50%);
     top: 60%; 
 }
-
+.p-reason div {
+    border-block: 8px solid;
+    font-size: .8em;
+}
+.p-reason {
+    flex-wrap: wrap;
+    }
 }
 @media screen and (min-width: 500px) and (max-width: 700px) {
 
@@ -832,7 +851,8 @@ body#playground {
     #playground-title,
     #gym-title,
     #bar-title,
-    .march-title {
+    .march-title
+    .playground-title {
         font-size: 1.4em;
     }
 
@@ -870,7 +890,7 @@ body#playground {
     .form-btn {
         font-size: small;
     }
-    .container-p p, .march-title {
+    .container-p p, .march-title, .playground-title{
         font-size: 0.8em;
     }
     .container-play p {
@@ -889,7 +909,7 @@ body#playground {
     }
     body#playground {
         grid-template-columns: auto;
-        grid-template-rows: auto 80px 400px 600px 1200px auto;
+        grid-template-rows: auto 80px 400px 50px auto auto;
         grid-template-areas:
             "hd"
             "text"
@@ -899,11 +919,19 @@ body#playground {
             "img4"
             "foot";
     }
+    .p-reason div {
+        border-block: none;
+        font-size: .8em;
+        border-top: 8px solid;
+    }
+    .p-reason {
+        flex-wrap: wrap;
+        }
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
     body#playground {
         grid-template-columns: auto;
-        grid-template-rows: auto 80px 400px 600px 1200px auto;
+        grid-template-rows: auto 80px 400px 80px auto auto;
         grid-template-areas:
             "hd"
             "text"
@@ -990,14 +1018,14 @@ body#playground {
         font-size: 1.45em;
     }
 
-    .march-title {
+    .march-title, .playground-title {
         font-size: 1.45em;
         
     }
     .form-btn {
         font-size: medium;
     }
-    .container-p p, .march-title {
+    .container-p p, .march-title, .playground-title {
         font-size: 1em;
     }
     table.time-table {
@@ -1014,6 +1042,10 @@ body#playground {
         grid-template-columns: 73%;
         top: 70%;
     }
+    .p-reason div {
+        border-block: 10px solid;
+        font-size: 1em;
+    }
 
 }
 @media screen and (min-width: 900px) and (max-width: 980px) {
@@ -1022,7 +1054,7 @@ body#playground {
       }
       body#playground {
         grid-template-columns: auto;
-        grid-template-rows: auto 80px 400px 600px 1200px auto;
+        grid-template-rows: auto 80px 400px 80px auto auto;
         grid-template-areas:
             "hd"
             "text"
@@ -1107,7 +1139,7 @@ body#playground {
         font-size:medium;
             top: 70%;
     }
-    .container-p p, .march-title {
+    .container-p p, .march-title, .playground-title {
         font-size: 1em;
     }
     table.time-table {
@@ -1120,7 +1152,7 @@ body#playground {
     .time-table td {
         padding: 4px 4px;
     }
-    .march-title {
+    .march-title, .playground-title {
         font-size: 1em;
     }
 
@@ -1159,12 +1191,15 @@ body#playground {
         grid-template-columns: 60%;
         top: 70%;
     }
-
+    .p-reason div {
+        border-block: 10px solid;
+        font-size: 1em;
+    }
 }
 @media screen and (min-width: 980px) and (max-width: 1350px)   {
     body#playground {
         grid-template-columns: auto;
-        grid-template-rows: auto 80px 600px 600px 1200px auto;
+        grid-template-rows: auto 80px 600px 80px auto auto;
         grid-template-areas:
             "hd"
             "text"
@@ -1176,7 +1211,7 @@ body#playground {
     }
     body.background {
         grid-template-columns: 45% 1fr;
-    grid-template-rows: auto auto 500px auto auto;
+    grid-template-rows: auto auto 600px 600px auto;
     }
     body#pool-body {
   
@@ -1269,7 +1304,7 @@ body#playground {
 @media (min-width: 1670px) and (max-width: 1850px)   {
     body#playground {
         grid-template-columns: auto;
-        grid-template-rows: auto 80px 900px 600px 1200px auto;
+        grid-template-rows: auto 80px 900px 80px auto auto;
         grid-template-areas:
             "hd"
             "text"
@@ -1297,7 +1332,7 @@ body#playground {
     
     body#playground {
         grid-template-columns: auto;
-        grid-template-rows: auto 80px 900px 600px 1200px auto;
+        grid-template-rows: auto 80px 900px 80px auto auto;
         grid-template-areas:
             "hd"
             "text"
