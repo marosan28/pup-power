@@ -679,12 +679,36 @@ body#playground {
     align-content: center;
     justify-content: center;
     flex-wrap: nowrap;
+    margin-bottom: 20px;
 }
 .p-reason div {
     padding: 10px;
-    border-block: 15px solid;
     text-align: center;
     font-size: 1.1em;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+}
+.p-reason :nth-child(4) {
+    border-right: 1px solid;
+}
+.play-image {
+    grid-area: img4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+                        "swing bench";
+
+        }
+img.swing {
+    grid-area: swing;
+}
+img.bench {
+    grid-area: bench;
+}
+img.swing, img.bench {
+    margin: 0 auto;
+    border: 50px solid white;
 }
 
 /* Gym page */
@@ -820,7 +844,6 @@ body#playground {
     top: 60%; 
 }
 .p-reason div {
-    border-block: 8px solid;
     font-size: .8em;
 }
 .p-reason {
@@ -920,13 +943,12 @@ body#playground {
             "foot";
     }
     .p-reason div {
-        border-block: none;
         font-size: .8em;
-        border-top: 8px solid;
     }
     .p-reason {
         flex-wrap: wrap;
         }
+
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
     body#playground {
@@ -1043,7 +1065,6 @@ body#playground {
         top: 70%;
     }
     .p-reason div {
-        border-block: 10px solid;
         font-size: 1em;
     }
 
@@ -1192,7 +1213,6 @@ body#playground {
         top: 70%;
     }
     .p-reason div {
-        border-block: 10px solid;
         font-size: 1em;
     }
 }
