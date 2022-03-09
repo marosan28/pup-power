@@ -351,13 +351,14 @@ footer {
     font-size: 1.2em;
     letter-spacing: 1px;
 }
-p.march-p{
+p.march-p, .why-swim{
         position: relative;
         justify-content: center;
         text-align: center;
         font-size: 1.1em;
         margin: 0 20px 0 20px;
         border: solid 1px black;
+        background-color: white;
 }
 .container-boxer {
         background-image: url("../images/boxer-img.png");
@@ -371,6 +372,9 @@ p.march-p{
 }
 .container-swim {
     grid-area: img1;
+}
+.why-swim {
+    margin: 20px;
 }
 /* Table */
 table.time-table {
@@ -399,6 +403,7 @@ table.time-table tr, .table.classes-table tr {
 }
 .time-table td, .classes-table td {
     padding: 12px 14px;
+    border: 1px solid black;
 }
 tr.unpair {
     background-color: #5F0F40;
@@ -413,6 +418,7 @@ div.staff {
 }
 p.staff-c, p.staff-k, p.staff-d {
     padding-block: 20px;
+    background-color: white;
 }
 .staff {
     display: grid;
@@ -451,7 +457,7 @@ div.container-s {
     display: inline-block;
     text-align: center;
 }
-#name {
+#name, #inner-pool p {
     display: block;
     font-size: 1.1rem;
     letter-spacing: 3px;
@@ -490,7 +496,7 @@ img.david {
 div.g-pinscher#g-p {
     display: grid;
     grid-template-columns: 5px 1fr 5px;
-    grid-template-rows: 440px 550px;
+    grid-template-rows: 475px 550px;
     grid-template-areas: 
                         "er dog re"
                         "em pool me";
@@ -506,11 +512,18 @@ div.g-pinscher#g-p {
 #inner-pool {
     grid-area: pool;
 }
+
+#inner-pool p {
+    border-top-right-radius: revert;
+    text-align: center;
+}
+
 #inner-pool img {
     height: 100%;
     width: 100%;
-    border-radius: 50%;
-   border: 2px solid #5F0F40;
+    border: 50px solid white;
+    border-radius: 10%;
+    margin-bottom: 20px;
 }
 .pool-paragraph {
     position: relative;
@@ -519,6 +532,7 @@ div.g-pinscher#g-p {
     font-size: 1.1em;
     margin: 0 20px 0 20px;
     border: solid 1px black;
+    background-color: white;
 }
 #swim {
     grid-area: swim;
@@ -673,6 +687,11 @@ body#playground {
     transform: translateX(-50%);
     top: 67%;
 }
+#agility {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
 .play-text p{
     background-color: #5f0f40;
 }
@@ -683,6 +702,7 @@ body#playground {
     justify-content: center;
     flex-wrap: nowrap;
     margin-bottom: 20px;
+    background-color: white;
 }
 .p-reason div {
     padding: 10px;
@@ -729,6 +749,8 @@ img.swing, img.bench {
 .questions p {
     margin:20px;
     font-size: 1.1em;
+    background-color: white;
+    border: 1px solid;
 }
 /* -------------------------------------- Gym page --------------------------------------*/
 .weight {
