@@ -335,12 +335,11 @@ footer {
 }
 .march-title, .playground-title {
     text-align: center;
-    background-color: #5F0F40;
+    background-color: #90BEC0;
     font-family: Playfair Display SC, sans-serif;
     font-weight: 400;
     font-size: 1.9em;
     letter-spacing: 4px;
-    color: beige;
     margin: 0 20px 0 20px;
     border: 1px solid black;
 }
@@ -374,7 +373,7 @@ p.march-p, .why-swim{
     grid-area: img1;
 }
 .why-swim {
-    margin: 20px;
+    margin: 70px 20px 20px 20px;
 }
 /* Table */
 table.time-table {
@@ -406,8 +405,7 @@ table.time-table tr, .table.classes-table tr {
     border: 1px solid black;
 }
 tr.unpair {
-    background-color: #5F0F40;
-    color: white;
+    background-color: white;
 }
 tr.pair {
     background-color: rgba(189, 178, 178, 0.377);
@@ -431,7 +429,7 @@ p.staff-c, p.staff-k, p.staff-d {
     
 }
 .staff-header {
-    background-color: #5f0f40;
+    background-color: white;
     border: 1px solid black;
     border-top-right-radius: 20px;
     display: block;
@@ -441,7 +439,6 @@ p.staff-c, p.staff-k, p.staff-d {
     letter-spacing: 3px;
     grid-area: t;
     padding: 10px 0 10px 0;
-    color: beige;
     font-family: Playfair Display SC, sans-serif;
     font-weight: 400;
 }
@@ -461,11 +458,10 @@ div.container-s {
     display: block;
     font-size: 1.1rem;
     letter-spacing: 3px;
-    background-color: #5F0F40;
+    background-color: white;
     font-family: Playfair Display SC, sans-serif;
     border: 1px solid black;
     border-top-right-radius: 20px;
-    color: beige;
 }
 img.corinne {
     grid-area: a;
@@ -693,7 +689,7 @@ body#playground {
     display: flex;
 }
 .play-text p{
-    background-color: #5f0f40;
+    background-color: #90BEC0;
 }
 .p-reason {
     display: flex;
@@ -738,12 +734,12 @@ img.swing, img.bench {
 .questions h4 {
     padding: 7px;
     font-size: 1.1em;
-    background-color: #5f0f40;
+    background-color: #90BEC0;
     display: inline;
-    color: beige;
     font-family: Playfair Display SC;
     font-weight: 400;
     margin: 20px;
+    border: 1px solid black;
     border-top-right-radius: 20px;
 }
 .questions p {
@@ -784,14 +780,13 @@ body#gym {
 }
 .gym-box, .gym-box1 {
     font-size: 2rem;
-    background-color: #5f0f40;
+    background-color: #90BEC0;
     width: 350px;
     border-radius: 2%;
     margin: 20px;
     transform: translateY(-180%);
     padding: 15px;
     font-family: 'Playfair Display SC';
-    color: beige;
     border: 1px solid;
     text-align: center;
 }
@@ -821,12 +816,14 @@ body#gym {
     margin: 20px;
     font-size: 1.1em;
     padding: 5px;
+    background-color: white;
 }
 .text-g {
     font-size: 1.1em;
     margin: 20px;
     border: 1px solid;
     padding: 5px;
+    background-color: white;
 }
 .gym-box1 a {
     color: beige;
@@ -878,7 +875,7 @@ div.bar-container {
     grid-area: menu;
     list-style-type: none;
     position: absolute;
-    transform: translate(87%, 34%);
+    transform: translate(75%, 34%);
     text-align: center;
     font-size: 1.5rem;
 }
@@ -1425,9 +1422,9 @@ body#playground {
         grid-area: pool;
     }
     #inner-pool img {
-        height: 100%;
-        width: 100%;
-        border-radius: 50%;
+            height: 100%;
+            width: 100%;
+            border: 20px solid white;
     }
     .container-play p {
         font-size: 1em;
@@ -1635,7 +1632,6 @@ body.background {
     #inner-pool img {
         height: 100%;
         width: 100%;
-        border-radius: 50%;
     }
 .container-play p {
     position: relative;
@@ -1664,7 +1660,7 @@ body.background {
     body#pool-body {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto 90px 90px 300px 420px 1250px auto 280px;
+        grid-template-rows: auto auto 90px 90px 300px 460px 1350px auto 480px;
         grid-template-areas:
             "hd"
             "text"
@@ -1713,8 +1709,7 @@ body.background {
 #inner-pool img {
     height: 100%;
     width: 100%;
-    border-radius: 50%;
-    border: 10px solid rgb(236, 207, 77);
+    border: 15px solid white;
 }
 div.g-pinscher#g-p {
     display: grid;
@@ -1748,7 +1743,7 @@ body.background{
 body#pool-body {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto 90px 90px 300px 420px 700px auto 280px;
+    grid-template-rows: auto auto 90px 90px 300px auto 700px auto 450px;
     grid-template-areas:
         "hd"
         "text"
@@ -1768,7 +1763,7 @@ body#pool-body {
 #inner-pool img {
     height: 100%;
     width: 100%;
-    border-radius: 50%;
+    border: 15px solid white;
 }
 div.g-pinscher#g-p {
     display: grid;
