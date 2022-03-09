@@ -820,6 +820,99 @@ table.classes-table {
     grid-area: table;
   margin-top: 50px;
 }
+/*----------------------------------------- Bar -----------------------------------------*/
+body#bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 110px 760px auto;
+    grid-template-areas:
+        "hd"
+        "text"
+        "place1"
+        "place2"
+        "place3"
+        "bar"
+        "place"
+        "dog"
+        "foot";
+}
+div.bar-container {
+    grid-area: place1;
+    display: grid;
+    grid-template-columns: 450px auto 450px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "dog1 menu dog2";
+}
+.food-menu {
+    background-image: url("../images/menu-img.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    grid-area: menu;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+#food{ 
+    grid-area: menu;
+    list-style-type: none;
+    position: absolute;
+    transform: translate(87%, 34%);
+    text-align: center;
+    font-size: 1.5rem;
+}
+.menu-title {
+    font-family: Playfair Display SC, sans-serif;
+}
+.dog-left {
+    background-image: url("../images/rottweiler-img.png");
+    width: 100%;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: dog1;
+    top: -30%;
+    margin-left: 100px;
+}
+
+.dog-left p {
+    position: relative;
+    display: grid;
+    grid-template-columns: 62%;
+    justify-content: center;
+    text-align: left;
+    font-family: Hubballi, sans-serif;
+    font-size: 1.2em;
+    top: 480px;
+}
+
+.dog-right {
+    background-image: url("../images/pug-img.png");
+    width: 100%;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: dog2;
+    right: 100px;
+}
+.dog-right p {
+    position: relative;
+    display: grid;
+    grid-template-columns: 62%;
+    justify-content: center;
+    text-align: left;
+    font-family: Hubballi, sans-serif;
+    font-size: 1.2em;
+    top: 470px;
+}
+.rights {
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Media Queries*/
 @media only screen and (max-width: 500px) {
   
