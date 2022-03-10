@@ -34,7 +34,7 @@ body{
     scroll-behavior: smooth;
     overflow-x: hidden;
     display: grid;
-    grid-template-columns: 45% auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 80px 700px 700px auto;
     grid-template-areas: 
         "hd hd"
@@ -145,32 +145,43 @@ li a:hover {
   }
 /* Images and text styling */
 .container-1 {
-  background-image: url("../images/amstaff-dog-img.png");
+    background-image: url("../images/amstaff-dog-img.png");
     width: 100%;
-    height: 85%;
+    height: 100%;
     position: relative;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    grid-area: img1; 
-}
-.container-1 p, .container-2 p  {
-    position: relative;
+    grid-area: img1;
     display: grid;
-    grid-template-columns: 50%;
+    grid-template-rows: 60% auto 10%;
+    grid-template-columns: minmax(20%, 32%) auto minmax(20%, 32%);
+    grid-template-areas:
+        "one-l one-m one-r"
+        "two-l two-m two-r"
+        "three-l three-m three-r";
+}
+.container-1 p {
     justify-content: center;
     text-align: left;
-    font-family: Hubballi, sans-serif;
+    font-size: 1.1em;
+    grid-area: two-m;
+    min-width: 300px;
+}
+.container-2 p  { 
+    position: relative;
+    justify-content: center;
+    text-align: left;
     font-size: .9em;
     top: 330px;
 }
-#pool-title, #playground-title {
+ #pool-title , #playground-title{ 
     text-align: center;
     font-family: Playfair Display SC, sans-serif;
     font-size: 1.5em;
-    
     letter-spacing: 4px;
     margin-bottom: 2%;
+    display: block;
 
 }
 #pool-title a, #playground-title a  {
@@ -934,7 +945,21 @@ div.bar-container {
 
 /* Media Queries*/
 @media only screen and (max-width: 500px) {
-  
+    body.background{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto 400px 420px 420px auto 280px;
+        grid-template-areas:
+            "hd"
+            "text"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "auto"
+            "foot";
+    }
     table {
         font-size: .5em;
     }
@@ -998,18 +1023,15 @@ div.bar-container {
     }
 
 div.container-1 {
-    width: 100%;
-    height: 120%;
+    grid-template-rows: 55% auto 10%;
 }
 div.container-2 {
     width: 100%;
     height: 100%;
 }
   div.container-1 p{
-    font-size: .5em;
-    position: relative;
-    top: 200px;
-    grid-template-columns: 50%;
+    font-size: .7em;
+    min-width: 200px;
 }
 div.container-2 p {
     font-size: .5em;
@@ -1064,7 +1086,21 @@ body#playground {
     }
 }
 @media screen and (min-width: 500px) and (max-width: 700px) {
-
+    body.background{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto 500px 420px 420px auto 280px;
+        grid-template-areas:
+            "hd"
+            "text"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "auto"
+            "foot";
+    }
     .staff-c, .staff-k, .staff-d {
         font-size: .8em;
         border-radius: 2%;
@@ -1108,23 +1144,11 @@ body#playground {
     .march-offer {
         font-size: .75em;
     }
-    .container-1 {
-        width: 100%;
-        height: 150%;
-    }
-    .container-2{
-        width: 100%;
-        height: 110%;
-    }
       .container-1 p, .container-2 p{
-        font-size: .5em;
-    position: relative;
-    top: 270px;
-    grid-template-columns: 45%;
-        
+        font-size: .8em;
       }
-    .form-btn {
-        font-size: small;
+      .container-1 p {
+        min-width: 200px
     }
     .container-p p, .march-title, .playground-title{
         font-size: 0.8em;
@@ -1163,9 +1187,24 @@ body#playground {
     .p-reason {
         flex-wrap: wrap;
         }
-
+      
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
+    body.background{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto 500px 420px 420px auto 280px;
+        grid-template-areas:
+            "hd"
+            "text"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "auto"
+            "foot";
+    } 
     body#playground {
         grid-template-columns: auto;
         grid-template-rows: auto 80px 400px 80px auto auto;
@@ -1180,18 +1219,6 @@ body#playground {
         "questions"
         "foot";
 }
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto 300px 300px auto;
-        grid-template-areas: 
-            "hd hd"
-            "text text"
-            "img1 img2"
-            "img3 img4"
-            "auto auto"
-            "foot foot";
-    }
     div.topnav {
         display: none;
       }
@@ -1205,19 +1232,15 @@ body#playground {
     .staff-header {
         font-size: 1em;
     }
-    .container-1 {
-        width: 100%;
-        height: 150%;
-    }
     .container-2 {
         width: 100%;
         height: 100%;
     }
       .container-1 p, .container-2 p {
-        font-size: .65em;
-        position: relative;
-        top: 245px;
-        grid-template-columns: 30%;
+        font-size: .8em;
+    }
+    .container-1 p {
+        min-width: 200px
     }
     html, body {
         
@@ -1284,7 +1307,6 @@ body#playground {
     .p-reason div {
         font-size: 1em;
     }
-
 }
 @media screen and (min-width: 900px) and (max-width: 980px) {
     div.topnav {
@@ -1318,7 +1340,7 @@ body#playground {
     }
     body#pool-body {
         display: grid;
-        grid-template-columns: 45% 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto 110px 500px auto;
         grid-template-areas:
             "hd hd"
@@ -1334,9 +1356,7 @@ body#playground {
     }
 
       .container-1 p, .container-2 p{
-        grid-template-columns: 60%;
-        font-size: .7em;
-        top: 280px;
+        font-size: .8em;
     }
 
     html, body {
@@ -1353,7 +1373,6 @@ body#playground {
     #logo {
         font-size: 2rem;
     }
-
     .home,
     .pool,
     .playground,
@@ -1362,11 +1381,9 @@ body#playground {
         padding: 0 50% 0 50%;
         border-top: 1px solid white;
     }
-
     #logo {
         margin-bottom: 2%;
     }
-
     .intro-text-box,
     .intro-text-box1 {
         font-size: 1.4em;
@@ -1375,7 +1392,7 @@ body#playground {
     .footer {
         font-size: .9em;
     }
-.form-btn {
+    .form-btn {
         font-size:medium;
             top: 70%;
     }
@@ -1450,10 +1467,6 @@ body#playground {
         "questions"
         "foot";
 }
-    body.background {
-        grid-template-columns: 45% 1fr;
-    grid-template-rows: auto auto 600px 600px auto;
-    }
     body#pool-body {
   
     grid-template-rows: 110px 80px 110px 500px 1200px auto;
@@ -1469,9 +1482,7 @@ body#playground {
         height: 80%;
     }
       .container-1 p, .container-2 p{
-        grid-template-columns: 65%;
-        font-size: .8em;
-        top: 310px;
+        font-size: 1em;
     }
     div.topnav {
         display: none;
@@ -1561,11 +1572,8 @@ body#playground {
           width: 100%;
           height: 100%;
     }
-
       .container-1 p, .container-2 p {
-        grid-template-columns: 55%;
         font-size: 1.1em;
-        top: 385px;
     }
     div.topnav {
         display: none;
@@ -1587,25 +1595,12 @@ body#playground {
         "questions"
         "foot";
 }
-body.background {
-    display: grid;
-    grid-template-columns: 45% auto;
-    grid-template-rows: auto 80px 700px 700px auto;
-    grid-template-areas:
-        "hd hd"
-        "text text"
-        "img1 img2"
-        "img3 img4"
-        "foot foot";
-}
     .container-1, .container-2 {
         width: 100%;
         height: 100%;
     }
       .container-1 p, .container-2 p {
-        grid-template-columns: 50%;
         font-size: 1.1em;
-        top: 400px;
     }
     div.topnav {
         display: none ;
@@ -1655,7 +1650,9 @@ body.background {
         left: 51%;
     }
 }
-/* Grid settings Pool-Page for smaller screens */
+/* smaller screens */
+
+
 @media screen and (max-width: 770px) {
     body#pool-body {
         display: grid;
@@ -1666,21 +1663,6 @@ body.background {
             "text"
             "swim"
             "offer"
-            "img1"
-            "img2"
-            "img3"
-            "img4"
-            "img5"
-            "auto"
-            "foot";
-    }
-    body.background{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto 300px 420px 420px auto 280px;
-        grid-template-areas:
-            "hd"
-            "text"
             "img1"
             "img2"
             "img3"
@@ -1725,21 +1707,6 @@ div.g-pinscher#g-p {
 }
 }
 @media screen and (min-width:770px) and (max-width:900px) {
-body.background{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto 300px 420px 420px auto 280px;
-    grid-template-areas:
-        "hd"
-        "text"
-        "img1"
-        "img2"
-        "img3"
-        "img4"
-        "img5"
-        "auto"
-        "foot";
-}
 body#pool-body {
     display: grid;
     grid-template-columns: auto;
