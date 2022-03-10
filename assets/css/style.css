@@ -1041,8 +1041,52 @@ img.bench {
     border: 15px solid white;
     width: 80%;
 }
+.gym-container img {
+    margin: 0 auto;
+    display: flex;
+    border-radius: 10%;
+    border: 15px solid white;
+    width: 80%;
+}
+.gym-box1 {
+    transform: translate(20%, -450%);
+}
+.gym-box, .gym-box1 {
+    font-size: 1rem;
+    width: 280px;
+    transform: translateY(-10%);
+    padding: 10px;
 }
 
+.gym-grid {
+    margin: 10px;
+}
+table.classes-table {
+    font-size: 0.75em;
+}
+.text-gym1, .text-gym2, .text-gym3, .text-gym4 {
+   text-align: center;
+}
+.weight img {
+    width: 35%;
+}
+body#gym {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 110px 400px auto;
+    grid-template-areas:
+        "hd"
+        "text"
+        "img1"
+        "img2"
+        "img3"
+        "gym"
+        "img"
+        "table"
+        "dog"
+        "foot";
+}
+}
 @media screen and (min-width: 500px) and (max-width: 700px) {
     body.background{
         display: grid;
