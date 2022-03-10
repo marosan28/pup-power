@@ -618,44 +618,41 @@ input[value="Reset Form"] {
 /* Playground page */
 body#playground {
     grid-template-columns: auto;
-    grid-template-rows: auto 80px 600px 80px auto auto;
+    grid-template-rows: auto 80px 800px 80px auto auto;
     grid-template-areas:
-    "hd"
-    "text"
-    "img1"
-    "img2"
-    "img3"
-    "img4"
-    "play"
-    "questions"
-    "foot";
+        "hd"
+        "text"
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "play"
+        "questions"
+        "foot";
 }
 
 .container-play {
     background-image: url("../images/dogs-img.png");
     width: 100%;
-    height: 85%;
+    height: 100%;
     position: relative;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    grid-area: img1; 
+    grid-area: img1;
+    display: grid;
+    grid-template-columns: 25% auto 26%;
+    grid-template-rows: auto 20% 10%;
+    grid-template-areas:
+        "empty1 photo empty2"
+        "empty3 text empty4"
+        "empty5 empty6 empty7";
 }
 .container-play p {
-    position: relative;
-    display: grid;
-    grid-template-columns: 60%;
-    justify-content: center;
     text-align: center;
     font-size: 2em;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 67%;
-}
-#agility {
-    width: 100%;
-    height: 100%;
-    display: flex;
+    grid-area: text;
+    min-width: 200px;
 }
 .play-text p{
     background-color: #90BEC0;
@@ -693,7 +690,7 @@ img.bench {
     grid-area: bench;
 }
 img.swing, img.bench {
-    margin: 0 auto;
+    margin: 20px auto;
     border: 50px solid white;
     border-radius: 10%;
 }
@@ -1024,18 +1021,28 @@ body#playground {
     "questions"
     "foot";
 }
-.container-play p {
-    grid-template-columns: 70%;
-    transform: translateX(-50%);
-    top: 60%; 
-}
 .p-reason div {
     font-size: .8em;
+    border: 1px solid;
 }
 .p-reason {
     flex-wrap: wrap;
     }
+
+.questions h4 {
+    display:block;
+    font-size: 0.8em;
 }
+img.swing {
+border: 15px solid white;
+width: 80%;
+}
+img.bench {
+    border: 15px solid white;
+    width: 80%;
+}
+}
+
 @media screen and (min-width: 500px) and (max-width: 700px) {
     body.background{
         display: grid;
@@ -1099,14 +1106,9 @@ body#playground {
         font-size: .8em;
         min-width: 200px
       }
-    .container-p p, .march-title, .playground-title{
+    .container-p p, .march-title, .playground-title, .container-play p{
         font-size: 0.8em;
     }
-    .container-play p {
-        font-size: 0.8em;
-    grid-template-columns: 80%;
-    top: 70%;
-}
     table.time-table {
         font-size: .9em;
     }
@@ -1136,7 +1138,10 @@ body#playground {
     .p-reason {
         flex-wrap: wrap;
         }
-      
+img.swing, img.bench {
+            width: 70%;
+            border: 25px solid white;
+        }
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
     body.background{
@@ -1250,6 +1255,12 @@ body#playground {
     .p-reason div {
         font-size: 1em;
     }
+    
+img.swing, img.bench {
+    width: 80%;
+    border: 25px solid white;
+   
+}
 }
 @media screen and (min-width: 900px) and (max-width: 980px) {
     div.topnav {
@@ -1257,18 +1268,18 @@ body#playground {
       }
       body#playground {
         grid-template-columns: auto;
-        grid-template-rows: auto 80px 400px 80px auto auto;
+        grid-template-rows: auto 80px 450px 80px auto auto;
         grid-template-areas:
-        "hd"
-        "text"
-        "img1"
-        "img2"
-        "img3"
-        "img4"
-        "play"
-        "questions"
-        "foot";
-}
+            "hd"
+            "text"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "play"
+            "questions"
+            "foot";
+    }
     body {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1386,8 +1397,6 @@ body#playground {
     }
     .container-play p {
         font-size: 1em;
-        grid-template-columns: 60%;
-        top: 70%;
     }
     .p-reason div {
         font-size: 1em;
@@ -1471,37 +1480,16 @@ body#playground {
         border: 25px solid white
     }
     .intro-text-box, .intro-text-box1 {
-        font-size: 2rem;
+        font-size: 2em;
         letter-spacing: 7px;
 }
 
 .container-play p {
-    position: relative;
-    display: grid;
-    grid-template-columns: 70%;
-    justify-content: center;
-    text-align: center;
     font-size: 2em;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 65%;
 }
 }
 @media (min-width: 1670px) and (max-width: 1850px)   {
-    body#playground {
-        grid-template-columns: auto;
-        grid-template-rows: auto 80px 900px 80px auto auto auto;
-        grid-template-areas:
-            "hd"
-            "text"
-            "img1"
-            "img2"
-            "img3"
-            "img4"
-            "play"
-            "questions"
-            "foot";
-    }
+   
     .container-1, .container-2, .container-3, .container-4{
           width: 100%;
           height: 100%;
@@ -1515,20 +1503,6 @@ body#playground {
     }
 @media (min-width: 1850px) and (max-width: 2560px)  {
     
-    body#playground {
-        grid-template-columns: auto;
-        grid-template-rows: auto 80px 900px 80px auto auto;
-        grid-template-areas:
-        "hd"
-        "text"
-        "img1"
-        "img2"
-        "img3"
-        "img4"
-        "play"
-        "questions"
-        "foot";
-}
     .container-1, .container-2, .container-3, .container-4 {
         width: 100%;
         height: 100%;
@@ -1561,18 +1535,7 @@ body#playground {
     #inner-pool img {
         height: 100%;
         width: 100%;
-    }
-.container-play p {
-    position: relative;
-    display: grid;
-    grid-template-columns: 70%;
-    justify-content: center;
-    text-align: center;
-    font-size: 2.5em;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 75%;
-}  
+    } 
 }
 /* Pool Page Media Query */
 @media screen and (min-width: 1350px) and (max-width: 2560px) {
