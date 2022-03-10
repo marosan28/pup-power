@@ -161,6 +161,23 @@ li a:hover {
         "two-l two-m two-r"
         "three-l three-m three-r";
 }
+.container-2 {
+    background-image: url("../images/bullmastiff-img.png");
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: img3;
+    display: grid;
+    grid-template-rows: 65% auto 10%;
+    grid-template-columns: minmax(20%, 32%) auto minmax(20%, 32%);
+    grid-template-areas:
+        "one-l2 one-m2 one-r2"
+        "two-l2 two-m2 two-r2"
+        "three-l2 three-m2 three-r2";
+}
 .container-1 p {
     justify-content: center;
     text-align: left;
@@ -169,11 +186,11 @@ li a:hover {
     min-width: 300px;
 }
 .container-2 p  { 
-    position: relative;
     justify-content: center;
     text-align: left;
-    font-size: .9em;
-    top: 330px;
+    font-size: 1.1em;
+    grid-area: two-m2;
+    min-width: 300px;
 }
  #pool-title , #playground-title{ 
     text-align: center;
@@ -193,17 +210,6 @@ li a:hover {
 }
 #logo:hover {
     color: white;
-}
-
-.container-2 {
-    background-image: url("../images/bullmastiff-img.png");
-    width: 100%;
-    height: 85%;
-    position: relative;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-area: img3; 
 }
 /*
 .container-3 {
@@ -336,7 +342,7 @@ footer {
 /* --------------------- Pool page ---------------------*/ 
 .intro-text-box, .intro-text-box1 {
     color: #5f0f40;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: Playfair Display SC, sans-serif;
     font-weight: 400;
     grid-area: text;
@@ -1007,7 +1013,7 @@ div.bar-container {
     
     .intro-text-box,
     .intro-text-box1 {
-        font-size: .8em;
+        font-size: 1em;
     }
 
     .footer {
@@ -1025,19 +1031,12 @@ div.bar-container {
 div.container-1 {
     grid-template-rows: 55% auto 10%;
 }
-div.container-2 {
-    width: 100%;
-    height: 100%;
+div.container-2  {
+    grid-template-rows: 60% auto 10%;
 }
-  div.container-1 p{
+  div.container-1 p, div.container-2 p{
     font-size: .7em;
     min-width: 200px;
-}
-div.container-2 p {
-    font-size: .5em;
-    position: relative;
-    top: 250px;
-    grid-template-columns: 50%
 }
 .form-btn {
     font-size: small;
@@ -1089,7 +1088,7 @@ body#playground {
     body.background{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto 500px 420px 420px auto 280px;
+        grid-template-rows: auto auto 500px 420px 500px auto 280px;
         grid-template-areas:
             "hd"
             "text"
@@ -1130,7 +1129,7 @@ body#playground {
 
     .intro-text-box,
     .intro-text-box1 {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     .footer {
@@ -1193,7 +1192,7 @@ body#playground {
     body.background{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto 500px 420px 420px auto 280px;
+        grid-template-rows: auto auto 500px 420px 500px auto 280px;
         grid-template-areas:
             "hd"
             "text"
@@ -1232,15 +1231,9 @@ body#playground {
     .staff-header {
         font-size: 1em;
     }
-    .container-2 {
-        width: 100%;
-        height: 100%;
-    }
       .container-1 p, .container-2 p {
         font-size: .8em;
-    }
-    .container-1 p {
-        min-width: 200px
+        min-width: 200px;
     }
     html, body {
         
@@ -1252,7 +1245,7 @@ body#playground {
         justify-content: center;
         align-items: center;
         padding: 20px 0 0 0;
-        font-size: .9em
+        font-size: 1.3em;
     }
     .home,
     .pool,
@@ -1268,7 +1261,7 @@ body#playground {
     }
     .intro-text-box,
     .intro-text-box1 {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
     .footer {
         font-size: .9em;
@@ -1357,6 +1350,7 @@ body#playground {
 
       .container-1 p, .container-2 p{
         font-size: .8em;
+        min-width: 300px;
     }
 
     html, body {
@@ -1468,18 +1462,11 @@ body#playground {
         "foot";
 }
     body#pool-body {
-  
     grid-template-rows: 110px 80px 110px 500px 1200px auto;
     }
-
     .form-btn {
         font-size:1.2em;
         top: 80%;
-     
-    }
-    .container-1, .container-2 {
-        width: 100%;
-        height: 80%;
     }
       .container-1 p, .container-2 p{
         font-size: 1em;
