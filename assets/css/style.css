@@ -143,7 +143,7 @@ li a:hover {
     background-color: #90BEC0;
     
   }
-/* Images and text styling */
+/* Images and text styling - Home Page */
 .container-1 {
     background-image: url("../images/amstaff-dog-img.png");
     width: 100%;
@@ -178,6 +178,7 @@ li a:hover {
         "two-l2 two-m2 two-r2"
         "three-l2 three-m2 three-r2";
 }
+
 .container-1 p {
     justify-content: center;
     text-align: left;
@@ -192,7 +193,7 @@ li a:hover {
     grid-area: two-m2;
     min-width: 300px;
 }
- #pool-title , #playground-title{ 
+ #pool-title , #playground-title, #gym-title, #bar-title{ 
     text-align: center;
     font-family: Playfair Display SC, sans-serif;
     font-size: 1.5em;
@@ -201,118 +202,69 @@ li a:hover {
     display: block;
 
 }
-#pool-title a, #playground-title a  {
+#pool-title a, #playground-title a, #gym-title a, #bar-title {
     text-decoration: none;
     color: black;
 }
-#pool-title a:hover, #playground-title a:hover {
+#pool-title a:hover, #playground-title a:hover, #gym-title a:hover {
     font-size: 1.7rem;
 }
 #logo:hover {
     color: white;
 }
-/*
+
 .container-3 {
-    background-image: url("../images/containter1-img.png");
-    width: 100%;
-    height: 200%;
-    position: relative;
-    display: flex;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-area: img3;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.img-3 {
+    background-image: url("../images/");
     width: 100%;
     height: 100%;
-    object-fit: contain;
-}
-
-.gym-text {
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: img2;
     display: grid;
-    grid-template-columns: minmax(auto, 18em);
-    grid-template-rows: minmax(auto, 15em);
+    grid-template-rows: 65% auto 10%;
+    grid-template-columns: minmax(20%, 32%) auto minmax(20%, 32%);
+    grid-template-areas:
+        "one-l3 one-m3 one-r3"
+        "two-l3 two-m3 two-r3"
+        "three-l3 three-m3 three-r3";
+
+}
+.container-3 p {
     justify-content: center;
-    text-align: center;
-    font-family: Hubballi, sans-serif;
+    text-align: left;
     font-size: 1.1em;
-}
-
-#gym-title {
-    display: flex;
-    font-size: 1.9em;
-    letter-spacing: 4px;
-    margin-bottom: 2%;
-
-}
-
-#gym-title a {
-    text-decoration: none;
-    color: black;
-}
-
-#gym-title a:hover {
-    font-size: 1.7rem;
+    grid-area: two-m3;
+    min-width: 300px;
 }
 
 .container-4 {
-    
+    background-image: url("../images/golden-img.png");
     width: 100%;
     height: 100%;
     position: relative;
-    display: flex;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
     grid-area: img4;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-4 {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.bar-text {
     display: grid;
-    grid-template-columns: minmax(auto, 18em);
-    grid-template-rows: minmax(auto, 15em);
+    grid-template-rows: 65% auto 10%;
+    grid-template-columns: minmax(20%, 32%) auto minmax(20%, 32%);
+    grid-template-areas:
+        "one-l4 one-m4 one-r4"
+        "two-l4 two-m4 two-r4"
+        "three-l4 three-m4 three-r4";
+
+}
+.container-4 p  { 
     justify-content: center;
-    text-align: center;
-    font-family: Hubballi, sans-serif;
+    text-align: left;
     font-size: 1.1em;
+    grid-area: two-m4;
+    min-width: 300px;
 }
 
-#bar-title {
-    display: flex;
-    font-size: 1.9em;
-    letter-spacing: 4px;
-    margin-bottom: 2%;
-
-}
-
-#bar-title a {
-    text-decoration: none;
-    color: black;
-}
-
-#bar-title a:hover {
-    font-size: 1.7rem;
-}
-*/
 /* Footer */
 footer {
 
