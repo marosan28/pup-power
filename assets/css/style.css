@@ -214,7 +214,7 @@ li a:hover {
 }
 
 .container-3 {
-    background-image: url("../images/");
+    background-image: url("../images/beagle-img.png");
     width: 100%;
     height: 100%;
     position: relative;
@@ -223,7 +223,7 @@ li a:hover {
     background-repeat: no-repeat;
     grid-area: img2;
     display: grid;
-    grid-template-rows: 65% auto 10%;
+    grid-template-rows: 60% auto 10%;
     grid-template-columns: minmax(20%, 32%) auto minmax(20%, 32%);
     grid-template-areas:
         "one-l3 one-m3 one-r3"
@@ -249,7 +249,7 @@ li a:hover {
     background-repeat: no-repeat;
     grid-area: img4;
     display: grid;
-    grid-template-rows: 65% auto 10%;
+    grid-template-rows: 60% auto 10%;
     grid-template-columns: minmax(20%, 32%) auto minmax(20%, 32%);
     grid-template-areas:
         "one-l4 one-m4 one-r4"
@@ -906,7 +906,7 @@ div.bar-container {
     body.background{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto 400px 420px 420px auto 280px;
+        grid-template-rows: auto auto repeat(4, 420px) auto;
         grid-template-areas:
             "hd"
             "text"
@@ -986,7 +986,7 @@ div.container-1 {
 div.container-2  {
     grid-template-rows: 60% auto 10%;
 }
-  div.container-1 p, div.container-2 p{
+  div.container-1 p, div.container-2 p, div.container-3 p, div.container-4 p{
     font-size: .7em;
     min-width: 200px;
 }
@@ -1040,7 +1040,7 @@ body#playground {
     body.background{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto 500px 420px 500px auto 280px;
+        grid-template-rows: auto auto repeat(4, 500px);
         grid-template-areas:
             "hd"
             "text"
@@ -1095,12 +1095,10 @@ body#playground {
     .march-offer {
         font-size: .75em;
     }
-      .container-1 p, .container-2 p{
+      .container-1 p, .container-2 p, .container-3 p, .container-4 p{
         font-size: .8em;
-      }
-      .container-1 p {
         min-width: 200px
-    }
+      }
     .container-p p, .march-title, .playground-title{
         font-size: 0.8em;
     }
@@ -1183,7 +1181,7 @@ body#playground {
     .staff-header {
         font-size: 1em;
     }
-      .container-1 p, .container-2 p {
+      .container-1 p, .container-2 p, .container-3 p, .container-4 p {
         font-size: .8em;
         min-width: 200px;
     }
@@ -1295,12 +1293,12 @@ body#playground {
             "img3 img4"
             "foot foot";
 }
-    .container-1, .container-2 {
+    .container-1, .container-2, .container-3, .container-4 {
         width: 100%;
         height: 100%;
     }
 
-      .container-1 p, .container-2 p{
+      .container-1 p, .container-2 p, .container-3 p, .container-4 p{
         font-size: .8em;
         min-width: 300px;
     }
@@ -1361,10 +1359,7 @@ body#playground {
 
     div.g-pinscher#g-p {
         grid-template-columns: auto;
-        grid-template-rows: 270px 400px;
-        grid-template-areas:
-            "er dog re"
-            "em pool me";
+        grid-template-rows: 315px 400px;
         width: 400px;
         height: 400px;
         position: relative;
@@ -1420,7 +1415,7 @@ body#playground {
         font-size:1.2em;
         top: 80%;
     }
-      .container-1 p, .container-2 p{
+      .container-1 p, .container-2 p, .container-3 p, .container-4 p{
         font-size: 1em;
     }
     div.topnav {
@@ -1439,7 +1434,7 @@ body#playground {
     
     div.g-pinscher#g-p {
         grid-template-columns: auto;
-        grid-template-rows: 270px 400px;
+        grid-template-rows: 315px 400px;
         grid-template-areas:
             "er dog re"
             "em pool me";
@@ -1473,7 +1468,7 @@ body#playground {
     #inner-pool img {
         height: 100%;
         width: 100%;
-        border-radius: 50%;
+        border: 25px solid white
     }
     .intro-text-box, .intro-text-box1 {
         font-size: 2rem;
@@ -1507,11 +1502,11 @@ body#playground {
             "questions"
             "foot";
     }
-    .container-1, .container-2 {
+    .container-1, .container-2, .container-3, .container-4{
           width: 100%;
           height: 100%;
     }
-      .container-1 p, .container-2 p {
+      .container-1 p, .container-2 p, .container-3 p, .container-4 p {
         font-size: 1.1em;
     }
     div.topnav {
@@ -1534,11 +1529,11 @@ body#playground {
         "questions"
         "foot";
 }
-    .container-1, .container-2 {
+    .container-1, .container-2, .container-3, .container-4 {
         width: 100%;
         height: 100%;
     }
-      .container-1 p, .container-2 p {
+      .container-1 p, .container-2 p, .container-3 p, .container-4 p {
         font-size: 1.1em;
     }
     div.topnav {
@@ -1547,7 +1542,7 @@ body#playground {
       div.g-pinscher#g-p {
         display: grid;
         grid-template-columns: 5px 1fr 5px;
-        grid-template-rows: 420px 600px;
+        grid-template-rows: 475px 600px;
         grid-template-areas: 
                             "er dog re"
                             "em pool me";
