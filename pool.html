@@ -2,154 +2,174 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }</script>
-    <title>Pup Power</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+  <title>Pup Power</title>
 </head>
 
-<body  id="pool-body">
-    <header>
-        <nav class="nav">
-       
-            <ul id="menu" class="menu-p"><span id="logo">PUP POWER  <i class="fa-solid fa-paw"></i></span>
-                <li class="home"><a href="index.html">HOME</a></li>
-                <li class="pool"><a href="pool.html">POOL</a></li>
-                <li class="playground"><a href="playground.html">PLAYGROUND</a></li>
-                <li class="gym"><a href="gym.html">GYM</a></li>
-                <li class="bar"><a href="bar.html">BAR</a></li>
-            </ul>
-        </nav>
-<!-- Top Navigation Hamburger Menu -->
+<body id="pool-body">
+  <header>
+    <nav class="nav">
+
+      <ul id="menu" class="menu-p"><span id="logo">PUP POWER <i class="fa-solid fa-paw"></i></span>
+        <li class="home"><a href="index.html">HOME</a></li>
+        <li class="pool"><a href="pool.html">POOL</a></li>
+        <li class="playground"><a href="playground.html">PLAYGROUND</a></li>
+        <li class="gym"><a href="gym.html">GYM</a></li>
+        <li class="bar"><a href="bar.html">BAR</a></li>
+      </ul>
+    </nav>
+    <!-- Top Navigation Hamburger Menu -->
     <div class="topnav" id="topnav">
-    <a href="index.html" class="active" id="logo-mobile">PUP POWER<i class="fa-solid fa-paw"></i></a>
-    <div id="myLinks">
-    <a href="index.html">HOME</a>
-    <a href="pool.html">POOL</a>
-      <a href="playground.html">PLAYGROUND</a>
-      <a href="gym.html">GYM</a>
-      <a href="bar.html">BAR</a>
+      <a href="index.html" class="active" id="logo-mobile">PUP POWER<i class="fa-solid fa-paw"></i></a>
+      <div id="myLinks">
+        <a href="index.html">HOME</a>
+        <a href="pool.html">POOL</a>
+        <a href="playground.html">PLAYGROUND</a>
+        <a href="gym.html">GYM</a>
+        <a href="bar.html">BAR</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
+  </header>
+  <h2 class="intro-text-box1">Hello Swimmers, Welcome to our pool!</h2>
+  <div id="offer">
+    <h3 class="march-title">MARCH OFFER</h3>
+    <p class="march-p">Become a <strong>GOLD</strong> member for only <strong>€50</strong> a month!
+      Enjoy all benefits of our gold members for half a price this March.
+      This promotion includes usage of pool and the bar only. T&C's apply.</p>
+  </div>
+  <div class="container-p">
+    <!-- Table -->
+    <table class="time-table">
+      <thead>
+        <tr>
+          <th>DAYS</th>
+          <th>OPENING HOURS</th>
+          <th>COACH</th>
+          <th>AGE-GROUP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="unpair">
+          <td>Monday</td>
+          <td>08:00 - 21:00</td>
+          <td>Katherine Gray</td>
+          <td>0 - 3 years</td>
+        </tr>
+        <tr class="pair">
+          <td>Tuesday</td>
+          <td>08:00 - 21:00</td>
+          <td>David Tank</td>
+          <td>3 - 7 years</td>
+        </tr>
+        <tr class="unpair">
+          <td>Wednesday</td>
+          <td>08:00 - 21:00</td>
+          <td>Corinne Mills</td>
+          <td>7 - 16 years</td>
+        </tr>
+        <tr class="pair">
+          <td>Thursday</td>
+          <td>08:00 - 18:00</td>
+          <td>Katherine Gray</td>
+          <td>0 - 3 years</td>
+        </tr>
+        <tr class="unpair">
+          <td>Friday</td>
+          <td>08:00 - 18:00</td>
+          <td>Corinne Mills</td>
+          <td>7 - 16 years</td>
+        </tr>
+        <tr class="pair">
+          <td>Saturday</td>
+          <td>08:00 - 18:00</td>
+          <td>David Tank</td>
+          <td>3 - 7 years</td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <p class="why-swim">Swimming is one of the best, most complete forms of exercise for your dog. Just one minute of
+        swimming equates to four minutes of running! It provides numerous health benefits, including strengthening the
+        heart and lungs, decreasing inflammation, increasing metabolism, and improving circulation which helps keep the
+        skin and coat healthy. Plus, moving their limbs against the resistance of the water uses every major muscle
+        group, improving overall tone and strength. All this adds up to a healthy, happy dog who can run, play, and have
+        fun for longer with less risk of injury.Swimming in warm water can be an excellent form of therapeutic exercise
+        for dogs, aiding in the recovery process by strengthening joints, facilitating circulation, and helping fortify
+        muscles. </p>
+    </div>
+  </div>
+  <div id="swim">
+    <h3 class="march-title">START SWIMMING</h3>
+    <p class="pool-paragraph">Join us and get exclusive offers every week.<br>Click <strong>"Join Now"</strong> button
+      bellow and start your membership now!</p>
+  </div>
+  <div class="container-boxer">
+    <a href="form.html" class="form-btn">
+      JOIN NOW
     </a>
   </div>
-    </header>
-    <h2 class="intro-text-box1">Hello Swimmers, Welcome to our pool!</h2>
-    <div id="offer">
-      <h3 class="march-title">MARCH OFFER</h3> 
-      <p class="march-p">Become a <strong>GOLD</strong> member for only <strong>€50</strong> a month!
-       Enjoy all benefits of our gold members for half a price this March. 
-       This promotion includes usage of pool and the bar only. T&C's apply.</p></div>
-    <div class="container-p">
-<!-- Table -->
-         <table class="time-table">
-        <thead>
-            <tr>
-                <th>DAYS</th>
-              <th>OPENING HOURS</th>
-              <th>COACH</th>
-              <th>AGE-GROUP</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="unpair">
-              <td>Monday</td>
-              <td>08:00 - 21:00</td>
-              <td>Katherine Gray</td>
-              <td>0 - 3 years</td>
-            </tr>
-            <tr class="pair">
-                <td>Tuesday</td>
-                <td>08:00 - 21:00</td>
-              <td>David Tank</td>
-              <td>3 - 7 years</td>
-            </tr>
-            <tr class="unpair">
-                <td>Wednesday</td>
-                <td>08:00 - 21:00</td>
-              <td>Corinne Mills</td>
-              <td>7 - 16 years</td>
-            </tr>
-            <tr class="pair">
-                <td>Thursday</td>
-                <td>08:00 - 18:00</td>
-              <td>Katherine Gray</td>
-              <td>0 - 3 years</td>
-            </tr>
-            <tr class="unpair">
-                <td>Friday</td>
-                <td>08:00 - 18:00</td>
-                <td>Corinne Mills</td>
-                <td>7 - 16 years</td>
-            </tr>
-            <tr class="pair">
-                <td>Saturday</td>
-                <td>08:00 - 18:00</td>
-                <td>David Tank</td>
-                <td>3 - 7 years</td>
-            </tr>
-        </tbody>
-          </table>
-          <div>
-            <p class="why-swim">Swimming is one of the best, most complete forms of exercise for your dog. Just one minute of swimming equates to four minutes of running! It provides numerous health benefits, including strengthening the heart and lungs, decreasing inflammation, increasing metabolism, and improving circulation which helps keep the skin and coat healthy. Plus, moving their limbs against the resistance of the water uses every major muscle group, improving overall tone and strength. All this adds up to a healthy, happy dog who can run, play, and have fun for longer with less risk of injury.Swimming in warm water can be an excellent form of therapeutic exercise for dogs, aiding in the recovery process by strengthening joints, facilitating circulation, and helping fortify muscles. </p>
-          </div>
-    </div>
-    <div id="swim">
-      <h3 class="march-title">START SWIMMING</h3>
-      <p class="pool-paragraph">Join us and get exclusive offers every week.<br>Click <strong>"Join Now"</strong> button bellow and start your membership now!</p>
-    </div>
-    <div class="container-boxer">
-       <a href="form.html"class="form-btn">
-            JOIN NOW
-        </a>
-    </div>
-     <div class="staff">
-        <h3 class="staff-header">MEET YOUR SWIMMING COACHES!</h3>
+  <div class="staff">
+    <h3 class="staff-header">MEET YOUR SWIMMING COACHES!</h3>
     <div class="container-s">
-        <img src="assets/images/corinne-img.jpg" alt="Waist up portrait of a black haired woman smiling to the camera with crossed arms" class="corinne">
-        <span id="name">CORINNE</span>
+      <img src="assets/images/corinne-img.jpg"
+        alt="Waist up portrait of a black haired woman smiling to the camera with crossed arms" class="corinne">
+      <span id="name">CORINNE</span>
     </div>
-        <p class="staff-c">Corinne is a certified swimming coach, active member of the International Swimming Foundation and the Swimming Institute at St.James Hospital.She describes herself as a motivational and easy going coach with the purpose to guide and teach while having fun with her clients.  
-        </p>
+    <p class="staff-c">Corinne is a certified swimming coach, active member of the International Swimming Foundation and
+      the Swimming Institute at St.James Hospital.She describes herself as a motivational and easy going coach with the
+      purpose to guide and teach while having fun with her clients.
+    </p>
     <div class="container-s">
-        <img src="assets/images/katherine-img.jpg" alt="Waist up portrait of a brown haired woman smiling to the camera with crossed arms" class="katherine">
-        <span id="name">KATHERINE</span>
+      <img src="assets/images/katherine-img.jpg"
+        alt="Waist up portrait of a brown haired woman smiling to the camera with crossed arms" class="katherine">
+      <span id="name">KATHERINE</span>
     </div>
-        <p class="staff-k">
-          Katherine is a graduate of The Veterinary Medicine College, Dublin University August 2015. She uses her knowledge to help dogs overcome their fear of water. Katherine's been in the swimming industry for 4 years.
-        </p>
-      <div class="container-s">
-        <img src="assets/images/david-img.jpg" alt="Waist up portrait of a man smiling to the camera with crossed arms" class="david">
-        <span id="name">DAVID</span>
-      </div>
-        <p class="staff-d">
-          David is from Cork, Ireland. After earning an B.A. in Science, he worked at the Ocean World Exposition in Kerry where he was a leading scientist. Since the start of the pandemic, he decided to join our team. David has been a Swimming Coach at Pup Power since 2019.
-        </p>
+    <p class="staff-k">
+      Katherine is a graduate of The Veterinary Medicine College, Dublin University August 2015. She uses her knowledge
+      to help dogs overcome their fear of water. Katherine's been in the swimming industry for 4 years.
+    </p>
+    <div class="container-s">
+      <img src="assets/images/david-img.jpg" alt="Waist up portrait of a man smiling to the camera with crossed arms"
+        class="david">
+      <span id="name">DAVID</span>
     </div>
-    <div class="g-pinscher" id="g-p">
-      <div id="inner-pool"><img src="assets/images/inner-pool.jpg" alt="Inner pool with chairs">
-      <p>P.S. Our inner pools are open!</p></div>
+    <p class="staff-d">
+      David is from Cork, Ireland. After earning an B.A. in Science, he worked at the Ocean World Exposition in Kerry
+      where he was a leading scientist. Since the start of the pandemic, he decided to join our team. David has been a
+      Swimming Coach at Pup Power since 2019.
+    </p>
+  </div>
+  <div class="g-pinscher" id="g-p">
+    <div id="inner-pool"><img src="assets/images/inner-pool.jpg" alt="Inner pool with chairs">
+      <p>P.S. Our inner pools are open!</p>
     </div>
-    <footer id="footer">
-        <ul class="footer" id="footer-p">CONTACT US!
-            <li>Email: customer-service@puppower.com</li>
-            <li>Tel: +353 83 1234 567</li>
-            <li>Address: 175 Herbert Street, Dublin 1, Ireland</li>
-            <li class="rights">© 2022 PUP POWER | All Rights Reserved</li>
-        </ul>
-    </footer>
-    <script src="https://kit.fontawesome.com/968597752e.js" crossorigin="anonymous"></script>
+  </div>
+  <footer id="footer">
+    <ul class="footer" id="footer-p">CONTACT US!
+      <li>Email: customer-service@puppower.com</li>
+      <li>Tel: +353 83 1234 567</li>
+      <li>Address: 175 Herbert Street, Dublin 1, Ireland</li>
+      <li class="rights">© 2022 PUP POWER | All Rights Reserved</li>
+    </ul>
+  </footer>
+  <script src="https://kit.fontawesome.com/968597752e.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
