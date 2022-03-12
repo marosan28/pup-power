@@ -78,6 +78,13 @@ indoor and outdoor pools,
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+1. [ShutterStock:](https://shutterstock.com/)
+    - Shutterstock was used to edit the main dog illustrations on the site.
+1. [TinyPNG:](https://tinypng.com/)
+    - TinyPNG was used to compress images throught the website.
+
+
+
     ## Testing
 
 The W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
