@@ -34,3 +34,15 @@ indoor and outdoor pools,
         1. As a Frequent User, I want to check to see current monthly offer.
         2. As a Frequent User, I want to check classes schedule every week.
         3. As a Frequent User, I want to register so I can receive all offers available.
+-   ### Design
+    -   #### Colour Scheme
+        -   The colour pallete used on this website is: 
+
+            ![App Screenshot]()
+
+    -   #### Typography
+        -   The Hubballi font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Hubballi is used because of the roundness of letters. Round shapes give the content softness, which makes a website appeal friendly and inviting.
+    -   #### Imagery
+        -   The main images are illustrations of dogs which are very prominent on a light background.
+        
+
