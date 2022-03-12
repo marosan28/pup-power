@@ -482,7 +482,7 @@ div.container-s {
     text-align: center;
 }
 
-#name,
+.name,
 #inner-pool p {
     display: block;
     font-size: 1.1rem;
@@ -600,17 +600,6 @@ label {
 #main-form {
     flex-grow: 1;
 }
-
-#form {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 700px auto;
-    grid-template-areas:
-        "hd"
-        "form"
-        "foot";
-}
-
 .form-btn {
     background-color: #90BEC0;
     border: 2px solid black;
@@ -1067,7 +1056,7 @@ body#bar {
         grid-area: t;
     }
 
-    #name {
+    .name {
         font-size: 1em;
     }
 
@@ -2140,7 +2129,7 @@ body#bar {
             "f";
     }
 
-    #name,
+    .name,
     #inner-pool p {
         font-size: 1em;
         margin-right: 20px;

@@ -7,20 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-  </script>
   <title>Pup Power</title>
   <meta name="description" content="Dog Leisure centre in Dublin, including dog gym, dog pool, dog playground and dog bar">
 </head>
-
 <body class="background">
   <header>
     <nav class="nav">
@@ -47,7 +36,6 @@
       </a>
     </div>
   </header>
-  <body id="form">
     <main id="main-form">
       <form action="#" method="post">
         <fieldset class="join-form">
@@ -83,7 +71,7 @@
           </div>
           <div class="fieldinput">
             <label for="gender">Select Gender:</label>
-            <select>
+            <select name="gender" id="gender">
               <option value="select">Select</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
