@@ -3,8 +3,8 @@
 
 Pup Power is a website made for a Dog Leisure Centre based in 
 Dublin, Ireland.
-It's a first ever Dog-Only Leisure Centre. The centre is hoping of encouraging pet owners to better care about their dogs health.
-Facilities include indoor and outdoor pools, 100 acre playground with all the commodities, large gym and a bar.
+It's a first ever Dog-Only Leisure Centre. The centre is hoping of encouraging pet owners to taking better care of their dogs health.
+Facilities include indoor and outdoor pools, 100 acre playground with all the commodities, large gym and a bar which serves food and drinks.
 [View the live project here.](https://marosan28.github.io/pup-power/)
 
 ![App Screenshot](wireframes/images/responsive-img.jpg)
@@ -35,7 +35,7 @@ Facilities include indoor and outdoor pools, 100 acre playground with all the co
     -   #### Colour Scheme
         -   The colour pallete used on this website is: 
 
-            ![App Screenshot]()
+            ![App Screenshot](wireframes/images/pallete-img.png)
 
     -   #### Typography
         -   The Hubballi font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Hubballi is used because of the roundness of letters. Round shapes give the content softness, which makes a website appeal friendly and inviting.
@@ -86,8 +86,8 @@ Facilities include indoor and outdoor pools, 100 acre playground with all the co
 
 The W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results]()
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results]()
 
 ### Testing User Stories from User Experience (UX) Section
 
