@@ -783,6 +783,8 @@ body#playground {
 
 img.swing {
     grid-area: swing;
+    width: 100%;
+    height: 100%;
 }
 
 img.bench {
@@ -800,7 +802,7 @@ img.bench {
     margin: 20px 0 20px 0;
 }
 
-.questions h4 {
+.questions h3 {
     padding: 7px;
     font-size: 1.1em;
     background-color: #90BEC0;
@@ -1178,7 +1180,7 @@ body#bar {
 
     }
 
-    .questions h4 {
+    .questions h3 {
         display: block;
         font-size: 1em;
     }
@@ -1390,7 +1392,7 @@ body#bar {
         font-size: 1em;
         border: 1px solid;
     }
-    .questions h4 {
+    .questions h3 {
     display: block;
     font-size: 1em;
     }
