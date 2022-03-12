@@ -346,6 +346,7 @@ footer {
     letter-spacing: 4px;
     margin: 0 20px 0 20px;
     border: 1px solid black;
+    padding: 15px;
 }
 
 .pool-info {
@@ -756,7 +757,7 @@ body#playground {
     align-content: center;
     justify-content: center;
     flex-wrap: nowrap;
-    margin-bottom: 20px;
+    margin: 20px;
     background-color: white;
 }
 
@@ -865,6 +866,7 @@ body#gym {
     font-family: 'Playfair Display SC';
     border: 1px solid;
     text-align: center;
+    position: relative;
 }
 
 .gym-box1 {
@@ -901,7 +903,7 @@ body#gym {
     border: 1px solid;
     margin: 20px;
     font-size: 1.1em;
-    padding: 5px;
+    padding: 15px;
     background-color: white;
 }
 
@@ -909,7 +911,7 @@ body#gym {
     font-size: 1.1em;
     margin: 20px;
     border: 1px solid;
-    padding: 5px;
+    padding: 15px;
     background-color: white;
 }
 
@@ -927,7 +929,7 @@ body#gym {
 table.classes-table {
     font-size: 1.3em;
     grid-area: table;
-    margin-top: 50px;
+    margin: 20px;
 }
 
 /*----------------------------------------- Bar -----------------------------------------*/
@@ -1175,7 +1177,7 @@ div.bar-container {
 
     body#playground {
         grid-template-columns: auto;
-        grid-template-rows: auto 80px 300px 50px auto auto;
+        grid-template-rows: auto 80px 400px 50px auto auto;
         grid-template-areas:
             "hd"
             "text"
@@ -1202,7 +1204,7 @@ div.bar-container {
 
     .questions h4 {
         display: block;
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     img.swing {
@@ -1231,7 +1233,7 @@ div.bar-container {
     .gym-box1 {
         font-size: 1rem;
         width: 280px;
-        transform: translateY(-10%);
+        transform: inherit;
         padding: 10px;
     }
 
@@ -1240,7 +1242,7 @@ div.bar-container {
     }
 
     table.classes-table {
-        font-size: 0.75em;
+        font-size: 1em;
     }
 
     .text-gym1,
@@ -1251,13 +1253,13 @@ div.bar-container {
     }
 
     .weight img {
-        width: 35%;
+        width: 30%;
     }
 
     body#gym {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 110px 400px auto;
+        grid-template-rows: auto 130px 450px auto;
         grid-template-areas:
             "hd"
             "text"
@@ -1274,6 +1276,26 @@ div.bar-container {
 
         font-size: 1em;
        
+    }
+    .container-play {
+        background-image: url("../images/pitbull-img.png");
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-area: img1;
+        display: grid;
+        grid-template-columns: 25% auto 20%;
+        grid-template-rows: auto 23% 20%;
+        grid-template-areas:
+            "empty1 photo empty2"
+            "empty3 text empty4"
+            "empty5 empty6 empty7";
+    }
+    .container-play p {
+        max-width: 250px;
     }
 }
 
@@ -1358,6 +1380,9 @@ div.bar-container {
     .container-play p, p.march-p, .why-swim{
         font-size: 1em;
     }
+    .container-play p {
+        max-width: 250px;
+    }
 .form-btn {
     font-size: 1em;
 }
@@ -1389,20 +1414,73 @@ div.bar-container {
     }
 
     .p-reason div {
-        font-size: .8em;
+        font-size: 1em;
+        border: 1px solid;
+    }
+    .questions h4 {
+    display: block;
+    font-size: 1em;
     }
 
     .p-reason {
         flex-wrap: wrap;
+        margin: 20px;
     }
 
     img.swing,
     img.bench {
-        width: 70%;
+        width: 80%;
         border: 25px solid white;
     }
     .container-play {
-        grid-template-columns: 15% auto 15%;
+            background-image: url("../images/pitbull-img.png");
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            grid-area: img1;
+            display: grid;
+            grid-template-columns: 33% auto 32%;
+            grid-template-rows: auto 23% 20%;
+            grid-template-areas:
+                "empty1 photo empty2"
+                "empty3 text empty4"
+                "empty5 empty6 empty7";
+    }
+    .gym-container img {
+    margin: 0 auto;
+    display: flex;
+    border-radius: 10%;
+    border: 15px solid white;
+    width: 80%;
+    }
+    .gym-box, .gym-box1 {
+        font-size: 1rem;
+        width: 280px;
+        transform: inherit;
+        padding: 10px;
+    }
+    .weight img {
+        width: 30%;
+    }
+    body#gym {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 170px 550px auto;
+        grid-template-areas:
+            "hd"
+            "text"
+            "img1"
+            "img2"
+            "img3"
+            "gym"
+            "img"
+            "table"
+            "dog"
+            "foot";
+    
     }
 }
 
@@ -1543,6 +1621,8 @@ div.bar-container {
 
     .container-play p {
         font-size: 1.1em;
+    }
+    .container-play {
         grid-template-columns: 15% auto 15%;
     }
 
@@ -1844,6 +1924,8 @@ div.bar-container {
 
     .container-play p {
         font-size: 1.6em;
+    }
+    .container-play {
         grid-template-columns: 15% auto 15%;
     }
 }
