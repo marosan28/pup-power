@@ -119,9 +119,8 @@ li a:hover {
 }
 
 #logo-mobile {
-    font-size: 17px;
+    font-size: 1.1em;
     font-family: Playfair Display SC, sans-serif;
-
     letter-spacing: 5px;
     color: black;
 }
@@ -365,6 +364,7 @@ p.march-p,
     margin: 0 20px 0 20px;
     border: solid 1px black;
     background-color: white;
+    padding: 15px;
 }
 
 .container-boxer {
@@ -388,19 +388,17 @@ p.march-p,
 
 /* Table */
 table.time-table {
-
     min-width: 200px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     grid-area: img2;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-
+    margin-top: 70px;
 }
 
 table.time-table tr,
 .table.classes-table tr {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .time-table thead tr,
@@ -442,6 +440,8 @@ p.staff-k,
 p.staff-d {
     padding-block: 20px;
     background-color: white;
+    margin-left: 20px;
+    padding: 20px;
 }
 
 .staff {
@@ -556,6 +556,7 @@ div.g-pinscher#g-p {
 #inner-pool p {
     border-top-right-radius: revert;
     text-align: center;
+    padding: 15px;
 }
 
 #inner-pool img {
@@ -574,6 +575,7 @@ div.g-pinscher#g-p {
     margin: 0 20px 0 20px;
     border: solid 1px black;
     background-color: white;
+    padding: 15px;
 }
 
 #swim {
@@ -1064,8 +1066,9 @@ div.bar-container {
     .staff-c,
     .staff-k,
     .staff-d {
-        font-size: .8em;
-        border-radius: 1%;
+        font-size: 1em;
+    border-radius: 1%;
+    padding: 15px;
     }
 
     img.corinne {
@@ -1084,8 +1087,11 @@ div.bar-container {
     }
 
     .staff-header {
-        font-size: .8em;
-        grid-area: t;
+        font-size: 1em;
+    grid-area: t;
+    }
+    #name {
+        font-size: 1em;
     }
 
     .nav #menu {
@@ -1137,18 +1143,19 @@ div.bar-container {
     }
 
     .form-btn {
-        font-size: small;
+        font-size: 1em;
     }
 
     .container-p p,
     .march-title,
     .container-play p,
     .playground-title {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     table.time-table {
-        font-size: .8em;
+        font-size: 1em;
+        margin: 20px;
     }
 
     .time-table th {
@@ -1162,7 +1169,7 @@ div.bar-container {
 
     p.march-p,
     p.pool-paragraph {
-        font-size: .8em;
+        font-size: 1em;
     }
 
     body#playground {
@@ -1281,7 +1288,7 @@ div.bar-container {
     .staff-c,
     .staff-k,
     .staff-d {
-        font-size: .8em;
+        font-size: 1em;
         border-radius: 2%;
     }
 
@@ -1292,7 +1299,7 @@ div.bar-container {
     }
 
     .staff-header {
-        font-size: .8em;
+        font-size: 1em;
     }
 
     .nav #menu {
@@ -1317,7 +1324,7 @@ div.bar-container {
     }
 
     .footer {
-        font-size: .8em;
+        font-size: 1em;
     }
 
     .pool-text,
@@ -1339,12 +1346,14 @@ div.bar-container {
     .container-p p,
     .march-title,
     .playground-title,
-    .container-play p {
-        font-size: 0.8em;
+    .container-play p, p.march-p, .why-swim{
+        font-size: 1em;
     }
-
+.form-btn {
+    font-size: 1em;
+}
     table.time-table {
-        font-size: .9em;
+        font-size: 1em;
     }
 
     .time-table th {
@@ -1424,8 +1433,9 @@ div.bar-container {
     .staff-c,
     .staff-k,
     .staff-d {
-        font-size: 1em;
+        font-size: 1.1em;
         border-radius: 2%;
+        padding: 15px;
     }
 
     img.corinne,
@@ -1435,7 +1445,7 @@ div.bar-container {
     }
 
     .staff-header {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     .container-1 p,
@@ -1498,13 +1508,13 @@ div.bar-container {
     }
 
     .form-btn {
-        font-size: medium;
+        font-size: 1.1em;
     }
 
     .container-p p,
     .march-title,
     .playground-title {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     table.time-table {
@@ -1573,7 +1583,7 @@ div.bar-container {
     body#pool-body {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto 110px 500px auto;
+        grid-template-rows: auto auto 150px auto;
         grid-template-areas:
             "hd hd"
             "text text"
@@ -1640,7 +1650,6 @@ div.bar-container {
     }
 
     .form-btn {
-        font-size: medium;
         top: 70%;
     }
 
@@ -1731,11 +1740,10 @@ div.bar-container {
     }
 
     body#pool-body {
-        grid-template-rows: 110px 80px 110px 500px 1200px auto;
+        grid-template-rows: 110px 80px 160px 500px 1200px auto;
     }
 
     .form-btn {
-        font-size: 1.2em;
         top: 80%;
     }
 
@@ -1751,8 +1759,8 @@ div.bar-container {
     }
 
     table.time-table {
-        margin: 20px auto;
-        font-size: 1em;
+        margin: 70px auto;
+        font-size: 1.1em;
     }
 
     .time-table th {
@@ -1778,8 +1786,10 @@ div.bar-container {
     .staff-c,
     .staff-k,
     .staff-d {
-        font-size: 1em;
-        border-radius: 2%;
+       
+    font-size: 1.1em;
+    border-radius: 2%;
+
     }
 
     .staff {
@@ -1896,9 +1906,9 @@ div.bar-container {
 /* Pool Page Media Query */
 @media screen and (min-width: 1350px) and (max-width: 2560px) {
     body#pool-body {
-        grid-template-rows: 110px 80px 110px 700px 1200px auto;
-        grid-template-columns: 1fr 1fr;
-    }
+        grid-template-rows: 110px 80px 200px 700px 1200px auto;
+    grid-template-columns: 1fr 1fr;
+}
 
     .form-btn {
         left: 51%;
@@ -1912,7 +1922,7 @@ div.bar-container {
     body#pool-body {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto 90px 90px 300px 460px 1350px auto 480px;
+        grid-template-rows: auto auto 125px 150px 300px 560px 1000px 450px 600px;
         grid-template-areas:
             "hd"
             "text"
@@ -1939,10 +1949,16 @@ div.bar-container {
             "f";
     }
 
-    #name {
-        font-size: .8em;
+    #name, #inner-pool p {
+        font-size: 1em;
+        margin-right: 20px;
     }
-
+    
+p.staff-c,
+p.staff-k,
+p.staff-d {
+    margin: 20px;
+}
     #inner-pool {
         grid-area: img4;
     }
@@ -1956,12 +1972,12 @@ div.bar-container {
     div.g-pinscher#g-p {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 50px 100px;
+        grid-template-rows: 100px 100px;
         grid-template-areas:
             "er dog re"
             "em pool me";
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         grid-area: img5;
         margin: 10px auto;
     }
@@ -1971,7 +1987,7 @@ div.bar-container {
     body#pool-body {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto 90px 90px 300px auto 700px auto 450px;
+        grid-template-rows: auto auto 115px 105px 300px auto 700px auto 600px;
         grid-template-areas:
             "hd"
             "text"
@@ -1999,15 +2015,15 @@ div.bar-container {
     div.g-pinscher#g-p {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 50px 100px;
+        grid-template-rows: 100px 100px;
         grid-template-areas:
             "er dog re"
             "em pool me";
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         grid-area: img5;
         margin: 10px auto;
-    }
+}
 }
 
 /* Form media queries*/
