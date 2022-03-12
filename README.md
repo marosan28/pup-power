@@ -78,6 +78,31 @@ indoor and outdoor pools,
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+    ## Testing
+
+The W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+
+### Testing User Stories from User Experience (UX) Section
+
+-   #### First Time Visitor Goals
+
+  - As a First Time Visitor, I want to easily understand the main purpose of the site.
+
+        1. When entering the site, users are immediately greeted with an easily readable navigation bar which will take them to the page of their choice. 
+        2. There are 4 hero images in the middle of the page, each with a title corresponding to one of the navigation bar buttons.
+        3. The user has two options, click the navigation bar buttons or click one of the titles, each will bring him to the same place.
+
+- As a First Time Visitor, I want to be able to easily navigate throughout the site.
+
+        1. The site has been designed with a clear navigation bar at the top of each page which clearly states what page user is currently on.
+        2. On the form page nav bar is also present so visitor can easily go back to where he was before.
+
+- As a First Time Visitor, I want to look for contact information and address to see where they are located and how to reach out.
+
+        1. On each page at the footer the user can find the contact information including a phone number, address and an email where he can reach out.
 
 
 
