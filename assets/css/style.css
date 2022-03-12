@@ -829,7 +829,7 @@ img.bench {
 body#gym {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 110px 760px auto;
+    grid-template-rows: auto 110px 350px auto;
     grid-template-areas:
         "hd"
         "text"
@@ -861,18 +861,12 @@ body#gym {
     width: 350px;
     border-radius: 2%;
     margin: 20px;
-    transform: translateY(-180%);
     padding: 15px;
     font-family: 'Playfair Display SC';
     border: 1px solid;
     text-align: center;
     position: relative;
 }
-
-.gym-box1 {
-    transform: translate(400%, -450%);
-}
-
 .gym-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1259,7 +1253,7 @@ div.bar-container {
     body#gym {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 130px 450px auto;
+        grid-template-rows: auto 130px auto;
         grid-template-areas:
             "hd"
             "text"
@@ -1468,7 +1462,7 @@ div.bar-container {
     body#gym {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 170px 550px auto;
+        grid-template-rows: auto 170px auto auto;
         grid-template-areas:
             "hd"
             "text"
@@ -1480,10 +1474,8 @@ div.bar-container {
             "table"
             "dog"
             "foot";
-    
-    }
 }
-
+}
 @media screen and (min-width: 700px) and (max-width: 900px) {
     body.background {
         display: grid;
@@ -1636,6 +1628,23 @@ div.bar-container {
         border: 25px solid white;
 
     }
+    .gym-container img {
+        margin: 0 auto;
+        display: flex;
+        border-radius: 10%;
+        border: 15px solid white;
+        width: 80%;
+    }
+    .gym-box, .gym-box1 {
+        font-size: 1rem;
+        width: 280px;
+        transform: inherit;
+        padding: 10px;
+    }
+body#gym {
+   
+        grid-template-rows: auto 180px auto auto;
+}
 }
 
 @media screen and (min-width: 900px) and (max-width: 980px) {
@@ -1815,6 +1824,23 @@ div.bar-container {
     div.container-play {
         grid-template-columns: 15% auto 15%;
     }
+    .gym-container img {
+        margin: 0 auto;
+        display: flex;
+        border-radius: 10%;
+        border: 15px solid white;
+        width: 80%;
+    }
+    .gym-box, .gym-box1 {
+        font-size: 1rem;
+        width: 280px;
+        transform: inherit;
+        padding: 10px;
+    }
+body#gym {
+   
+        grid-template-rows: auto 180px auto auto;
+}
 }
 
 @media screen and (min-width: 980px) and (max-width: 1350px) {
@@ -1928,6 +1954,25 @@ div.bar-container {
     .container-play {
         grid-template-columns: 15% auto 15%;
     }
+    .gym-container img {
+        margin: 0 auto;
+        display: flex;
+        border-radius: 10%;
+        border: 15px solid white;
+        width: 80%;
+    }
+    .gym-box, .gym-box1 {
+        
+            font-size: 1.3rem;
+            width: 280px;
+            transform: inherit;
+            padding: 10px;
+
+    }
+body#gym {
+   
+        grid-template-rows: auto 180px auto auto;
+}
 }
 
 @media (min-width: 1670px) and (max-width: 1850px) {
