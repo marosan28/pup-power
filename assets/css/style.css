@@ -929,26 +929,13 @@ table.classes-table {
 /*----------------------------------------- Bar -----------------------------------------*/
 body#bar {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 110px 760px auto;
+    grid-template-columns: 28% auto 26%;
+    grid-template-rows: 110px 80px 800px auto;
     grid-template-areas:
-        "hd"
-        "text"
-        "place1"
-        "place2"
-        "place3"
-        "bar"
-        "place"
-        "dog"
-        "foot";
-}
-
-div.bar-container {
-    grid-area: place1;
-    display: grid;
-    grid-template-columns: 450px auto 450px;
-    grid-template-rows: 1fr;
-    grid-template-areas: "dog1 menu dog2";
+        "hd hd hd"
+        "text text text"
+        "dog1 menu dog2"
+        "foot foot foot";
 }
 
 .food-menu {
@@ -964,10 +951,10 @@ div.bar-container {
 #food {
     grid-area: menu;
     list-style-type: none;
-    position: absolute;
-    transform: translate(75%, 34%);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.7em;
+    position: relative;
+    top: 170px;
 }
 
 .menu-title {
@@ -977,13 +964,10 @@ div.bar-container {
 .dog-left {
     background-image: url("../images/rottweiler-img.png");
     width: 100%;
-    position: relative;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     grid-area: dog1;
-    top: -30%;
-    margin-left: 100px;
 }
 
 .dog-left p {
@@ -993,30 +977,28 @@ div.bar-container {
     justify-content: center;
     text-align: left;
     font-family: Hubballi, sans-serif;
-    font-size: 1.2em;
-    top: 480px;
+    font-size: 1.7em;
+    top: 520px;
 }
 
 .dog-right {
     background-image: url("../images/pug-img.png");
     width: 100%;
-    position: relative;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     grid-area: dog2;
-    right: 100px;
 }
 
 .dog-right p {
     position: relative;
     display: grid;
-    grid-template-columns: 62%;
+    grid-template-columns: 68%;
     justify-content: center;
     text-align: left;
     font-family: Hubballi, sans-serif;
-    font-size: 1.2em;
-    top: 470px;
+    font-size: 1.7em;
+    top: 490px;
 }
 
 .rights {
@@ -1347,11 +1329,9 @@ div.bar-container {
     .intro-text-box1 {
         font-size: 1.3em;
     }
-
     .footer {
         font-size: 1em;
     }
-
     .pool-text,
     .playground-text,
     .gym-text,
@@ -1406,7 +1386,6 @@ div.bar-container {
             "questions"
             "foot";
     }
-
     .p-reason div {
         font-size: 1em;
         border: 1px solid;
@@ -1645,6 +1624,12 @@ body#gym {
    
         grid-template-rows: auto 180px auto auto;
 }
+.container-play {
+    grid-template-columns: 15% auto 15%;
+}
+.dog-right p, .dog-left p {
+    font-size: 1.4em;
+}
 }
 
 @media screen and (min-width: 900px) and (max-width: 980px) {
@@ -1841,6 +1826,12 @@ body#gym {
    
         grid-template-rows: auto 180px auto auto;
 }
+.container-play {
+    grid-template-columns: 15% auto 15%;
+}
+.dog-right p, .dog-left p {
+    font-size: 1.4em;
+}
 }
 
 @media screen and (min-width: 980px) and (max-width: 1350px) {
@@ -1973,6 +1964,13 @@ body#gym {
    
         grid-template-rows: auto 180px auto auto;
 }
+.container-play {
+    grid-template-columns: 15% auto 15%;
+}
+.dog-right p, .dog-left p {
+    font-size: 1.4em;
+}
+
 }
 
 @media (min-width: 1670px) and (max-width: 1850px) {
@@ -1998,6 +1996,9 @@ body#gym {
     
 .container-play {
     grid-template-columns: 15% auto 15%;
+}
+.dog-right p, .dog-left p {
+    font-size: 1.4em;
 }
 }
 
