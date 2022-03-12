@@ -816,6 +816,7 @@ img.bench {
     font-size: 1.1em;
     background-color: white;
     border: 1px solid;
+    padding: 15px;
 }
 
 /* -------------------------------------- Gym page --------------------------------------*/
@@ -1188,12 +1189,15 @@ div.bar-container {
     }
 
     .p-reason div {
-        font-size: .8em;
+        font-size: 1em;
         border: 1px solid;
     }
 
     .p-reason {
-        flex-wrap: wrap;
+       
+    flex-wrap: wrap;
+    margin: 20px;
+
     }
 
     .questions h4 {
@@ -1265,6 +1269,11 @@ div.bar-container {
             "table"
             "dog"
             "foot";
+    }
+    .questions p {
+
+        font-size: 1em;
+       
     }
 }
 
