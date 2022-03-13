@@ -115,7 +115,7 @@ The W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were used to va
 ### Acessibility
 - Google Lighthouse
   Website was tested using [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse)
-  
+
   ![App Screenshot](wireframes/images/lighthouse.jpg)
 
 ### Testing User Stories from User Experience (UX) Section
