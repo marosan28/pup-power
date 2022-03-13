@@ -123,10 +123,10 @@ The W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were used to va
 
 -   #### First Time Visitor Goals
 
-  - As a First Time Visitor, I want to easily understand the main purpose of the site.
+     - As a First Time Visitor, I want to easily understand the main purpose of the site.
 
         1. When entering the site, users are immediately greeted with an easily readable navigation bar which will take them to the page of their choice. 
-        2. There are 4 hero images in the middle of the page, each with a title corresponding to one of the navigation bar buttons.
+        2. There are 4 main images in the middle of the page, each with a title corresponding to one of the navigation bar buttons.
         3. The user has two options, click the navigation bar buttons or click one of the titles, each will bring him to the same place.
 
     - As a First Time Visitor, I want to be able to easily navigate throughout the site.
