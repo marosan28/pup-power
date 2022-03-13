@@ -8,8 +8,24 @@ Facilities include indoor and outdoor pools, 100 acre playground with all the co
 [View the live project here.](https://marosan28.github.io/pup-power/)
 
 ![App Screenshot](wireframes/images/responsive-img.jpg)
+## Features
+- __Navigation Bar__
 
- #### First Time Visitor Goals
+  - Featured on all pages, includes links to Home, Playground, Gym and Bar sections.
+    - Navigation bar will allow user to navigate from page to page easily on all devices.
+
+![App Screenshot](wireframes/images/header-img.jpg)
+
+- __Landing Page__
+
+  - The landing page consists of four dog illustrations each above a white box wich represents different pages on a website. Inside the boxes there is a brief explanation of each of the pages.
+    - Each dog has a different box with a clickable name, meaning a user can access the page both from the navigation bar and from the text boxes.
+
+![App Screenshot](wireframes/images/landing-page.jpg)
+    
+
+
+ ## First Time Visitor Goals
 -   ### User stories
 
     -   #### First Time Visitor Goals
