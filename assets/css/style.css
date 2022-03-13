@@ -146,16 +146,14 @@ div.topnav {
     background-color: #ddd;
     color: rgb(102, 102, 102);
 }
-/* Images and text styling - Home Page */
-.container-1 {
-    background-image: url("../images/amstaff-dog-img.webp");
+/*-----------------------------------------  Images and text styling - Home Page -----------------------------------------*/
+.container-1, .container-2, .container-3, .container-4 {
     width: 100%;
     height: 100%;
     position: relative;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    grid-area: img1;
     display: grid;
     grid-template-rows: 60% auto 10%;
     grid-template-columns: minmax(20%, 32%) auto minmax(20%, 32%);
@@ -165,40 +163,23 @@ div.topnav {
         "three-l three-m three-r";
 }
 
-.container-2 {
-    background-image: url("../images/bullmastiff-img.webp");
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-area: img3;
-    display: grid;
-    grid-template-rows: 65% auto 10%;
-    grid-template-columns: minmax(20%, 32%) auto minmax(20%, 32%);
-    grid-template-areas:
-        "one-l2 one-m2 one-r2"
-        "two-l2 two-m2 two-r2"
-        "three-l2 three-m2 three-r2";
+.container-1 {
+    background-image: url("../images/amstaff-dog-img.webp");
+    grid-area: img1;
 }
 
-.container-1 p {
+.container-2 {
+    background-image: url("../images/bullmastiff-img.webp");
+    grid-area: img3;
+}
+
+.text {
     justify-content: center;
     text-align: left;
     font-size: 1.1em;
     grid-area: two-m;
     min-width: 300px;
 }
-
-.container-2 p {
-    justify-content: center;
-    text-align: left;
-    font-size: 1.1em;
-    grid-area: two-m2;
-    min-width: 300px;
-}
-
 .title{
     text-align: center;
     font-family: 'Playfair Display SC', sans-serif;
@@ -206,7 +187,6 @@ div.topnav {
     letter-spacing: 4px;
     margin-bottom: 2%;
     display: block;
-
 }
 
 .title a {
@@ -224,56 +204,12 @@ div.topnav {
 
 .container-3 {
     background-image: url("../images/beagle-img.webp");
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     grid-area: img2;
-    display: grid;
-    grid-template-rows: 60% auto 10%;
-    grid-template-columns: minmax(20%, 32%) auto minmax(20%, 32%);
-    grid-template-areas:
-        "one-l3 one-m3 one-r3"
-        "two-l3 two-m3 two-r3"
-        "three-l3 three-m3 three-r3";
-
-}
-
-.container-3 p {
-    justify-content: center;
-    text-align: left;
-    font-size: 1.1em;
-    grid-area: two-m3;
-    min-width: 300px;
 }
 
 .container-4 {
     background-image: url("../images/golden-img.webp");
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     grid-area: img4;
-    display: grid;
-    grid-template-rows: 60% auto 10%;
-    grid-template-columns: minmax(20%, 32%) auto minmax(20%, 32%);
-    grid-template-areas:
-        "one-l4 one-m4 one-r4"
-        "two-l4 two-m4 two-r4"
-        "three-l4 three-m4 three-r4";
-
-}
-
-.container-4 p {
-    justify-content: center;
-    text-align: left;
-    font-size: 1.1em;
-    grid-area: two-m4;
-    min-width: 300px;
 }
 
 /* Footer */
@@ -574,7 +510,7 @@ form {
     display: table;
     position: relative;
     grid-area: form;
-    margin: 0 auto;
+    margin:20px;
 }
 
 label {
@@ -1223,14 +1159,15 @@ table.classes-table {
     font-size: 1.1em;
     top: 150px;
 }
+/*----------------------------------------- Form -----------------------------------------*/
 input {
     margin-right: 10px;
     font-size: 1.1em;
-    height: 20px;
-    width: 200px;
+    height: 35px;
+    width: inherit;
 }
 .join-form {
-    padding: 40px;
+    padding: 20px;
 }
 #form-title, label, option, select {
     font-size: 1.1em;
@@ -1432,14 +1369,42 @@ input.btn {
     } 
 #food {
     top: 150px;
-}   
+}
+/*----------------------------------------- Form -----------------------------------------*/
+input {
+    margin-right: 10px;
+    font-size: 1.1em;
+    height: 35px;
+    width: inherit;
+}
+.join-form {
+    padding: 40px;
+}
+#form-title, label, option, select {
+    font-size: 1.1em;
+}
+.fieldinput {
+    margin: 10px 0 10px 0;
+    width: 100%;
+}
+#checkbox {
+    width: 20px;
+    top: 4px;
+}
+.btn {
+    margin: 20px 0 20px 0;
+    font-size: 1.1em;
+}
+input.btn {
+    padding: 5px;
+} 
 }
 
 @media screen and (min-width: 700px) and (max-width: 900px) {
     .background {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto 500px 420px 500px auto 280px;
+        grid-template-rows: auto auto repeat(4, 500px) auto;
         grid-template-areas:
             "hd"
             "text"
@@ -1447,8 +1412,7 @@ input.btn {
             "img2"
             "img3"
             "img4"
-            "img5"
-            "auto"
+            "Img5"
             "foot";
     }
 
@@ -1659,7 +1623,7 @@ input.btn {
     #pool-body {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto 150px auto;
+        grid-template-rows: auto auto 200px auto;
         grid-template-areas:
             "hd hd"
             "text text"
@@ -2112,7 +2076,7 @@ input.btn {
     #pool-body {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto 125px 150px 300px 560px 1000px 450px 600px;
+        grid-template-rows: auto auto 155px 170px 300px 560px 1000px 450px 600px;
         grid-template-areas:
             "hd"
             "text"
@@ -2178,20 +2142,20 @@ input.btn {
 @media screen and (min-width:770px) and (max-width:900px) {
     #pool-body {
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto 115px 105px 300px auto 700px auto 600px;
-        grid-template-areas:
-            "hd"
-            "text"
-            "swim"
-            "offer"
-            "img1"
-            "img2"
-            "img3"
-            "img4"
-            "img5"
-            "auto"
-            "foot";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 155px 150px 300px auto 700px auto 600px;
+    grid-template-areas:
+        "hd"
+        "text"
+        "swim"
+        "offer"
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "auto"
+        "foot";
     }
 
     #inner-pool {
@@ -2215,18 +2179,5 @@ input.btn {
         height: 250px;
         grid-area: img5;
         margin: 10px auto;
-    }
-}
-
-/* Form media queries*/
-@media screen and (max-width:500px) {
-    .fieldinput {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    input {
-        border-radius: 5px;
-        width: 250px;
     }
 }
