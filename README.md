@@ -112,6 +112,16 @@ The W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were used to va
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](wireframes/images/html-validator.jpg)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](wireframes/images/css-validator.jpg)
 
+### Acessibility
+- Google Lighthouse
+  Website was tested using [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse)
+  ![App Screenshot](wireframes/images/lighthouse.jpg)
+    
+
+  The **Workspace** results home page are presented below:
+  <img width="642" alt="Screenshot 2022-03-13 at 00 02 39" src="https://user-images.githubusercontent.com/67274642/158039618-9fff50b0-b27b-45c9-9c98-8d213cc6aad2.png">
+  The test shows that the site is slow to load, mainly due to the images sizes.
+
 ### Testing User Stories from User Experience (UX) Section
 
 -   #### First Time Visitor Goals
@@ -164,6 +174,11 @@ The W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were used to va
     3. As a Frequent User, I want to register so I can receive all offers available.
 
         1. At the pool page there is a "Join Now" button, frequent users can sign up to join the Leisure Centre newsletter and therafore receive offers not available to non members.
+
+
+
+
+
 
 ### Further Testing
 
