@@ -4,7 +4,7 @@
 Pup Power is a website made for a Dog Leisure Centre based in 
 Dublin, Ireland.
 It's a first ever Dog-Only Leisure Centre. The centre's main goal is encouraging pet owners of taking better care for their dogs health.
-Facilities include indoor and outdoor pools, 100 acre playground with all the commodities, large gym and a bar which serves food and drinks.
+Facilities include indoor and outdoor pools, 100 acre playground with all the commodities, large gym and a bar which serves both food and drinks.
 [View the live project here.](https://marosan28.github.io/pup-power/)
 
 ![App Screenshot](wireframes/images/responsive-img.jpg)
@@ -62,16 +62,24 @@ Facilities include indoor and outdoor pools, 100 acre playground with all the co
         -   The main images used are illustrations of dogs holding white boxes which were used as text boxes. The illustrations are giving the site uniqueness. They are more visually appealing and they add humor which makes the website appear fun.
          *   ### Wireframes
 
-    -   Home Page Wireframe - [View]()
+    -   Home Page Wireframe - [View](wireframes/images/index-page.jpg)
 
-    -   Mobile Wireframe - [View]()
+    -   Pool Page Wireframe - [View](wireframes/images/pool-page.jpg)
 
-    -   Contact Us Page Wireframe - [View]()
+    -   Playground Page Wireframe - [View](wireframes/images/playground-page.jpg)
+
+    -   Gym Page Wireframe - [View](wireframes/images/gym-page.jpg)
+
+    -   Bar Page Wireframe - [View](wireframes/images/bar-page.jpg)
+
+   
 ## Features
 
 -   Responsive on all device sizes
 
--   Form
+-   Button
+
+-   Logo
 
 ## Technologies Used
 
