@@ -76,10 +76,13 @@ Facilities include indoor and outdoor pools, 100 acre playground with all the co
 ## Features
 
 -   Responsive on all device sizes
+    -The website is made to be responsive on all devices.
 
 -   Button
+    -The website has one join button on pool page which takes the user to a form page.
 
 -   Logo
+    -The Logo of the website is located in the top left corner and will take you to the home page when clicked.
 
 ## Technologies Used
 
@@ -135,5 +138,40 @@ The W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were used to va
 
         1. On each page at the footer the user can find the contact information including a phone number, address and an email where he can reach out.
 
+-   #### Returning Visitor Goals
+
+    1. As a Returning Visitor, I want to find information about benefits of letting my pet engage in offered activities.
+
+        1. On Pool, Playground and Gym pages the user can find information about exercise effects on dogs. How much exercise they need and what exactly it does to their body. 
+        2. The text boxes are clearly visible and made with borders to make them stand out.
+
+    2. As a Returning Visitor, I want to find classes currently available.
+
+        1. There are two tables in total on the website.
+        2. The first table is made for swimming classes and thereafore is on the Pool page of the website.
+        3. The second table is for all the other classes Pup Power is offering and is on the Gym page, as all the
+            other classes are kept there.
+
+     2. 3. As a Returning Visitor, I want to find coach information.
+
+        1. On the Pool page there are images with clealry stated names of all swimming coaches at Pup Power.
+        2. Every coach has a little bit about me written next to the picture with their name.
+        3. The table on the pool page also outlines the coaches working hours and dog age groups they are currently working with.
+
+-   #### Frequent User Goals
+
+    1. As a Frequent User, I want to check to see the current monthly offer.
+
+        1. The monthly offers will always be at the top of the each page, the user should be well known with the page layout by now and would be able to easily navigate through all the pages.
+
+     2. As a Frequent User, I want to check class schedule every week.
+
+        1. Class schedule rotates every week, the schedule is written in the table on the Gym page of the website, the user is known with the layout and always finds information at the same place.
+
+    3. As a Frequent User, I want to register so I can receive all offers available.
+
+        1. At the pool page there is a "Join Now" button, frequent users can sign up to join the Leisure Centre and therafore receive offers not available to non members. 
+
+    
 
 
