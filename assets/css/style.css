@@ -585,7 +585,7 @@ label {
     flex-grow: 1;
 }
 .form-btn {
-    background-color: #90BEC0;
+    background-color: #a790a5;
     border: 2px solid black;
     border-radius: 25px;
     color: black;
@@ -605,12 +605,12 @@ label {
 
 input {
     margin-right: 10px;
-    font-size: 1em;
-    height: 20px;
+    font-size: 1.5em;
+    height: 50px;
     border: 1px solid gray;
     border: 2px solid #5f0f40;
     border-radius: 5px;
-    width: 300px;
+    width: 500px;
     display: table-cell;
 }
 
@@ -621,12 +621,12 @@ input {
     margin: 20px auto;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.486);
     border-radius: 20px;
-    padding: 30px;
+    padding: 70px;
 }
 
 #form-title {
     font-family: 'Playfair Display SC', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.5em;
     color: black;
     font-weight: bold;
     text-transform: uppercase;
@@ -635,8 +635,7 @@ input {
 label {
     margin: 0 0 20px;
     font-family: 'Playfair Display SC', sans-serif;
-    font-size: .9em;
-
+    font-size: 1.5em;
 }
 
 .fieldinput {
@@ -646,26 +645,25 @@ label {
 }
 
 #checkbox {
-    width: 20px;
+    width: 30px;
     position: relative;
     top: 6px;
 }
 
-option {
+option, select {
     font-family: 'Playfair Display SC', sans-serif;
-
+    font-size: 1.5em;
 }
 
 .btn {
     font-family: 'Playfair Display SC', sans-serif;
-    font-size: .9em;
     border: 1px solid black;
     border-radius: 2px;
     margin: 20px 0 20px 0;
     background: white;
     cursor: pointer;
+    font-size: 1.5em;
 }
-
 button {
     padding: 5px;
 }
@@ -898,12 +896,11 @@ table.classes-table {
 #bar {
     display: grid;
     grid-template-columns: 29% auto 29%;
-    grid-template-rows: 110px 80px 800px 600px auto;
+    grid-template-rows: 110px 80px 800px auto;
     grid-template-areas:
         "hd hd hd"
         "text text text"
         "dog1 menu dog2"
-        "em1 em2 em3"
         "foot foot foot";
 }
 
@@ -1189,14 +1186,6 @@ table.classes-table {
 
     .container-play {
         background-image: url("../images/pitbull-img.webp");
-        width: 100%;
-        height: 100%;
-        position: relative;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        grid-area: img1;
-        display: grid;
         grid-template-columns: 25% auto 20%;
         grid-template-rows: auto 23% 20%;
         grid-template-areas:
@@ -1234,6 +1223,34 @@ table.classes-table {
     font-size: 1.1em;
     top: 150px;
 }
+input {
+    margin-right: 10px;
+    font-size: 1.1em;
+    height: 20px;
+    width: 200px;
+}
+.join-form {
+    padding: 40px;
+}
+#form-title, label, option, select {
+    font-size: 1.1em;
+}
+.fieldinput {
+    margin: 10px 0 10px 0;
+    width: 100%;
+}
+#checkbox {
+    width: 20px;
+    top: 4px;
+}
+.btn {
+    margin: 20px 0 20px 0;
+    font-size: 1.1em;
+}
+input.btn {
+    padding: 5px;
+}
+
 }
 
 @media screen and (min-width: 500px) and (max-width: 700px) {
@@ -1367,14 +1384,6 @@ table.classes-table {
 
     .container-play {
         background-image: url("../images/pitbull-img.webp");
-        width: 100%;
-        height: 100%;
-        position: relative;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        grid-area: img1;
-        display: grid;
         grid-template-columns: 33% auto 32%;
         grid-template-rows: auto 23% 20%;
         grid-template-areas:
@@ -2073,6 +2082,15 @@ table.classes-table {
     .dog-left p {
         font-size: 1.7em;
     }
+    #bar {
+    grid-template-rows: 110px 80px 800px 600px auto;
+    grid-template-areas:
+        "hd hd hd"
+        "text text text"
+        "dog1 menu dog2"
+        "em1 em2 em3"
+        "foot foot foot";
+}
 }
 
 /* Pool Page Media Query */
