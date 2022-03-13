@@ -109,8 +109,8 @@ Facilities include indoor and outdoor pools, 100 acre playground with all the co
 
 The W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](wireframes/images/bar-validator.jpg)(wireframes/images/bar-validator.jpg)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results]()
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](wireframes/images/html-validator.jpg)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](wireframes/images/css-validator.jpg)
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -167,11 +167,13 @@ The W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were used to va
 
 ### Further Testing
 
--   The Website was tested on Google Chrome.
--  
+-   The Website was tested on Google Chrome, Opera and Mozzila Firefox.
+- The website was tested on Google Pixel 4a and Iphone 6s
 
 ### Known Bugs
 
+-Current bug on Mozzila Firefox 
+![App Screenshot](wireframes/images/mozzila-bug.jpg)
 
 ## Deployment
 
