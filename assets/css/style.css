@@ -106,8 +106,6 @@ li a:hover {
     background-color: rgba(255, 255, 255, 0.63);
     padding: 3.52px;
 }
-
-
 /* Hamburger menu */
 .topnav {
     overflow: hidden;
@@ -148,12 +146,6 @@ div.topnav {
     background-color: #ddd;
     color: rgb(102, 102, 102);
 }
-
-.active {
-    background-color: #90BEC0;
-
-}
-
 /* Images and text styling - Home Page */
 .container-1 {
     background-image: url("../images/amstaff-dog-img.webp");
@@ -207,10 +199,7 @@ div.topnav {
     min-width: 300px;
 }
 
-#pool-title,
-#playground-title,
-#gym-title,
-#bar-title {
+.title{
     text-align: center;
     font-family: 'Playfair Display SC', sans-serif;
     font-size: 1.5em;
@@ -220,17 +209,12 @@ div.topnav {
 
 }
 
-#pool-title a,
-#playground-title a,
-#gym-title a,
-#bar-title {
+.title a {
     text-decoration: none;
     color: black;
 }
 
-#pool-title a:hover,
-#playground-title a:hover,
-#gym-title a:hover {
+.title a:hover {
     font-size: 1.7rem;
 }
 
@@ -1068,28 +1052,13 @@ body#bar {
         display: contents !important;
     }
 
-    #pool-title,
-    #playground-title,
-    #gym-title,
-    #bar-title {
+    .title {
         font-size: 1.4em;
     }
 
     .intro-text-box,
     .intro-text-box1 {
         font-size: 1em;
-    }
-
-    .footer {
-        font-size: .8em;
-    }
-
-    .pool-text,
-    .playground-text,
-    .gym-text,
-    .bar-text,
-    .march-offer {
-        font-size: .75em;
     }
 
     div.container-1 {
@@ -1307,10 +1276,7 @@ body#bar {
         display: contents !important;
     }
 
-    #pool-title,
-    #playground-title,
-    #gym-title,
-    #bar-title,
+    .title
     .march-title .playground-title {
         font-size: 1.4em;
     }
@@ -1322,14 +1288,6 @@ body#bar {
 
     .footer {
         font-size: 1em;
-    }
-
-    .pool-text,
-    .playground-text,
-    .gym-text,
-    .bar-text,
-    .march-offer {
-        font-size: .75em;
     }
 
     .container-1 p,
@@ -1561,10 +1519,7 @@ body#bar {
         font-size: .9em;
     }
 
-    #pool-title,
-    #playground-title,
-    #gym-title,
-    #bar-title {
+    .title {
         font-size: 1.45em;
     }
 
