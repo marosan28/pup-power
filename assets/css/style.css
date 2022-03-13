@@ -825,20 +825,16 @@ img.bench {
     border: 50px solid white;
 }
 
-.gym-box,
-.gym-box1 {
+.gym-box {
     font-size: 2rem;
     background-color: #90BEC0;
-    width: 350px;
     border-radius: 2%;
     margin: 20px;
     padding: 15px;
     font-family: 'Playfair Display SC', sans-serif;
     border: 1px solid;
     text-align: center;
-    position: relative;
 }
-
 .gym-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -881,7 +877,7 @@ img.bench {
     background-color: white;
 }
 
-.gym-box1 a {
+.gym-box a {
     color: beige;
     cursor: pointer;
 }
@@ -1158,16 +1154,8 @@ body#bar {
         width: 80%;
     }
 
-    .gym-box1 {
-        transform: translate(20%, -450%);
-    }
-
-    .gym-box,
-    .gym-box1 {
+    .gym-box {
         font-size: 1rem;
-        width: 280px;
-        transform: inherit;
-        padding: 10px;
     }
 
     .gym-grid {
@@ -1372,12 +1360,8 @@ body#bar {
         width: 80%;
     }
 
-    .gym-box,
-    .gym-box1 {
+    .gym-box{
         font-size: 1rem;
-        width: 280px;
-        transform: inherit;
-        padding: 10px;
     }
 
     .weight img {
@@ -1544,12 +1528,8 @@ body#bar {
         width: 80%;
     }
 
-    .gym-box,
-    .gym-box1 {
+    .gym-box{
         font-size: 1rem;
-        width: 280px;
-        transform: inherit;
-        padding: 10px;
     }
     .container-play {
         grid-template-columns: 15% auto 15%;
@@ -1748,12 +1728,8 @@ body#bar {
         width: 80%;
     }
 
-    .gym-box,
-    .gym-box1 {
+    .gym-box{
         font-size: 1rem;
-        width: 280px;
-        transform: inherit;
-        padding: 10px;
     }
 
     .container-play {
@@ -1887,14 +1863,8 @@ body#bar {
         width: 80%;
     }
 
-    .gym-box,
-    .gym-box1 {
-
+    .gym-box{
         font-size: 1.3rem;
-        width: 280px;
-        transform: inherit;
-        padding: 10px;
-
     }
     .container-play {
         grid-template-columns: 15% auto 15%;
