@@ -106,6 +106,9 @@ li a:hover {
     background-color: rgba(255, 255, 255, 0.63);
     padding: 3.52px;
 }
+.active {
+    background-color: rgba(255, 255, 255, 0.63);
+}
 /* Hamburger menu */
 .topnav {
     overflow: hidden;
@@ -607,7 +610,10 @@ button {
 input[value="Reset Form"] {
     width: inherit;
 }
-
+.back {
+    font-size: 5rem;
+    margin: 20px;
+}
 /* Playground page */
 #playground {
     grid-template-columns: auto;
@@ -1806,7 +1812,6 @@ input.btn {
     #food {
         top: 100px;
     }
-
 }
 
 @media screen and (min-width: 980px) and (max-width: 1350px) {
