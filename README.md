@@ -218,6 +218,8 @@ Forking the GitHub Repository means we make a copy of the original repository on
 - The information about benefits for dog swimming was found on [here](https://topdoghealth.com/the-top-5-benefits-of-swimming-for-dogs/)
 - The playground information about why dogs need to play was found [here](https://www.pedigree.com/dog-care/health/the-serious-benefits-of-play) and the information about dog training was found [here](https://vcahospitals.com/know-your-pet/dog-behavior-and-training---play-and-exercise)
 - The Gym information was found [here](https://www.thefarmersdog.com/digest/how-much-exercise-do-dogs-need/)
+- Terms and Conditions template was found [here](https://www.privacypolicies.com/blog/sample-terms-conditions-template/)
+
 
 ### Media
 
