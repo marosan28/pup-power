@@ -155,7 +155,7 @@ div.topnav {
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-rows: 60% auto 10%;
+    grid-template-rows: 58% auto 10%;
     grid-template-columns: minmax(20%, 32%) auto minmax(20%, 32%);
     grid-template-areas:
         "one-l one-m one-r"
@@ -176,7 +176,7 @@ div.topnav {
 .text {
     justify-content: center;
     text-align: left;
-    font-size: 1.1em;
+    font-size: 1.15em;
     grid-area: two-m;
     min-width: 300px;
 }
@@ -918,7 +918,7 @@ table.classes-table {
     .background {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto repeat(4, 420px) auto;
+        grid-template-rows: auto auto repeat(4, 500px) auto;
         grid-template-areas:
             "hd"
             "text"
@@ -932,7 +932,7 @@ table.classes-table {
     }
 
     table {
-        font-size: .5em;
+        font-size: 1em;
     }
 
     .staff-c {
@@ -996,19 +996,22 @@ table.classes-table {
         font-size: 1em;
     }
 
-    div.container-1 {
+    .container-1 {
         grid-template-rows: 55% auto 10%;
+        grid-template-columns: 15% auto 15%;
     }
 
-    div.container-2 {
+    .container-2 {
         grid-template-rows: 60% auto 10%;
+        grid-template-columns: 15% auto 15%;
     }
 
-    div.container-1 p,
-    div.container-2 p,
-    div.container-3 p,
-    div.container-4 p {
-        font-size: .7em;
+    .container-3, .container-4 {
+        grid-template-columns: 15% auto 15%;
+    }
+
+   .text {
+        font-size: 1em;
         min-width: 200px;
     }
 
@@ -1246,14 +1249,6 @@ input.btn {
         font-size: 1em;
     }
 
-    .container-1 p,
-    .container-2 p,
-    .container-3 p,
-    .container-4 p {
-        font-size: .8em;
-        min-width: 200px
-    }
-
     .container-p p,
     .march-title,
     .playground-title,
@@ -1464,12 +1459,9 @@ input.btn {
         font-size: 1.1em;
     }
 
-    .container-1 p,
-    .container-2 p,
-    .container-3 p,
-    .container-4 p {
-        font-size: .8em;
-        min-width: 200px;
+   .text {
+        font-size: 1em;
+        min-width: 230px;
     }
 
     html,
@@ -1507,7 +1499,7 @@ input.btn {
     }
 
     .footer {
-        font-size: .9em;
+        font-size: 1em;
     }
 
     .title {
@@ -1652,14 +1644,12 @@ input.btn {
     .container-4 {
         width: 100%;
         height: 100%;
+        grid-template-columns: 15% auto 15%;
     }
 
-    .container-1 p,
-    .container-2 p,
-    .container-3 p,
-    .container-4 p {
-        font-size: .8em;
-        min-width: 300px;
+   .text{
+        font-size: 1em;
+        min-width: 310px;
     }
 
     html,
@@ -1699,7 +1689,7 @@ input.btn {
     }
 
     .footer {
-        font-size: .9em;
+        font-size: 1em;
     }
 
     .form-btn {
@@ -1842,14 +1832,6 @@ input.btn {
     .form-btn {
         top: 80%;
     }
-
-    .container-1 p,
-    .container-2 p,
-    .container-3 p,
-    .container-4 p {
-        font-size: 1em;
-    }
-
     div.topnav {
         display: none;
     }
@@ -2006,17 +1988,12 @@ input.btn {
         height: 100%;
     }
 
-    .container-1 p,
-    .container-2 p,
-    .container-3 p,
-    .container-4 p {
-        font-size: 1.1em;
-    }
-
     div.topnav {
         display: none;
     }
-
+.text {
+    margin: 20px;
+}
     div.g-pinscher#g-p {
         display: grid;
         grid-template-columns: 5px 1fr 5px;
