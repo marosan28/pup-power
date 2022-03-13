@@ -796,21 +796,22 @@ img.bench {
     margin: 20px;
 }
 
-body#gym {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 110px 350px auto;
-    grid-template-areas:
-        "hd"
-        "text"
-        "img1"
-        "img2"
-        "img3"
-        "gym"
-        "img"
-        "table"
-        "dog"
-        "foot";
+#gym {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 170px auto auto;
+        grid-template-areas:
+            "hd"
+            "text"
+            "img1"
+            "img2"
+            "img3"
+            "gym"
+            "img"
+            "table"
+            "dog"
+            "text-box"
+            "foot";
 }
 
 .gym-container {
@@ -1187,24 +1188,6 @@ body#bar {
     .weight img {
         width: 30%;
     }
-
-    body#gym {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 130px auto;
-        grid-template-areas:
-            "hd"
-            "text"
-            "img1"
-            "img2"
-            "img3"
-            "gym"
-            "img"
-            "table"
-            "dog"
-            "foot";
-    }
-
     .questions p {
 
         font-size: 1em;
@@ -1400,23 +1383,6 @@ body#bar {
     .weight img {
         width: 30%;
     }
-
-    body#gym {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 170px auto auto;
-        grid-template-areas:
-            "hd"
-            "text"
-            "img1"
-            "img2"
-            "img3"
-            "gym"
-            "img"
-            "table"
-            "dog"
-            "foot";
-    }
 }
 
 @media screen and (min-width: 700px) and (max-width: 900px) {
@@ -1585,12 +1551,6 @@ body#bar {
         transform: inherit;
         padding: 10px;
     }
-
-    body#gym {
-
-        grid-template-rows: auto 180px auto auto;
-    }
-
     .container-play {
         grid-template-columns: 15% auto 15%;
     }
@@ -1796,11 +1756,6 @@ body#bar {
         padding: 10px;
     }
 
-    body#gym {
-
-        grid-template-rows: auto 180px auto auto;
-    }
-
     .container-play {
         grid-template-columns: 15% auto 15%;
     }
@@ -1941,12 +1896,6 @@ body#bar {
         padding: 10px;
 
     }
-
-    body#gym {
-
-        grid-template-rows: auto 180px auto auto;
-    }
-
     .container-play {
         grid-template-columns: 15% auto 15%;
     }
