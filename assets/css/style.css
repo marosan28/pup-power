@@ -276,7 +276,7 @@ p.march-p,
     position: relative;
     justify-content: center;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.15em;
     margin: 0 20px 0 20px;
     border: solid 1px black;
     background-color: white;
@@ -487,7 +487,7 @@ div.g-pinscher#g-p {
     position: relative;
     justify-content: center;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.15em;
     margin: 0 20px 0 20px;
     border: solid 1px black;
     background-color: white;
@@ -666,7 +666,7 @@ input[value="Reset Form"] {
 .p-reason div {
     padding: 10px;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.15em;
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-left: 1px solid;
@@ -706,7 +706,7 @@ img.bench {
 
 .questions h3 {
     padding: 7px;
-    font-size: 1.1em;
+    font-size: 1.15em;
     background-color: #90BEC0;
     display: inline;
     font-family: 'Playfair Display SC', sans-serif;
@@ -718,7 +718,7 @@ img.bench {
 
 .questions p {
     margin: 20px;
-    font-size: 1.1em;
+    font-size: 1.15em;
     background-color: white;
     border: 1px solid;
     padding: 15px;
@@ -798,13 +798,13 @@ img.bench {
 .text-gym4 {
     border: 1px solid;
     margin: 20px;
-    font-size: 1.1em;
+    font-size: 1.15em;
     padding: 15px;
     background-color: white;
 }
 
 .text-g {
-    font-size: 1.1em;
+    font-size: 1.15em;
     margin: 20px;
     border: 1px solid;
     padding: 15px;
@@ -911,6 +911,16 @@ table.classes-table {
     align-content: space-around;
     align-items: center;
     justify-content: center;
+}
+
+.terms {
+    height: 200px;
+    overflow-y: auto;
+    font-size: 1.5em;
+    background-color: white;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid;
 }
 
 /* Media Queries*/
@@ -1150,7 +1160,7 @@ table.classes-table {
     .dog-left p{
         grid-template-columns: 50%;
         font-size: 1.1em;
-        top: 180px;
+        top: 170px;
     }
 
     .dog-right p{
@@ -1172,7 +1182,7 @@ input {
 .join-form {
     padding: 20px;
 }
-#form-title, label, option, select {
+#form-title, label, option, select, .terms {
     font-size: 1.1em;
 }
 .fieldinput {
@@ -1190,7 +1200,6 @@ input {
 input.btn {
     padding: 5px;
 }
-
 }
 
 @media screen and (min-width: 500px) and (max-width: 700px) {
@@ -1392,7 +1401,10 @@ input {
 }
 input.btn {
     padding: 5px;
-} 
+}
+.terms {
+    font-size: 1.1em;
+}
 }
 
 @media screen and (min-width: 700px) and (max-width: 900px) {
@@ -1826,7 +1838,7 @@ input.btn {
     }
 
     #pool-body {
-        grid-template-rows: 110px 80px 160px 500px 1200px auto;
+        grid-template-rows: 110px 80px 160px 600px 1100px auto;
     }
 
     .form-btn {
@@ -1865,7 +1877,7 @@ input.btn {
     .staff-k,
     .staff-d {
 
-        font-size: 1.1em;
+        font-size: 1.15em;
         border-radius: 2%;
 
     }
