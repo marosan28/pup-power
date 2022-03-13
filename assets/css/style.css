@@ -44,7 +44,7 @@ body {
         "foot foot";
 }
 
-body#pool-body {
+#pool-body {
     grid-template-rows: 110px 80px 110px 600px 1200px auto;
     grid-template-areas:
         "hd hd"
@@ -675,7 +675,7 @@ input[value="Reset Form"] {
 }
 
 /* Playground page */
-body#playground {
+#playground {
     grid-template-columns: auto;
     grid-template-rows: auto 80px 800px 80px auto auto;
     grid-template-areas:
@@ -895,34 +895,36 @@ table.classes-table {
 }
 
 /*----------------------------------------- Bar -----------------------------------------*/
-body#bar {
+#bar {
     display: grid;
-    grid-template-columns: 28% auto 26%;
-    grid-template-rows: 110px 80px 800px auto;
+    grid-template-columns: 29% auto 29%;
+    grid-template-rows: 110px 80px 800px 600px auto;
     grid-template-areas:
         "hd hd hd"
         "text text text"
         "dog1 menu dog2"
+        "em1 em2 em3"
         "foot foot foot";
 }
 
 .food-menu {
-    background-image: url("../images/menu-img.png");
+    background-image: url("../images/menu-img.webp");
     background-repeat: no-repeat;
     background-size: contain;
     grid-area: menu;
     width: 100%;
     height: 100%;
     background-position: center;
+    margin: 5px;
 }
 
 #food {
     grid-area: menu;
     list-style-type: none;
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.5em;
     position: relative;
-    top: 170px;
+    top: 200px;
 }
 
 .menu-title {
@@ -941,12 +943,13 @@ body#bar {
 .dog-left p {
     position: relative;
     display: grid;
-    grid-template-columns: 62%;
+    grid-template-columns: 75%;
     justify-content: center;
     text-align: left;
-    font-family: 'Hubballi', sans-serif;
-    font-size: 1.7em;
-    top: 520px;
+    font-size: 1.5em;
+    top: 430px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .dog-right {
@@ -959,13 +962,15 @@ body#bar {
 }
 
 .dog-right p {
-    position: relative;
-    display: grid;
-    grid-template-columns: 68%;
-    justify-content: center;
-    text-align: left;
-    font-size: 1.7em;
-    top: 490px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 75%;
+        justify-content: center;
+        text-align: left;
+        font-size: 1.5em;
+        top: 450px;
+        max-width: 700px;
+        margin: 0 auto;
 }
 
 .rights {
@@ -977,7 +982,7 @@ body#bar {
 
 /* Media Queries*/
 @media only screen and (max-width: 500px) {
-    body.background {
+    .background {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto repeat(4, 420px) auto;
@@ -1104,7 +1109,7 @@ body#bar {
         font-size: 1em;
     }
 
-    body#playground {
+    #playground {
         grid-template-columns: auto;
         grid-template-rows: auto 80px 400px 50px auto auto;
         grid-template-areas:
@@ -1203,10 +1208,36 @@ body#bar {
     .container-play p {
         max-width: 250px;
     }
+    #bar {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 300px 600px 350px auto;
+        grid-template-areas:
+            "hd"
+            "text"
+            "dog1"
+            "menu"
+            "dog2"
+            "foot";
+    }
+    .dog-left p{
+        grid-template-columns: 50%;
+        font-size: 1.1em;
+        top: 180px;
+    }
+
+    .dog-right p{
+        grid-template-columns: 50%;
+        font-size: 1.1em;
+        top: 220px;
+    }
+#food {
+    font-size: 1.1em;
+    top: 150px;
+}
 }
 
 @media screen and (min-width: 500px) and (max-width: 700px) {
-    body.background {
+    .background {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto repeat(4, 500px);
@@ -1298,7 +1329,7 @@ body#bar {
         padding: 3px 3px;
     }
 
-    body#playground {
+    #playground {
         grid-template-columns: auto;
         grid-template-rows: auto 80px 400px 50px auto auto;
         grid-template-areas:
@@ -1367,10 +1398,36 @@ body#bar {
     .weight img {
         width: 30%;
     }
+    #bar {
+        display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 450px 700px 500px auto;
+    grid-template-areas:
+        "hd"
+        "text"
+        "dog1"
+        "menu"
+        "dog2"
+        "foot";
+    }
+.dog-left p{
+    font-size: 1.4em;
+    grid-template-columns: 45%;
+    top: 250px;
+       
+    }
+    .dog-right p {
+        font-size: 1.4em;
+        grid-template-columns: 45%;
+        top: 300px;
+    } 
+#food {
+    top: 150px;
+}   
 }
 
 @media screen and (min-width: 700px) and (max-width: 900px) {
-    body.background {
+    .background {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto 500px 420px 500px auto 280px;
@@ -1386,7 +1443,7 @@ body#bar {
             "foot";
     }
 
-    body#playground {
+    #playground {
         grid-template-columns: auto;
         grid-template-rows: auto 80px 400px 80px auto auto;
         grid-template-areas:
@@ -1400,7 +1457,18 @@ body#bar {
             "questions"
             "foot";
     }
-
+    #bar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 450px 600px 450px auto;
+        grid-template-areas:
+            "hd"
+            "text"
+            "dog1"
+            "menu"
+            "dog2"
+            "foot";
+    }
     div.topnav {
         display: none;
     }
@@ -1538,6 +1606,11 @@ body#bar {
     .dog-right p,
     .dog-left p {
         font-size: 1.4em;
+        grid-template-columns: 30%;
+        top: 250px;
+    }
+    #food {
+        top: 115px;
     }
 }
 
@@ -1546,9 +1619,9 @@ body#bar {
         display: none;
     }
 
-    body#playground {
+    #playground {
         grid-template-columns: auto;
-        grid-template-rows: auto 80px 450px 80px auto auto;
+        grid-template-rows: auto auto 450px 80px auto auto;
         grid-template-areas:
             "hd"
             "text"
@@ -1574,7 +1647,7 @@ body#bar {
             "foot foot";
     }
 
-    body#pool-body {
+    #pool-body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto 150px auto;
@@ -1585,6 +1658,19 @@ body#bar {
             "img1 img2"
             "img3 img4"
             "foot foot";
+    }
+
+    #bar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 450px 600px 450px auto;
+        grid-template-areas:
+            "hd"
+            "text"
+            "dog1"
+            "menu"
+            "dog2"
+            "foot";
     }
 
     .container-1,
@@ -1739,11 +1825,29 @@ body#bar {
     .dog-right p,
     .dog-left p {
         font-size: 1.4em;
+    grid-template-columns: 35%;
+    top: 250px;
     }
+    #food {
+        top: 100px;
+    }
+
 }
 
 @media screen and (min-width: 980px) and (max-width: 1350px) {
-    body#playground {
+    #bar {
+        display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 450px 600px 500px auto;
+    grid-template-areas:
+        "hd"
+        "text"
+        "dog1"
+        "menu"
+        "dog2"
+        "foot";
+    }
+    #playground {
         grid-template-columns: auto;
         grid-template-rows: auto 80px 600px 80px auto auto;
         grid-template-areas:
@@ -1758,7 +1862,7 @@ body#bar {
             "foot";
     }
 
-    body#pool-body {
+    #pool-body {
         grid-template-rows: 110px 80px 160px 500px 1200px auto;
     }
 
@@ -1873,6 +1977,16 @@ body#bar {
     .dog-right p,
     .dog-left p {
         font-size: 1.4em;
+        grid-template-columns: 28%;
+        top: 250px;
+    }
+    .dog-right p {
+        font-size: 1.4em;
+        grid-template-columns: 25%;
+        top: 300px;
+    }
+    #food {
+        top: 100px;
     }
 
 }
@@ -1904,7 +2018,7 @@ body#bar {
 
     .dog-right p,
     .dog-left p {
-        font-size: 1.4em;
+        font-size: 1.7em;
     }
 }
 
@@ -1955,11 +2069,15 @@ body#bar {
         height: 100%;
         width: 100%;
     }
+    .dog-right p,
+    .dog-left p {
+        font-size: 1.7em;
+    }
 }
 
 /* Pool Page Media Query */
 @media screen and (min-width: 1350px) and (max-width: 2560px) {
-    body#pool-body {
+    #pool-body {
         grid-template-rows: 110px 80px 200px 700px 1200px auto;
         grid-template-columns: 1fr 1fr;
     }
@@ -1973,7 +2091,7 @@ body#bar {
 
 
 @media screen and (max-width: 770px) {
-    body#pool-body {
+    #pool-body {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto 125px 150px 300px 560px 1000px 450px 600px;
@@ -2040,7 +2158,7 @@ body#bar {
 }
 
 @media screen and (min-width:770px) and (max-width:900px) {
-    body#pool-body {
+    #pool-body {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto 115px 105px 300px auto 700px auto 600px;
