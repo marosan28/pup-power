@@ -8,11 +8,12 @@ Facilities include indoor and outdoor pools, 100 acre playground with all the co
 [View the live project here.](https://marosan28.github.io/pup-power/)
 
 ![App Screenshot](wireframes/images/responsive-img.jpg)
-## Features
+## Main Features
 - __Navigation Bar__
 
   - Featured on all pages, includes links to Home, Pool, Playground, Gym and Bar sections.
     - Navigation bar will allow user to navigate from page to page easily on all devices.
+    - The Logo of the website is located in the top left corner and will take you to the home page when clicked.
 
 ![App Screenshot](wireframes/images/header-img.jpg)
 
@@ -22,8 +23,12 @@ Facilities include indoor and outdoor pools, 100 acre playground with all the co
     - Each dog has a different box with a clickable name, meaning a user can access the page both from the navigation bar and from the text boxes.
 
 ![App Screenshot](wireframes/images/landing-page.jpg)
-    
 
+- __The Footer__ 
+
+  - The footer section contains contact information, email, phone number and the address of the Leisure centre, the visitor has easy access to any contact information needed.
+
+![Footer](wireframes/images/footer-img.jpg)
 
  ## First Time Visitor Goals
 -   ### User stories
@@ -72,18 +77,6 @@ Facilities include indoor and outdoor pools, 100 acre playground with all the co
 
     -   Bar Page Wireframe - [View](wireframes/images/bar-page.jpg)
 
-   
-## Features
-
--   Responsive on all device sizes
-    -The website is made to be responsive on all devices.
-
--   Button
-    -The website has one join button on pool page which takes the user to a form page.
-
--   Logo
-    -The Logo of the website is located in the top left corner and will take you to the home page when clicked.
-
 ## Technologies Used
 
 ### Languages Used
@@ -123,18 +116,18 @@ The W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were used to va
 
 -   #### First Time Visitor Goals
 
-     - As a First Time Visitor, I want to easily understand the main purpose of the site.
+    1. As a First Time Visitor, I want to easily understand the main purpose of the site.
 
         1. When entering the site, users are immediately greeted with an easily readable navigation bar which will take them to the page of their choice. 
         2. There are 4 main images in the middle of the page, each with a title corresponding to one of the navigation bar buttons.
         3. The user has two options, click the navigation bar buttons or click one of the titles, each will bring him to the same place.
 
-    - As a First Time Visitor, I want to be able to easily navigate throughout the site.
+    2. As a First Time Visitor, I want to be able to easily navigate throughout the site.
 
         1. The site has been designed with a clear navigation bar at the top of each page which clearly states what page user is currently on.
         2. On the form page nav bar is also present so visitor can easily go back to where he was before.
 
-    - As a First Time Visitor, I want to look for contact information and address to see where they are located and how to reach out.
+    3. As a First Time Visitor, I want to look for contact information and address to see where they are located and how to reach out.
 
         1. On each page at the footer the user can find the contact information including a phone number, address and an email where he can reach out.
 
@@ -170,8 +163,45 @@ The W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were used to va
 
     3. As a Frequent User, I want to register so I can receive all offers available.
 
-        1. At the pool page there is a "Join Now" button, frequent users can sign up to join the Leisure Centre and therafore receive offers not available to non members. 
+        1. At the pool page there is a "Join Now" button, frequent users can sign up to join the Leisure Centre newsletter and therafore receive offers not available to non members.
 
-    
+### Further Testing
 
+-   The Website was tested on Google Chrome.
+-  
+
+### Known Bugs
+
+
+## Deployment
+
+### GitHub Pages
+
+To deploy the site to Github pages the following steps should be followed: 
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+3. Scroll down the Settings page until you locate the "GitHub Pages" that now has it's own dedicated tab.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. The link to your page will now show up with "Your site is published at:" 
+
+### Forking the GitHub Repository
+
+Forking the GitHub Repository means we make a copy of the original repository on our GitHub account to view and make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/) you want to fork.
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, you will see a fork button.
+3. Click on the button to create a copy. 
+4. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/) you want to deploy.
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash in your IDE.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied.
+7. Press enter and the clone should be created.
 
