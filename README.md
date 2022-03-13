@@ -97,7 +97,7 @@ Facilities include indoor and outdoor pools, 100 acre playground with all the co
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+    - Balsamiq was used to create the wireframes during the design process.
 1. [ShutterStock:](https://shutterstock.com/)
     - Shutterstock was used to edit the images throught the site.
 1. [TinyPNG:](https://tinypng.com/)
@@ -204,4 +204,30 @@ Forking the GitHub Repository means we make a copy of the original repository on
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type `git clone`, and then paste the URL you copied.
 7. Press enter and the clone should be created.
+
+## Credits
+
+### Code
+
+-   The hamburger menu came from [W3 Schools](https://www.w3schools.com/howto/howto_js_mobile_navbar.asp)
+
+### Content
+
+- The information about benefits for dog swimming was found on [here] (https://topdoghealth.com/the-top-5-benefits-of-swimming-for-dogs/)
+- The playground information about why dogs need to play was found [here] (https://www.pedigree.com/dog-care/health/the-serious-benefits-of-play) and the information about dog training was found [here](https://vcahospitals.com/know-your-pet/dog-behavior-and-training---play-and-exercise)
+- The Gym information was found [here](https://www.thefarmersdog.com/digest/how-much-exercise-do-dogs-need/)
+
+### Media
+
+-  Dog images were found on [123RF](https://www.123rf.com/) and edited via [shutterstock editor](https://www.shutterstock.com/editor)
+
+- The playground and park images were found on (shutterstock)[https://www.shutterstock.com]
+
+### Acknowledgements
+
+-   My Mentor for continuous all the tips and helpful feedback.
+
+-   Slack student support.
+
+-   [Kevin Powell](https://www.youtube.com/kevinpowell) for all the tutorials that helped me throught the project.
 
