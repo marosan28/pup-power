@@ -45,7 +45,8 @@ body {
 }
 
 #pool-body {
-    grid-template-rows: 110px 80px 110px 600px 1200px auto;
+    grid-template-rows: 110px 80px 200px 700px 1200px auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "hd hd"
         "text text"
@@ -54,7 +55,6 @@ body {
         "img3 img4"
         "foot foot";
 }
-
 #logo {
     font-size: 3rem;
     font-family: 'Playfair Display SC', sans-serif;
@@ -306,7 +306,16 @@ p.march-p,
 }
 
 /*----------------------------------------- Table -----------------------------------------*/
-table.time-table {
+td {
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+}
+table {
+    table-layout:fixed;
+}
+
+.time-table {
     min-width: 200px;
     font-size: 1.2em;
     grid-area: img2;
@@ -537,7 +546,7 @@ label {
     text-decoration: none;
     grid-area: img1;
     position: absolute;
-    left: 50%;
+    left: 51%;
     transform: translateX(-50%);
     top: 80%;
 }
@@ -734,24 +743,25 @@ img.bench {
 .weight {
     grid-area: text;
     margin: 20px;
+    width: fit-content;
 }
 
 #gym {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 170px auto auto;
-        grid-template-areas:
-            "hd"
-            "text"
-            "img1"
-            "img2"
-            "img3"
-            "gym"
-            "img"
-            "table"
-            "dog"
-            "text-box"
-            "foot";
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "hd"
+        "text"
+        "img1"
+        "img2"
+        "img3"
+        "gym"
+        "img"
+        "table"
+        "dog"
+        "text-box"
+        "foot";
 }
 
 .gym-container {
@@ -847,7 +857,7 @@ table.classes-table {
 }
 
 .food-menu {
-    background-image: url("../images/menu-img.webp");
+    background-image: url("../images/menu-img.png");
     background-repeat: no-repeat;
     background-size: contain;
     grid-area: menu;
@@ -930,6 +940,7 @@ table.classes-table {
 }
 
 /*----------------------------------------- Media Queries -----------------------------------------*/
+
 @media only screen and (max-width: 500px) {
     .background {
         display: grid;
@@ -1028,7 +1039,7 @@ table.classes-table {
 
    .text {
         font-size: 1em;
-        min-width: 200px;
+        min-width: 270px;
     }
 
     .form-btn {
@@ -1042,17 +1053,18 @@ table.classes-table {
         font-size: 1em;
     }
 
-    table.time-table {
+    table.time-table, .classes-table {
         font-size: 1em;
-        margin: 20px;
+        margin: 0 auto;
     }
 
-    .time-table th {
+    .time-table th, .classes-table th {
         padding: 2px 2px;
         font-size: 1em;
+       font-family:'Hubballi', sans-serif;
     }
 
-    .time-table td {
+    .time-table td, .classes-table td {
         padding: 2px 2px;
     }
 
@@ -1121,6 +1133,8 @@ table.classes-table {
     .text-gym3,
     .text-gym4 {
         text-align: center;
+        margin: 5px;
+        padding: 5px;
     }
 
     .weight img {
@@ -1129,7 +1143,6 @@ table.classes-table {
     .questions p {
 
         font-size: 1em;
-
     }
 
     .container-play {
@@ -1147,7 +1160,7 @@ table.classes-table {
     }
     #bar {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto 300px 600px 350px auto;
+        grid-template-rows: auto auto 300px 500px 350px auto;
         grid-template-areas:
             "hd"
             "text"
@@ -1159,7 +1172,7 @@ table.classes-table {
     .dog-left p{
         grid-template-columns: 50%;
         font-size: 1.1em;
-        top: 170px;
+        top: 160px;
     }
 
     .dog-right p{
@@ -1169,7 +1182,7 @@ table.classes-table {
     }
 #food {
     font-size: 1.1em;
-    top: 150px;
+    top: 100px;
 }
 /*----------------------------------------- Form -----------------------------------------*/
 input {
@@ -1199,13 +1212,16 @@ input {
 input.btn {
     padding: 5px;
 }
+.food-menu {
+    background-size: cover;
+}
 }
 
 @media screen and (min-width: 500px) and (max-width: 700px) {
     .background {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto repeat(4, 500px);
+        grid-template-rows: auto auto repeat(4, 600px);
         grid-template-areas:
             "hd"
             "text"
@@ -1265,6 +1281,53 @@ input.btn {
     .why-swim {
         font-size: 1em;
     }
+  
+    div.staff {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "t"
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f";
+    }
+
+    .name,
+    #inner-pool p {
+        font-size: 1em;
+        margin-right: 20px;
+    }
+
+    p.staff-c,
+    p.staff-k,
+    p.staff-d {
+        margin: 20px;
+    }
+
+    #inner-pool {
+        grid-area: img4;
+    }
+
+    #inner-pool img {
+        height: 100%;
+        width: 100%;
+        border: 15px solid white;
+    }
+
+    div.g-pinscher#g-p {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px;
+        grid-template-areas:
+            "er dog re"
+            "em pool me";
+        width: 250px;
+        height: 250px;
+        grid-area: img5;
+        margin: 10px auto;
+    }
 
     .container-play p {
         max-width: 250px;
@@ -1273,16 +1336,15 @@ input.btn {
     .form-btn {
         font-size: 1em;
     }
-
-    table.time-table {
+    .time-table, .classes-table {
+        overflow-x: auto;
         font-size: 1em;
     }
-
-    .time-table th {
+    .time-table th, .classes-table th {
         padding: 3px 3px;
     }
 
-    .time-table td {
+    .time-table td, .classes-table td {
         padding: 3px 3px;
     }
 
@@ -1350,7 +1412,7 @@ input.btn {
     #bar {
         display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 450px 700px 500px auto;
+    grid-template-rows: auto auto 450px 600px 500px auto;
     grid-template-areas:
         "hd"
         "text"
@@ -1371,7 +1433,8 @@ input.btn {
         top: 300px;
     } 
 #food {
-    top: 150px;
+    top: 110px;
+    font-size: 1.4em;
 }
 /*----------------------------------------- Form -----------------------------------------*/
 input {
@@ -1533,15 +1596,15 @@ input.btn {
         font-size: 1.1em;
     }
 
-    table.time-table {
+    table.time-table, table.classes-table {
         font-size: 1em;
     }
 
-    .time-table th {
+    .time-table th, .classes-table th{
         padding: 4px 4px;
     }
 
-    .time-table td {
+    .time-table td, .classes-table td {
         padding: 4px 4px;
     }
 
@@ -1587,6 +1650,46 @@ input.btn {
     }
     #food {
         top: 115px;
+    }
+    #pool-body {
+        display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 155px 150px 300px auto 700px auto 600px;
+    grid-template-areas:
+        "hd"
+        "text"
+        "swim"
+        "offer"
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "auto"
+        "foot";
+    }
+
+    #inner-pool {
+        grid-area: img4;
+    }
+
+    #inner-pool img {
+        height: 100%;
+        width: 100%;
+        border: 15px solid white;
+    }
+
+    div.g-pinscher#g-p {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px;
+        grid-template-areas:
+            "er dog re"
+            "em pool me";
+        width: 250px;
+        height: 250px;
+        grid-area: img5;
+        margin: 10px auto;
     }
 }
 
@@ -1713,16 +1816,16 @@ input.btn {
         font-size: 1em;
     }
 
-    table.time-table {
+    table.time-table, table.classes-table {
         margin: 20px;
         font-size: 1em;
     }
 
-    .time-table th {
+    .time-table th, .classes-table th{
         padding: 4px 4px;
     }
 
-    .time-table td {
+    .time-table td, .classes-table td {
         padding: 4px 4px;
     }
 
@@ -1841,6 +1944,7 @@ input.btn {
 
     .form-btn {
         top: 80%;
+        left: 50%;
     }
     div.topnav {
         display: none;
@@ -2044,20 +2148,12 @@ input.btn {
 }
 }
 /*----------------------------------------- Pool Page Media Query -----------------------------------------*/
-@media screen and (min-width: 1350px) and (max-width: 2560px) {
-    #pool-body {
-        grid-template-rows: 110px 80px 200px 700px 1200px auto;
-        grid-template-columns: 1fr 1fr;
-    }
-    .form-btn {
-        left: 51%;
-    }
-}
-@media screen and (max-width: 770px) {
+
+@media screen and (max-width: 700px) {
     #pool-body {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto 155px 170px 300px 560px 1000px 450px 600px;
+        grid-template-rows: auto auto 175px 200px 300px auto auto auto 600px;
         grid-template-areas:
             "hd"
             "text"
@@ -2071,7 +2167,39 @@ input.btn {
             "auto"
             "foot";
     }
+    #inner-pool {
+        grid-area: img4;
+    }
 
+    #inner-pool img {
+        height: 100%;
+        width: 100%;
+        border: 15px solid white;
+    }
+
+    div.g-pinscher#g-p {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px;
+        grid-template-areas:
+            "er dog re"
+            "em pool me";
+        width: 250px;
+        height: 250px;
+        grid-area: img5;
+        margin: 10px auto;
+    }
+    .staff {
+        grid-template-columns:auto;
+        grid-template-areas:
+            "t"
+            "a"
+            "b"
+            "c" 
+            "d"
+            "e" 
+            "f";
+    }
     div.staff {
         display: grid;
         grid-template-columns: auto;
@@ -2100,65 +2228,5 @@ input.btn {
         grid-area: img4;
     }
 
-    #inner-pool img {
-        height: 100%;
-        width: 100%;
-        border: 15px solid white;
-    }
-
-    div.g-pinscher#g-p {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 100px;
-        grid-template-areas:
-            "er dog re"
-            "em pool me";
-        width: 250px;
-        height: 250px;
-        grid-area: img5;
-        margin: 10px auto;
-    }
 }
 
-@media screen and (min-width:770px) and (max-width:900px) {
-    #pool-body {
-        display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto 155px 150px 300px auto 700px auto 600px;
-    grid-template-areas:
-        "hd"
-        "text"
-        "swim"
-        "offer"
-        "img1"
-        "img2"
-        "img3"
-        "img4"
-        "img5"
-        "auto"
-        "foot";
-    }
-
-    #inner-pool {
-        grid-area: img4;
-    }
-
-    #inner-pool img {
-        height: 100%;
-        width: 100%;
-        border: 15px solid white;
-    }
-
-    div.g-pinscher#g-p {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 100px;
-        grid-template-areas:
-            "er dog re"
-            "em pool me";
-        width: 250px;
-        height: 250px;
-        grid-area: img5;
-        margin: 10px auto;
-    }
-}
