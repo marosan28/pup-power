@@ -1,7 +1,7 @@
 
 # Pup Power
 
-    This project was made as a part of a Full Stack Developer Programme by Code Institute. All information contained on the page is intended for course use only.
+This project was made as a part of a Full Stack Developer Programme by Code Institute. All information contained on the page is intended for course use only.
     [View the live project here.](https://marosan28.github.io/pup-power/)
 -----
 ## Who is this website for and what does it do? 
