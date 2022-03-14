@@ -183,8 +183,6 @@ The W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were used to va
 
   ![App Screenshot](wireframes/images/lighthouse.jpg)
 
-- Desktop results
-
 ### Testing User Stories from User Experience (UX) Section
 
 -   #### First Time Visitor Goals
@@ -239,20 +237,27 @@ The W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were used to va
 
         1. At the pool page there is a "Join Now" button, frequent users can sign up to join the Leisure Centre newsletter and therafore receive offers not available to non members.
 
-
-
-
-
-
 ### Further Testing
 
 -   The Website was tested on Google Chrome, Opera and Mozzila Firefox.
 - The website was tested on Google Pixel 4a and Iphone 6s
 
-### Known Bugs
+### Unresolved Bugs
 
 -Current bug on Mozzila Firefox 
 ![App Screenshot](wireframes/images/mozzila-bug.jpg)
+
+The bug was not fixed, could not find the solution.
+
+-Current bug on screen sizes 320px - 360px
+![App Screenshot](wireframes/images/bug-phone.png)
+
+The bug was not fixed, media queries not being applied for unknown reason.
+
+-Current bug on mobile screen sizes
+![App Screenshot](wireframes/images/bug-phone.png)
+
+- Page overflow, tried using overflow - hidden, tried deleting every element to see which one is causing this, tried setting the body width to 100%
 
 ## Deployment
 

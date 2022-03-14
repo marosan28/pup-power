@@ -55,6 +55,7 @@ body {
         "img3 img4"
         "foot foot";
 }
+
 #logo {
     font-size: 3rem;
     font-family: 'Playfair Display SC', sans-serif;
@@ -106,9 +107,11 @@ li a:hover {
     background-color: rgba(255, 255, 255, 0.63);
     padding: 3.52px;
 }
+
 .active {
     background-color: rgba(255, 255, 255, 0.63);
 }
+
 /*----------------------------------------- Hamburger menu -----------------------------------------*/
 .topnav {
     overflow: hidden;
@@ -149,8 +152,12 @@ div.topnav {
     background-color: #ddd;
     color: rgb(102, 102, 102);
 }
+
 /*-----------------------------------------  Images and text styling - Home Page -----------------------------------------*/
-.container-1, .container-2, .container-3, .container-4 {
+.container-1,
+.container-2,
+.container-3,
+.container-4 {
     width: 100%;
     height: 100%;
     position: relative;
@@ -183,7 +190,8 @@ div.topnav {
     grid-area: two-m;
     min-width: 300px;
 }
-.title{
+
+.title {
     text-align: center;
     font-family: 'Playfair Display SC', sans-serif;
     font-size: 1.5em;
@@ -307,12 +315,13 @@ p.march-p,
 
 /*----------------------------------------- Table -----------------------------------------*/
 td {
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+    overflow: hidden;
+    text-overflow: ellipsis;
     word-wrap: break-word;
 }
+
 table {
-    table-layout:fixed;
+    table-layout: fixed;
 }
 
 .time-table {
@@ -522,7 +531,7 @@ form {
     display: table;
     position: relative;
     grid-area: form;
-    margin:20px;
+    margin: 20px;
 }
 
 label {
@@ -532,6 +541,7 @@ label {
 #main-form {
     flex-grow: 1;
 }
+
 .form-btn {
     background-color: #a790a5;
     border: 2px solid black;
@@ -572,7 +582,7 @@ input {
     padding: 70px;
 }
 
-#form-title {
+.form-title {
     font-family: 'Playfair Display SC', sans-serif;
     font-size: 1.5em;
     color: black;
@@ -598,7 +608,8 @@ label {
     top: 6px;
 }
 
-option, select {
+option,
+select {
     font-family: 'Playfair Display SC', sans-serif;
     font-size: 1.5em;
 }
@@ -612,6 +623,7 @@ option, select {
     cursor: pointer;
     font-size: 1.5em;
 }
+
 button {
     padding: 5px;
 }
@@ -619,10 +631,12 @@ button {
 input[value="Reset Form"] {
     width: inherit;
 }
+
 .back {
     font-size: 5rem;
     margin: 20px;
 }
+
 /*----------------------------------------- Playground Page -----------------------------------------*/
 #playground {
     grid-template-columns: auto;
@@ -785,6 +799,7 @@ img.bench {
     border: 1px solid;
     text-align: center;
 }
+
 .gym-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -911,15 +926,15 @@ table.classes-table {
 }
 
 .dog-right p {
-        position: relative;
-        display: grid;
-        grid-template-columns: 75%;
-        justify-content: center;
-        text-align: left;
-        font-size: 1.5em;
-        top: 450px;
-        max-width: 700px;
-        margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 75%;
+    justify-content: center;
+    text-align: left;
+    font-size: 1.5em;
+    top: 450px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .rights {
@@ -1033,11 +1048,12 @@ table.classes-table {
         grid-template-columns: 15% auto 15%;
     }
 
-    .container-3, .container-4 {
+    .container-3,
+    .container-4 {
         grid-template-columns: 15% auto 15%;
     }
 
-   .text {
+    .text {
         font-size: 1em;
         min-width: 270px;
     }
@@ -1053,18 +1069,21 @@ table.classes-table {
         font-size: 1em;
     }
 
-    table.time-table, .classes-table {
+    table.time-table,
+    .classes-table {
         font-size: 1em;
         margin: 0 auto;
     }
 
-    .time-table th, .classes-table th {
+    .time-table th,
+    .classes-table th {
         padding: 2px 2px;
         font-size: 1em;
-       font-family:'Hubballi', sans-serif;
+        font-family: 'Hubballi', sans-serif;
     }
 
-    .time-table td, .classes-table td {
+    .time-table td,
+    .classes-table td {
         padding: 2px 2px;
     }
 
@@ -1102,14 +1121,17 @@ table.classes-table {
         display: block;
         font-size: 1em;
     }
+
     img.swing {
         border: 15px solid white;
         width: 80%;
     }
+
     img.bench {
         border: 15px solid white;
         width: 80%;
     }
+
     .gym-container img {
         margin: 0 auto;
         display: flex;
@@ -1117,9 +1139,11 @@ table.classes-table {
         border: 15px solid white;
         width: 80%;
     }
+
     .gym-box {
         font-size: 1rem;
     }
+
     .gym-grid {
         margin: 10px;
     }
@@ -1140,6 +1164,7 @@ table.classes-table {
     .weight img {
         width: 30%;
     }
+
     .questions p {
 
         font-size: 1em;
@@ -1158,6 +1183,7 @@ table.classes-table {
     .container-play p {
         max-width: 250px;
     }
+
     #bar {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto 300px 500px 350px auto;
@@ -1169,52 +1195,66 @@ table.classes-table {
             "dog2"
             "foot";
     }
-    .dog-left p{
+
+    .dog-left p {
         grid-template-columns: 50%;
         font-size: 1.1em;
         top: 160px;
     }
 
-    .dog-right p{
+    .dog-right p {
         grid-template-columns: 50%;
         font-size: 1.1em;
         top: 220px;
     }
-#food {
-    font-size: 1.1em;
-    top: 100px;
-}
-/*----------------------------------------- Form -----------------------------------------*/
-input {
-    margin-right: 10px;
-    font-size: 1.1em;
-    height: 35px;
-    width: inherit;
-}
-.join-form {
-    padding: 20px;
-}
-#form-title, label, option, select, .terms {
-    font-size: 1.1em;
-}
-.fieldinput {
-    margin: 10px 0 10px 0;
-    width: 100%;
-}
-#checkbox {
-    width: 20px;
-    top: 4px;
-}
-.btn {
-    margin: 20px 0 20px 0;
-    font-size: 1.1em;
-}
-input.btn {
-    padding: 5px;
-}
-.food-menu {
-    background-size: cover;
-}
+
+    #food {
+        font-size: 1.1em;
+        top: 100px;
+    }
+
+    /*----------------------------------------- Form -----------------------------------------*/
+    input {
+        margin-right: 10px;
+        font-size: 1.1em;
+        height: 35px;
+        width: inherit;
+    }
+
+    .join-form {
+        padding: 20px;
+    }
+
+    .form-title,
+    label,
+    option,
+    select,
+    .terms {
+        font-size: 1.1em;
+    }
+
+    .fieldinput {
+        margin: 10px 0 10px 0;
+        width: 100%;
+    }
+
+    #checkbox {
+        width: 20px;
+        top: 4px;
+    }
+
+    .btn {
+        margin: 20px 0 20px 0;
+        font-size: 1.1em;
+    }
+
+    input.btn {
+        padding: 5px;
+    }
+
+    .food-menu {
+        background-size: cover;
+    }
 }
 
 @media screen and (min-width: 500px) and (max-width: 700px) {
@@ -1259,8 +1299,7 @@ input.btn {
         display: contents !important;
     }
 
-    .title
-    .march-title .playground-title {
+    .title .march-title .playground-title {
         font-size: 1.4em;
     }
 
@@ -1281,7 +1320,7 @@ input.btn {
     .why-swim {
         font-size: 1em;
     }
-  
+
     div.staff {
         display: grid;
         grid-template-columns: auto;
@@ -1336,15 +1375,20 @@ input.btn {
     .form-btn {
         font-size: 1em;
     }
-    .time-table, .classes-table {
+
+    .time-table,
+    .classes-table {
         overflow-x: auto;
         font-size: 1em;
     }
-    .time-table th, .classes-table th {
+
+    .time-table th,
+    .classes-table th {
         padding: 3px 3px;
     }
 
-    .time-table td, .classes-table td {
+    .time-table td,
+    .classes-table td {
         padding: 3px 3px;
     }
 
@@ -1402,71 +1446,86 @@ input.btn {
         width: 80%;
     }
 
-    .gym-box{
+    .gym-box {
         font-size: 1rem;
     }
 
     .weight img {
         width: 30%;
     }
+
     #bar {
         display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 450px 600px 500px auto;
-    grid-template-areas:
-        "hd"
-        "text"
-        "dog1"
-        "menu"
-        "dog2"
-        "foot";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 450px 600px 500px auto;
+        grid-template-areas:
+            "hd"
+            "text"
+            "dog1"
+            "menu"
+            "dog2"
+            "foot";
     }
-.dog-left p{
-    font-size: 1.4em;
-    grid-template-columns: 45%;
-    top: 250px;
-       
+
+    .dog-left p {
+        font-size: 1.4em;
+        grid-template-columns: 45%;
+        top: 250px;
+
     }
+
     .dog-right p {
         font-size: 1.4em;
         grid-template-columns: 45%;
         top: 300px;
-    } 
-#food {
-    top: 110px;
-    font-size: 1.4em;
-}
-/*----------------------------------------- Form -----------------------------------------*/
-input {
-    margin-right: 10px;
-    font-size: 1.1em;
-    height: 35px;
-    width: inherit;
-}
-.join-form {
-    padding: 40px;
-}
-#form-title, label, option, select {
-    font-size: 1.1em;
-}
-.fieldinput {
-    margin: 10px 0 10px 0;
-    width: 100%;
-}
-#checkbox {
-    width: 20px;
-    top: 4px;
-}
-.btn {
-    margin: 20px 0 20px 0;
-    font-size: 1.1em;
-}
-input.btn {
-    padding: 5px;
-}
-.terms {
-    font-size: 1.1em;
-}
+    }
+
+    #food {
+        top: 110px;
+        font-size: 1.4em;
+    }
+
+    /*----------------------------------------- Form -----------------------------------------*/
+    input {
+        margin-right: 10px;
+        font-size: 1.1em;
+        height: 35px;
+        width: inherit;
+    }
+
+    .join-form {
+        padding: 40px;
+    }
+
+    .form-title,
+    label,
+    option,
+    select {
+        font-size: 1.1em;
+    }
+
+    .fieldinput {
+        margin: 10px 0 10px 0;
+        width: 100%;
+    }
+
+    #checkbox {
+        width: 20px;
+        top: 4px;
+    }
+
+    .btn {
+        margin: 20px 0 20px 0;
+        font-size: 1.1em;
+    }
+
+    input.btn {
+        padding: 5px;
+    }
+
+    .terms {
+        font-size: 1.1em;
+    }
 }
 
 @media screen and (min-width: 700px) and (max-width: 900px) {
@@ -1499,6 +1558,7 @@ input.btn {
             "questions"
             "foot";
     }
+
     #bar {
         display: grid;
         grid-template-columns: 1fr;
@@ -1511,6 +1571,7 @@ input.btn {
             "dog2"
             "foot";
     }
+
     div.topnav {
         display: none;
     }
@@ -1533,7 +1594,7 @@ input.btn {
         font-size: 1.1em;
     }
 
-   .text {
+    .text {
         font-size: 1em;
         min-width: 230px;
     }
@@ -1596,15 +1657,18 @@ input.btn {
         font-size: 1.1em;
     }
 
-    table.time-table, table.classes-table {
+    table.time-table,
+    table.classes-table {
         font-size: 1em;
     }
 
-    .time-table th, .classes-table th{
+    .time-table th,
+    .classes-table th {
         padding: 4px 4px;
     }
 
-    .time-table td, .classes-table td {
+    .time-table td,
+    .classes-table td {
         padding: 4px 4px;
     }
 
@@ -1635,9 +1699,10 @@ input.btn {
         width: 80%;
     }
 
-    .gym-box{
+    .gym-box {
         font-size: 1rem;
     }
+
     .container-play {
         grid-template-columns: 15% auto 15%;
     }
@@ -1648,25 +1713,27 @@ input.btn {
         grid-template-columns: 30%;
         top: 250px;
     }
+
     #food {
         top: 115px;
     }
+
     #pool-body {
         display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto 155px 150px 300px auto 700px auto 600px;
-    grid-template-areas:
-        "hd"
-        "text"
-        "swim"
-        "offer"
-        "img1"
-        "img2"
-        "img3"
-        "img4"
-        "img5"
-        "auto"
-        "foot";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto 155px 150px 300px auto 700px auto 600px;
+        grid-template-areas:
+            "hd"
+            "text"
+            "swim"
+            "offer"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "auto"
+            "foot";
     }
 
     #inner-pool {
@@ -1761,7 +1828,7 @@ input.btn {
         grid-template-columns: 15% auto 15%;
     }
 
-   .text{
+    .text {
         font-size: 1em;
         min-width: 310px;
     }
@@ -1816,16 +1883,19 @@ input.btn {
         font-size: 1em;
     }
 
-    table.time-table, table.classes-table {
+    table.time-table,
+    table.classes-table {
         margin: 20px;
         font-size: 1em;
     }
 
-    .time-table th, .classes-table th{
+    .time-table th,
+    .classes-table th {
         padding: 4px 4px;
     }
 
-    .time-table td, .classes-table td {
+    .time-table td,
+    .classes-table td {
         padding: 4px 4px;
     }
 
@@ -1891,7 +1961,7 @@ input.btn {
         width: 80%;
     }
 
-    .gym-box{
+    .gym-box {
         font-size: 1rem;
     }
 
@@ -1902,9 +1972,10 @@ input.btn {
     .dog-right p,
     .dog-left p {
         font-size: 1.4em;
-    grid-template-columns: 35%;
-    top: 250px;
+        grid-template-columns: 35%;
+        top: 250px;
     }
+
     #food {
         top: 100px;
     }
@@ -1913,16 +1984,17 @@ input.btn {
 @media screen and (min-width: 980px) and (max-width: 1350px) {
     #bar {
         display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 450px 600px 500px auto;
-    grid-template-areas:
-        "hd"
-        "text"
-        "dog1"
-        "menu"
-        "dog2"
-        "foot";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 450px 600px 500px auto;
+        grid-template-areas:
+            "hd"
+            "text"
+            "dog1"
+            "menu"
+            "dog2"
+            "foot";
     }
+
     #playground {
         grid-template-columns: auto;
         grid-template-rows: auto 80px 600px 80px auto auto;
@@ -1946,6 +2018,7 @@ input.btn {
         top: 80%;
         left: 50%;
     }
+
     div.topnav {
         display: none;
     }
@@ -2036,9 +2109,10 @@ input.btn {
         width: 80%;
     }
 
-    .gym-box{
+    .gym-box {
         font-size: 1.3rem;
     }
+
     .container-play {
         grid-template-columns: 15% auto 15%;
     }
@@ -2049,11 +2123,13 @@ input.btn {
         grid-template-columns: 28%;
         top: 250px;
     }
+
     .dog-right p {
         font-size: 1.4em;
         grid-template-columns: 25%;
         top: 300px;
     }
+
     #food {
         top: 100px;
     }
@@ -2105,9 +2181,11 @@ input.btn {
     div.topnav {
         display: none;
     }
-.text {
-    margin: 20px;
-}
+
+    .text {
+        margin: 20px;
+    }
+
     div.g-pinscher#g-p {
         display: grid;
         grid-template-columns: 5px 1fr 5px;
@@ -2133,20 +2211,23 @@ input.btn {
         height: 100%;
         width: 100%;
     }
+
     .dog-right p,
     .dog-left p {
         font-size: 1.7em;
     }
+
     #bar {
-    grid-template-rows: 110px 80px 800px 600px auto;
-    grid-template-areas:
-        "hd hd hd"
-        "text text text"
-        "dog1 menu dog2"
-        "em1 em2 em3"
-        "foot foot foot";
+        grid-template-rows: 110px 80px 800px 600px auto;
+        grid-template-areas:
+            "hd hd hd"
+            "text text text"
+            "dog1 menu dog2"
+            "em1 em2 em3"
+            "foot foot foot";
+    }
 }
-}
+
 /*----------------------------------------- Pool Page Media Query -----------------------------------------*/
 
 @media screen and (max-width: 700px) {
@@ -2167,6 +2248,7 @@ input.btn {
             "auto"
             "foot";
     }
+
     #inner-pool {
         grid-area: img4;
     }
@@ -2189,17 +2271,19 @@ input.btn {
         grid-area: img5;
         margin: 10px auto;
     }
+
     .staff {
-        grid-template-columns:auto;
+        grid-template-columns: auto;
         grid-template-areas:
             "t"
             "a"
             "b"
-            "c" 
+            "c"
             "d"
-            "e" 
+            "e"
             "f";
     }
+
     div.staff {
         display: grid;
         grid-template-columns: auto;
@@ -2229,4 +2313,3 @@ input.btn {
     }
 
 }
-
