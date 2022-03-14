@@ -1,8 +1,8 @@
 
 # Pup Power
 
-This project was made as a part of a Full Stack Developer Programme by Code Institute. All information contained on the page is intended for course use only.
-[View the live project here.](https://marosan28.github.io/pup-power/)
+    This project was made as a part of a Full Stack Developer Programme by Code Institute. All information contained on the page is intended for course use only.
+    [View the live project here.](https://marosan28.github.io/pup-power/)
 -----
 ## Who is this website for and what does it do? 
 
@@ -42,7 +42,7 @@ Dublin, Ireland. It's a first ever Dog-Only Leisure Centre. The centre's main go
 
 - __Form__ 
 
-  - A dummy form was made for the website. The link used was the one used by Code Institute. The Form is made so a user can join the newsletter of Pup Power. The data collected is personal information like name, email and password with the dogs personal information like breed and gender. 
+  - A dummy form was made for the website. The link used was the one used by Code Institute. The Form is made so a user can join the newsletter of Pup Power. The data collected is personal information like name, email and password with the dogs personal information like breed and gender.
 
 ![Footer](wireframes/images/form-img.png)
 
@@ -60,11 +60,27 @@ Dublin, Ireland. It's a first ever Dog-Only Leisure Centre. The centre's main go
 
 - __Playground Second Part Of The Page__ 
 
-  - Second part of the page showcases images of the park and the playground. As the playground is open all the time, the use of coaches is optional, usefull information about dog training is provided for visitors who wish to train their dog on the premises. The information is provided on the white background with black contrast text, different titles are visually seperated for easier understanding. 
+  - Second part of the page showcases images of the park and the playground. As the playground is open all the time, the use of coaches is optional, useful information about dog training is provided for visitors who wish to train their dog on the premises. The information is provided on the white background with black contrast text, different titles are visually seperated for easier understanding. 
 
 ![Footer](wireframes/images/playground-landing-page-2.png)
 
+- __Gym Landing Page__ 
 
+  - Gym Landing page has a central image of a dog holding a weight, the image aids to the fun and friendly appeal of the site and is supposed to encourage a positive reaction from a user. Below the image there is a link that will take the user to the form page where he can sign up. Useful information about dogs and exercises is situated below. Provides answers to any questions visitior may have about dogs and exercise. 
+
+![Footer](wireframes/images/gym-landing-page-1.png)
+
+- __Gym Second Part Of The Page__ 
+
+  - Second part of the gym page contains a big table of class schedules currently offered at Pup Power. The user has answers to what, where, when and who. 
+
+![Footer](wireframes/images/gym-landing-page-2.png)
+
+- __Bar Page__ 
+
+  - The Bar page has highlighted menu in the middle and offers currently available. The offer on the right side has a link which takes the user to the home page where instructions on how to get a free puppachino are provided.
+
+![Footer](wireframes/images/gym-landing-page-2.png)
 
  ## First Time Visitor Goals
 -   ### User stories
