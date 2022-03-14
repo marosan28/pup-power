@@ -1,12 +1,15 @@
 
 # Pup Power
 
-Pup Power is a website made for a Dog Leisure Centre based in 
-Dublin, Ireland.
-It's a first ever Dog-Only Leisure Centre. The centre's main goal is encouraging pet owners of taking better care for their dogs health.
-Facilities include indoor and outdoor pools, 100 acre playground with all the commodities, large gym and a bar which serves both food and drinks.
+This project was made as a part of a Full Stack Developer Programme by Code Institute. All information contained on the page is intended for course use only.
 [View the live project here.](https://marosan28.github.io/pup-power/)
+-----
+## Who is this website for and what does it do? 
 
+Pup Power is a website made for a Dog Leisure Centre based in 
+Dublin, Ireland. It's a first ever Dog-Only Leisure Centre. The centre's main goal is encouraging pet owners of taking better care for their dogs health. The website is targeted towards all pet owners and dog lovers. Pup Power offers different facilities with a range of activities made specifically to boost dogs health and agility. Facilities include indoor and outdoor pools, 100 acre playground with all the commodities, large gym and a bar which serves both food and drinks.
+
+-----
 ![App Screenshot](wireframes/images/responsive-img.jpg)
 ## Main Features
 - __Navigation Bar__
@@ -31,11 +34,37 @@ Facilities include indoor and outdoor pools, 100 acre playground with all the co
 
 ![Footer](wireframes/images/footer-img.jpg)
 
+- __Pool Landing Page__ 
+
+  - When a user lands on a pool section page he is greeted with this month's pool offers, and opening hours. There is a "Join Now" button in dogs paws which takes the user on a form page. The big table shows days, opening hours, coaches working the relevant day and the age groups they are currently working with. The data is shown in a clear way. There is a paragraph about why swimming is important for dogs health which provides the user with usefull information on why they should sing up their dog to our class and what benefits will come out of it.
+
+![Footer](wireframes/images/pool-landing-page-1.png)
+
 - __Form__ 
 
   - A dummy form was made for the website. The link used was the one used by Code Institute. The Form is made so a user can join the newsletter of Pup Power. The data collected is personal information like name, email and password with the dogs personal information like breed and gender. 
 
 ![Footer](wireframes/images/form-img.png)
+
+- __Pool Second Part Of The Page__ 
+
+  - Second section of the pool page shows images of the coaches and something about each coach. User can determine which coach they think would be the best choice for their needs. The images are here because visuals are processed quickly and cause a faster and stronger reaction than just words. There is also an image on the right with the note about our indoor pools. More people preffer indoor pools during spring because of low temperatures. User knows he can book a session regardless of the weather. 
+
+![Footer](wireframes/images/pool-landing-page-2.png)
+
+- __Playground Landing Page__ 
+
+  - Playground landing page highlights the features currently available at the facility. Reasons dogs should play, visitor knows what is offered and why he should bring his pet to the playground. The same principles are maintained with dog images to make information transfer easier. 
+
+![Footer](wireframes/images/playground-landing-page-1.png)
+
+- __Playground Second Part Of The Page__ 
+
+  - Second part of the page showcases images of the park and the playground. As the playground is open all the time, the use of coaches is optional, usefull information about dog training is provided for visitors who wish to train their dog on the premises. The information is provided on the white background with black contrast text, different titles are visually seperated for easier understanding. 
+
+![Footer](wireframes/images/playground-landing-page-2.png)
+
+
 
  ## First Time Visitor Goals
 -   ### User stories
@@ -258,6 +287,4 @@ Forking the GitHub Repository means we make a copy of the original repository on
 -   Slack student support.
 
 -   [Kevin Powell](https://www.youtube.com/kevinpowell) for all the tutorials that helped me throughout the project.
-
-This project was made as a part of a Full Stack Developer Programme by Code Institute. All the information contained on the page is intended for course use only. 
 
