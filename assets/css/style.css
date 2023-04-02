@@ -896,12 +896,13 @@ table.classes-table {
 }
 
 .dog-left {
-    background-image: url("../images/rottweiler-img.webp");
-    width: 100%;
+    background-image: url("../images/amstaff-dog-img.webp");
+    width: 80%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     grid-area: dog1;
+    margin-left: 20px;
 }
 
 .dog-left p {
